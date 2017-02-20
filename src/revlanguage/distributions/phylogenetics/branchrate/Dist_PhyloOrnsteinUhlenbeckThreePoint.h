@@ -1,5 +1,5 @@
-#ifndef Dist_PhyloOrnsteinUhlenbeckMVN_H
-#define Dist_PhyloOrnsteinUhlenbeckMVN_H
+#ifndef Dist_PhyloOrnsteinUhlenbeckThreePoint_H
+#define Dist_PhyloOrnsteinUhlenbeckThreePoint_H
 
 #include "ContinuousCharacterData.h"
 #include "RlContinuousCharacterData.h"
@@ -8,14 +8,14 @@
 
 namespace RevLanguage {
     
-    class Dist_PhyloOrnsteinUhlenbeckMVN :  public TypedDistribution< ContinuousCharacterData > {
+    class Dist_PhyloOrnsteinUhlenbeckThreePoint :  public TypedDistribution< ContinuousCharacterData > {
         
     public:
-        Dist_PhyloOrnsteinUhlenbeckMVN( void );
-        virtual ~Dist_PhyloOrnsteinUhlenbeckMVN();
+        Dist_PhyloOrnsteinUhlenbeckThreePoint( void );
+        virtual ~Dist_PhyloOrnsteinUhlenbeckThreePoint();
         
         // Basic utility functions
-        Dist_PhyloOrnsteinUhlenbeckMVN*                 clone(void) const;                                                                      //!< Clone the object
+        Dist_PhyloOrnsteinUhlenbeckThreePoint*          clone(void) const;                                                                      //!< Clone the object
         static const std::string&                       getClassType(void);                                                                     //!< Get Rev type
         static const TypeSpec&                          getClassTypeSpec(void);                                                                 //!< Get class type spec
         std::string                                     getDistributionFunctionName(void) const;                                                //!< Get the Rev-name for this distribution.
