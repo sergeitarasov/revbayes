@@ -71,9 +71,9 @@ double PhyloOrnsteinUhlenbeckProcessThreePoint::computeLnProbability( void )
     // @Josef: Here is where you'll need to add the algorithm to compute the probability of the observed data.
     
     // sum the partials up
-    this->lnProb = sumRootLikelihood();
+    this->ln_prob = sumRootLikelihood();
     
-    return this->lnProb;
+    return this->ln_prob;
 }
 
 double PhyloOrnsteinUhlenbeckProcessThreePoint::computeRootState(size_t siteIdx) const
