@@ -10,6 +10,7 @@
 #include "DistributionBetaBinomial.cpp" //?????? need this? check the BinomialDistribution file.
 #include "RandomNumberFactory.h"
 #include "RbConstants.h"
+#include "RbException.h"
 
 using namespace RevBayesCore;
 

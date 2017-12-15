@@ -14,10 +14,12 @@
 
 #endif /* REVLANGUAGE_DISTRIBUTIONS_MATH_DIST_BETABINOMIAL_H_ */
 
-#ifndef Dist_binomial_H
-#define Dist_binomial_H
+#ifndef Dist_betaBinomial_H
+#define Dist_betaBinomial_H
 
-#include "BinomialDistribution.h"
+#include "BetaBinomialDistribution.h"
+#include "BetaDistribution.h"
+#include "BetaBinomialDistribution.h"
 #include "Natural.h"
 #include "Probability.h"
 #include "RlTypedDistribution.h"
@@ -25,13 +27,13 @@
 namespace RevLanguage {
 
     /**
-     * The RevLanguage wrapper of the binomial distribution.
+     * The RevLanguage wrapper of the beta binomial distribution.
      *
-     * The RevLanguage wrapper of the binomial distribution simply
+     * The RevLanguage wrapper of the beta binomial distribution simply
      * manages the interactions through the Rev with our core.
      * That is, the internal distribution object can be constructed and hooked up
      * in a model graph.
-     * See the BinomialDistribution for more details.
+     * See the BetaBinomialDistribution for more details.
      *
      *
      * @copyright Copyright 2009-
@@ -39,14 +41,14 @@ namespace RevLanguage {
      * @since 2014-08-25, version 1.0
      *
      */
-    class Dist_binomial :  public TypedDistribution<Natural> {
+    class Dist_betaBinomial :  public TypedDistribution<Natural> {
 
     public:
-                                                        Dist_binomial(void);
-        virtual                                        ~Dist_binomial(void);
+                                                        Dist_betaBinomial(void);
+        virtual                                        ~Dist_betaBinomial(void);
 
         // Basic utility functions
-        Dist_binomial*                                  clone(void) const;                                                                      //!< Clone the object
+        Dist_betaBinomial*                                  clone(void) const;                                                                      //!< Clone the object
         static const std::string&                       getClassType(void);                                                                     //!< Get Rev type
         static const TypeSpec&                          getClassTypeSpec(void);                                                                 //!< Get class type spec
         std::string                                     getDistributionFunctionName(void) const;                                                //!< Get the Rev-name for this distribution.
@@ -56,7 +58,7 @@ namespace RevLanguage {
 
 
         // Distribution functions you have to override
-        RevBayesCore::BinomialDistribution*             createDistribution(void) const;
+        RevBayesCore::BetaBinomialDistribution*             createDistribution(void) const;
 
     protected:
 

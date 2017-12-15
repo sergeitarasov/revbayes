@@ -22,9 +22,11 @@
 #include "RbConstants.h"
 #include "RbException.h"
 #include "RbMathFunctions.h"
+#include "RbMathCombinatorialFunctions.h"
 #include "RbMathHelper.h"
 #include "RbMathLogic.h"
 #include "DistributionBetaBinomial.h"
+#include <cmath>
 
 using namespace RevBayesCore;
 
@@ -41,7 +43,7 @@ using namespace RevBayesCore;
  */
 double RbStatistics::BetaBinomial::cdf(double n, double p, double x)
 {
-	throw RbException('The Beta Binomial cdf is not yet implemented in RB.');
+	throw RbException('The Beta Binomial cdf is not yet implemented in RB.');//error: 'no matching conversion for functional-style cast from 'int' to 'RbException'.
 }
 
 /*!

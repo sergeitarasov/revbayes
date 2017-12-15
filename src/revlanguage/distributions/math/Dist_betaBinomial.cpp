@@ -5,18 +5,21 @@
 #include "Dist_betaBinomial.h"  //don't forget to edit/populate the header file
 #include "Probability.h"
 #include "RealPos.h"
+#include "RbException.h"
+#include "DistributionBetaBinomial.h"
+#include "RbHelpReference.h" //?
 
 using namespace RevLanguage;
 
 Dist_betaBinomial::Dist_betaBinomial(void) : TypedDistribution<Natural>()
 {
-
+	//return?
 }
 
 
-Dist_betaBinomial::~Dist_betaBinomial(void)
+Dist_betaBinomial::~Dist_betaBinomial(void) //error: expects the class name after ~
 {
-
+	//return?
 }
 
 
