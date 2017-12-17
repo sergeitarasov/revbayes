@@ -126,23 +126,23 @@ double RbStatistics::BetaBinomial::pdf(double y, double n, double pp, double a, 
 
     //TODO: conditionals
     if (a==0)
-    		// return((y == 0) ? (asLog ? 0.0 : 1.0) : (asLog ? RbConstants::Double::neginf : 0.0) );
-    		return constant;
+    		return((y == 0) ? (asLog ? 0.0 : 1.0) : (asLog ? RbConstants::Double::neginf : 0.0) );
+    		//return constant;
 
     if (b==0)
-    		// return((y == n) ? (asLog ? 0.0 : 1.0) : (asLog ? RbConstants::Double::neginf : 0.0) );
-    		return constant;
+    		return((y == n) ? (asLog ? 0.0 : 1.0) : (asLog ? RbConstants::Double::neginf : 0.0) );
+    		//return constant;
 
     constant = RevBayesCore::RbMath::choose(n, y);
     if(asLog == false){
-    		prUnnorm = constant * RbStatistics::Beta::pdf(a-y, b+n-y, y);
-    		prNormed = prUnnorm / RbStatistics::Beta::pdf(a, b, y);
+    		double prUnnorm = constant * RbStatistics::Beta::pdf(a-y, b+n-y, y);
+    		double prNormed = prUnnorm / RbStatistics::Beta::pdf(a, b, y);
     		return prNormed;
     }
     else{
-    		logChoose = RevBayesCore::RbMath::log(constant);
-    		prUnnorm = logChoose + RbStatistics::Beta::lnPdf(a, b, y);
-    		prNormed = prUnnorm - RbStatistics::Beta::lnPdf(a, b, y);
+    		RbMath::lnChoose = RevBayesCore::RbMathFunctions::ln(constant);
+    		double prUnnorm = RbMathFunctions::lnChoose + RbStatistics::Beta::lnPdf(a, b, y);
+    		double prNormed = prUnnorm - RbStatistics::Beta::lnPdf(a, b, y);
     }
 
 
@@ -172,7 +172,8 @@ double RbStatistics::BetaBinomial::pdf(double y, double n, double pp, double a, 
  * \throws Does not throw an error.
  */
 
-double RbStatistics::BetaBinomial::quantile(double quantile_prob, double n, double p)
+//double RbStatistics::BetaBinomial::quantile(double quantile_prob, double n, double p)
+double quantile(double quantile_prob, double n, double p)
 {
 	throw RbException('There is no simple formula for this, and it is not yet implemented in RB.');
 }

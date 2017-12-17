@@ -51,7 +51,8 @@ double BetaBinomialDistribution::computeLnProbability( void )
         return RbConstants::Double::neginf;
     }
 
-    return RbStatistics::BetaBinomial::lnPdf(n->getValue(), p->getValue(), *value);
+    //return RbStatistics::BetaBinomial::lnPdf(n->getValue(), a->getValue(), b->getValue(), *value); //CAREFUL
+    return RbStatistics::BetaBinomial::lnPdf(n->getValue(), p->getValue(), q->getValue(), *value); //CAREFUL
 }
 
 
