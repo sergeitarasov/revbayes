@@ -51,15 +51,15 @@ double BetaBinomialDistribution::computeLnProbability( void )
         return RbConstants::Double::neginf;
     }
 
-    //return RbStatistics::BetaBinomial::lnPdf(n->getValue(), a->getValue(), b->getValue(), *value); //CAREFUL
-    return RbStatistics::BetaBinomial::lnPdf(n->getValue(), p->getValue(), q->getValue(), *value); //CAREFUL
+    return RbStatistics::BetaBinomial::lnPdf(n->getValue(), pp->getValue(), a->getValue(), b->getValue(), *value); //CAREFUL
+    //return RbStatistics::BetaBinomial::lnPdf(n->getValue(), p->getValue(), q->getValue(), *value); //CAREFUL
 }
 
 
 
 void BetaBinomialDistribution::redrawValue( void ) {
 
-    *value = RbStatistics::BetaBinomial::rv(n->getValue(), p->getValue(), *GLOBAL_RNG);
+    *value = RbStatistics::BetaBinomial::rv(n->getValue(), pp->getValue(), a->getValue(), b->getValue(), *GLOBAL_RNG);
 }
 
 
