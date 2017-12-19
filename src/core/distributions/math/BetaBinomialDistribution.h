@@ -25,10 +25,10 @@
 namespace RevBayesCore {
 
     /**
-     * @brief Beta Binomial distribution class.
+     * @brief Beta-Binomial distribution class.
      *
      * The Binomial distribution represents a family of distributions defined
-     * on the natural number. The Beta Binomial distribution has 2???????? parameters:
+     * on the natural number. The Beta-Binomial distribution has 2 parameters:
      *   n .. the number of trials
      *   p .. the probability of success
      * Instances of this class can be associated to stochastic variables.

@@ -27,9 +27,9 @@
 namespace RevLanguage {
 
     /**
-     * The RevLanguage wrapper of the beta binomial distribution.
+     * The RevLanguage wrapper of the beta-binomial distribution.
      *
-     * The RevLanguage wrapper of the beta binomial distribution simply
+     * The RevLanguage wrapper of the beta-binomial distribution simply
      * manages the interactions through the Rev with our core.
      * That is, the internal distribution object can be constructed and hooked up
      * in a model graph.

@@ -7,7 +7,7 @@
 
 #include "BetaBinomialDistribution.h"
 #include "DistributionBetaBinomial.h"
-#include "DistributionBetaBinomial.cpp" //?????? need this? check the BinomialDistribution file.
+#include "DistributionBetaBinomial.cpp"
 #include "RandomNumberFactory.h"
 #include "RbConstants.h"
 #include "RbException.h"

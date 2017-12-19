@@ -1,8 +1,8 @@
 /**
  * @file DistributionBetaBinomial
- * This file contains the functions of the beta binomial distribution.
+ * This file contains the functions of the beta-binomial distribution.
  *
- * @brief Implementation of the binomial distribution.
+ * @brief Implementation of the beta-binomial distribution.
  *
  * (c) Copyright 2009- under GPL version 3
  * @date Last modified: $Date$

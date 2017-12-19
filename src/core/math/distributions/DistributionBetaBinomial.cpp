@@ -1,6 +1,6 @@
 /**
  * @file DistributionBetaBinomial
- * This file contains the functions of the beta binomial distribution.
+ * This file contains the functions of the beta-binomial distribution.
  *
  * @brief Implementation of the beta binomial distribution.
  *
@@ -32,7 +32,10 @@ using namespace RevBayesCore;
 
 /*!
  * This function calculates the probability density 
- * for a beta binomially-distributed random variable. //FIXME: correct the wording here
+ * for a beta-binomially-distributed random variable.
+ * The beta-binomial distribution is the binomial distribution
+ * in which the probability of successes at each trial is random,
+ * and follows a beta distribution.
  *
  * \brief Beta Binomial probability density.
  * \param n is the number of trials. 
@@ -43,12 +46,12 @@ using namespace RevBayesCore;
  */
 double RbStatistics::BetaBinomial::cdf(double n, double p, double x)
 {
-	throw RbException("The Beta Binomial cdf is not yet implemented in RB.");//error: 'no matching conversion for functional-style cast from 'int' to 'RbException'.
+	throw RbException("The Beta Binomial cdf is not yet implemented in RB.");
 }
 
 /*!
  * This function draws a random variable
- * from a beta binomial distribution.
+ * from a beta-binomial distribution.
  *
  * From R:
  *
@@ -68,7 +71,7 @@ double RbStatistics::BetaBinomial::cdf(double n, double p, double x)
  *	(Algorithm BTPEC).
  *
  *
- * \brief Beta Binomial probability density.
+ * \brief Beta-Binomial probability density.
  * \param n is the number of trials.
  * \param pp is the success probability.
  * \param a is the number of successes. ????
@@ -89,9 +92,9 @@ int RbStatistics::BetaBinomial::rv(double n, double pp, double a, double b, RevB
 
 /*!
  * This function calculates the probability density 
- * for a beta binomially-distributed random variable.
+ * for a beta-binomially-distributed random variable.
  *
- * \brief Beta Binomial probability density.
+ * \brief Beta-Binomial probability density.
  * \param n is the number of trials. 
  * \param p is the success probability. 
  * \param x is the number of successes. 
@@ -106,9 +109,9 @@ double RbStatistics::BetaBinomial::lnPdf(double n, double pp, double a, double b
 
 /*!
  * This function calculates the probability density 
- * for a beta binomially-distributed random variable.
+ * for a beta-binomially-distributed random variable.
  *
- * \brief Beta Binomial probability density.
+ * \brief Beta-Binomial probability density.
  * \param n is the number of trials. 
  * \param pp is the success probability.
  * \param y is the number of successes.
@@ -159,7 +162,7 @@ double RbStatistics::BetaBinomial::pdf(double y, double n, double pp, double a, 
 
 /*!
  * This function calculates the probability density 
- * for a binomially-distributed random variable.
+ * for a beta-binomially-distributed random variable.
  *
  * From R:
  *
@@ -171,7 +174,7 @@ double RbStatistics::BetaBinomial::pdf(double y, double n, double pp, double a, 
  *     (3) Also does not check for 0 <= p <= 1 and 0 <= q <= 1 or NaN's.
  *         Do this in the calling function.
  *
- * \brief Binomial probability density.
+ * \brief Beta Binomial probability density.
  * \param n is the number of trials. 
  * \param p is the success probability. 
  * \param x is the number of successes. 
