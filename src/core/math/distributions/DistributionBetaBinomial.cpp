@@ -15,7 +15,6 @@
  */
 
 #include <cmath>
-
 #include "DistributionBeta.h"
 #include "DistributionBinomial.h"
 #include "DistributionNormal.h"
@@ -26,7 +25,6 @@
 #include "RbMathHelper.h"
 #include "RbMathLogic.h"
 #include "DistributionBetaBinomial.h"
-#include <cmath>
 
 using namespace RevBayesCore;
 
@@ -101,10 +99,10 @@ int RbStatistics::BetaBinomial::rv(double n, double pp, double a, double b, RevB
  * \return Returns the probability density.
  * \throws Does not throw an error.
  */
-double RbStatistics::BetaBinomial::lnPdf(double n, double pp, double a, double b) {
+double RbStatistics::BetaBinomial::lnPdf(double n, double pp, double a, double b, double value) {
 
     double aa = 1.0 - pp;
-    return lnPdf(n, pp, aa, b); //is this right?
+    return value;
 }
 
 /*!
@@ -144,19 +142,15 @@ double RbStatistics::BetaBinomial::pdf(double y, double n, double pp, double a, 
     		//return constant;
 
     constant = RevBayesCore::RbMath::lnChoose(n, y);
-    if(asLog == false){
-    		double prUnnorm = constant * RbStatistics::Beta::pdf(a-y, b+n-y, y);
-    		double prNormed = prUnnorm / RbStatistics::Beta::pdf(a, b, y);
+
+
+    	double prUnnorm = constant + RbStatistics::Beta::lnPdf(a, b, y);
+    	double prNormed = prUnnorm - RbStatistics::Beta::lnPdf(a, b, y);
+
+    	if(asLog == false)
+    		return exp(prNormed);
+    	else
     		return prNormed;
-    }
-    else{
-    		RbMath::lnChoose = RevBayesCore::RbMathFunctions::ln(constant); //error: no member named 'ln' in RbMathFunctions
-    		double prUnnorm = RbMath::lnChoose + RbStatistics::Beta::lnPdf(a, b, y);
-    		double prNormed = prUnnorm - RbStatistics::Beta::lnPdf(a, b, y);
-    }
-
-
-
 }
 
 

@@ -37,7 +37,9 @@ RevBayesCore::BetaBinomialDistribution* Dist_betaBinomial::createDistribution( v
     // get the parameters
     RevBayesCore::TypedDagNode<long>*    vn = static_cast<const Natural     &>( n->getRevObject() ).getDagNode();
     RevBayesCore::TypedDagNode<double>* vp = static_cast<const Probability &>( p->getRevObject() ).getDagNode();
-    RevBayesCore::BetaBinomialDistribution* d  = new RevBayesCore::BetaBinomialDistribution( vn, vp );
+    RevBayesCore::TypedDagNode<long>* va = static_cast<const Natural &>( a->getRevObject() ).getDagNode();
+    RevBayesCore::TypedDagNode<long>* vb = static_cast<const Natural &>( b->getRevObject() ).getDagNode();
+    RevBayesCore::BetaBinomialDistribution* d  = new RevBayesCore::BetaBinomialDistribution( vn, vp, va, vb );
     return d;
 }
 

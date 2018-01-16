@@ -77,6 +77,8 @@ namespace RevLanguage {
 
         RevPtr<const RevVariable>                       p;
         RevPtr<const RevVariable>                       n;
+        RevPtr<const RevVariable>					   a;
+        RevPtr<const RevVariable>					   b;
     };
 
 }

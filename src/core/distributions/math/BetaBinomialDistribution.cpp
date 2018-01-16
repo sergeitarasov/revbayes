@@ -7,25 +7,28 @@
 
 #include "BetaBinomialDistribution.h"
 #include "DistributionBetaBinomial.h"
-#include "DistributionBetaBinomial.cpp"
 #include "RandomNumberFactory.h"
 #include "RbConstants.h"
 #include "RbException.h"
 
 using namespace RevBayesCore;
 
-BetaBinomialDistribution::BetaBinomialDistribution(const TypedDagNode<long> *m, const TypedDagNode<double> *q) : TypedDistribution<long>( new long( 0 ) ),
+BetaBinomialDistribution::BetaBinomialDistribution(const TypedDagNode<long> *m, const TypedDagNode<double> *q, const TypedDagNode<long> *alpha, const TypedDagNode<long> *beta) : TypedDistribution<long>( new long( 0 ) ),
     n( m ),
-    p( q )
+    p( q ),
+	a( alpha ),
+	b( beta )
 {
 
     // add the parameters to our set (in the base class)
     // in that way other class can easily access the set of our parameters
     // this will also ensure that the parameters are not getting deleted before we do
     addParameter( n );
-    addParameter( q );
+    addParameter( p );
+    addParameter( a );
+    addParameter( b );
 
-    *value = RbStatistics::Binomial::rv(n->getValue(), p->getValue(), *GLOBAL_RNG);
+    *value = RbStatistics::BetaBinomial::rv(n->getValue(), p->getValue(), alpha->getValue(), beta->getValue(), *GLOBAL_RNG);
 }
 
 
@@ -51,7 +54,7 @@ double BetaBinomialDistribution::computeLnProbability( void )
         return RbConstants::Double::neginf;
     }
 
-    return RbStatistics::BetaBinomial::lnPdf(n->getValue(), pp->getValue(), a->getValue(), b->getValue(), *value); //CAREFUL
+    return RbStatistics::BetaBinomial::lnPdf(n->getValue(), p->getValue(), a->getValue(), b->getValue(), *value); //CAREFUL
     //return RbStatistics::BetaBinomial::lnPdf(n->getValue(), p->getValue(), q->getValue(), *value); //CAREFUL
 }
 
@@ -59,7 +62,7 @@ double BetaBinomialDistribution::computeLnProbability( void )
 
 void BetaBinomialDistribution::redrawValue( void ) {
 
-    *value = RbStatistics::BetaBinomial::rv(n->getValue(), pp->getValue(), a->getValue(), b->getValue(), *GLOBAL_RNG);
+    *value = RbStatistics::BetaBinomial::rv(n->getValue(), p->getValue(), a->getValue(), b->getValue(), *GLOBAL_RNG);
 }
 
 

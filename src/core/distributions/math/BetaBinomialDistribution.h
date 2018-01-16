@@ -41,7 +41,7 @@ namespace RevBayesCore {
     class BetaBinomialDistribution : public TypedDistribution<long> {
 
     public:
-        BetaBinomialDistribution(const TypedDagNode<long> *n, const TypedDagNode<double> *p);
+        BetaBinomialDistribution(const TypedDagNode<long> *n, const TypedDagNode<double> *p, const TypedDagNode<long> *alpha, const TypedDagNode<long> *beta);
         virtual                                            ~BetaBinomialDistribution(void);                                             //!< Virtual destructor
 
         // public member functions
@@ -58,6 +58,9 @@ namespace RevBayesCore {
         // members
         const TypedDagNode<long>*                            n;
         const TypedDagNode<double>*                         p;
+        const TypedDagNode<long>*							a;
+        const TypedDagNode<long>*							b;
+
     };
 
 }

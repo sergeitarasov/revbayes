@@ -28,7 +28,7 @@ namespace RevBayesCore {
         
             double                      pdf(double n, double p, double x);                                    /*!< Binomial(n,p) probability density */
             double                      pdf(double y, double n, double pp, double a, double b, bool log);     /*!< Beta Binomial(n,pp) probability density */
-            double                      lnPdf(double n, double pp, double a, double b);                       /*!< Beta Binomial(n,pp) log_e probability density */
+            double                      lnPdf(double n, double pp, double a, double b, double y);                       /*!< Beta Binomial(n,pp) log_e probability density */
             double                      cdf(double n, double p, double x);                                    /*!< Beta Binomial(n,p) cumulative probability */
             double                      quantile(double n, double p);                               		    /*!< Beta Binomial(n,p) quantile */
             int                         rv(double n, double pp, double a, double b, RandomNumberGenerator& rng);             /*!< Beta Binomial(n,pp) random variable */
