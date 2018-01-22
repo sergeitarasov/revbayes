@@ -144,6 +144,7 @@
 /* Distributions on simple variables (in folder "distributions/math") */
 #include "Dist_bernoulli.h"
 #include "Dist_beta.h"
+#include "Dist_betaBinomial.h"
 #include "Dist_bimodalLnorm.h"
 #include "Dist_bimodalNorm.h"
 #include "Dist_binomial.h"
@@ -326,6 +327,9 @@ void RevLanguage::Workspace::initializeDistGlobalWorkspace(void)
         // beta distribution
 //        AddContinuousDistribution< Probability >( new Dist_beta() );
         AddDistribution< Probability                >( new Dist_beta() );
+
+        // beta binomial distribution
+        AddDistribution< Natural				   >( new Dist_betaBinomial());
 
         // bimodal normal distribution
         AddContinuousDistribution< Real             >( new Dist_bimodalNorm() );
