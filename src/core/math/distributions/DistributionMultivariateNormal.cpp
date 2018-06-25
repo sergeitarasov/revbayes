@@ -55,6 +55,7 @@ double RbStatistics::MultivariateNormal::lnPdfCovariance(const std::vector<doubl
     // we compute the precision matrix, which is the inverse of the covariance matrix
     // and then simply call the lnPDF for the precision matrix.
     // This simplifies the coding.
+    sigma.setCholesky(true);
     MatrixReal omega = sigma.computeInverse();
 
     return lnPdfPrecision(mu, omega, x, scale);
@@ -79,7 +80,7 @@ std::vector<double> RbStatistics::MultivariateNormal::rvCovariance(const std::ve
     size_t dim = sigma.getDim();
     
     MatrixReal W(dim, 1, 0.0);
-    for(size_t i = 0; i < dim; ++i)
+    for (size_t i = 0; i < dim; ++i)
     {
         W[i][0] = RbStatistics::Normal::rv(0, sqrtScale, rng);
     }
@@ -88,7 +89,7 @@ std::vector<double> RbStatistics::MultivariateNormal::rvCovariance(const std::ve
     
     MatrixReal V = L * W;
     std::vector<double> v = std::vector<double>(dim, 0.0);
-    for(size_t i = 0; i < dim; ++i)
+    for (size_t i = 0; i < dim; ++i)
     {
         v[i] = mu[i] + V[i][0];
     }
@@ -177,10 +178,22 @@ double RbStatistics::MultivariateNormal::lnPdfPrecision(const std::vector<double
     {
         return logDet;
     }
-    
-    if ( omega.getCholeskyDecomposition().checkPositiveSemidefinite() == false )
+   
+    // check positive semidefiniteness
+    if ( omega.isUsingCholesky() == true )
     {
-        return RbConstants::Double::neginf;
+        if ( omega.getCholeskyDecomposition().checkPositiveSemidefinite() == false )
+        {
+            return RbConstants::Double::neginf;
+        }
+    }
+    else
+    {
+        CholeskyDecomposition c = CholeskyDecomposition(&omega);
+        if ( c.checkPositiveSemidefinite() == false )
+        {
+            return RbConstants::Double::neginf;
+        }
     }
 
     size_t dim = x.size();
