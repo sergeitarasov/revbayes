@@ -6,13 +6,15 @@
 using namespace RevBayesCore;
 
 
-SSE_ODE::SSE_ODE( const std::vector<double> &m, const RateGenerator* q, double r, bool backward_time, bool extinction_only ) :
+SSE_ODE::SSE_ODE( const std::vector<double> &m, const RateGenerator* q, double r, bool backward_time, bool extinction_only, bool cond, bool comp_avg_time ) :
     mu( m ),
     num_states( q->getNumberOfStates() ),
     Q( q ),
     rate( r ),
     extinction_only( extinction_only ),
-    backward_time( backward_time )
+    backward_time( backward_time ),
+    conditioned( cond ),
+    compute_average_time_in_state( comp_avg_time )
 {
     
 }
@@ -74,7 +76,7 @@ void SSE_ODE::operator()(const state_type &x, state_type &dxdt, const double t)
             }
         }
         
-        if (psi.empty() == false)
+        if ( psi.empty() == false )
         {
             no_event_rate += psi[i];
         }
@@ -121,6 +123,11 @@ void SSE_ODE::operator()(const state_type &x, state_type &dxdt, const double t)
         
             // no event
             dxdt[i + num_states] = -no_event_rate * safe_x[i + num_states];
+            if ( backward_time == false && conditioned == false )
+            {
+                dxdt[i + num_states] += no_event_rate * safe_x[i + 3*num_states];
+                dxdt[i + 3*num_states] = no_event_rate * safe_x[i + 3*num_states];
+            }
             
             // speciation event
             if ( use_speciation_from_event_map == true )
@@ -154,7 +161,16 @@ void SSE_ODE::operator()(const state_type &x, state_type &dxdt, const double t)
             }
             else
             {
-                dxdt[i + num_states] += 2 * lambda[i] * safe_x[i] * safe_x[i + num_states];
+                if ( backward_time == true || conditioned == true )
+                {
+                    dxdt[i + num_states] += 2 * lambda[i] * safe_x[i] * safe_x[i + num_states];
+                }
+                else if ( backward_time == false && conditioned == false )
+                {
+                    dxdt[i + 3*num_states] -= 2 * lambda[i] * safe_x[i] * safe_x[i + 3*num_states];
+                    dxdt[i + num_states] -= 2 * lambda[i] * safe_x[i] * safe_x[i + 3*num_states];
+                    dxdt[i + num_states] += 2 * lambda[i] * safe_x[i] * safe_x[i + num_states];
+                }
             }
         
             // anagenetic state change
@@ -166,17 +182,41 @@ void SSE_ODE::operator()(const state_type &x, state_type &dxdt, const double t)
                     {
                         dxdt[i + num_states] += Q->getRate(i, j, age, rate) * safe_x[j + num_states];
                     }
+                    else if ( conditioned == true )
+                    {
+                        dxdt[i + num_states] += Q->getRate(j, i, age, rate) * safe_x[j + num_states];
+                    }
                     else
                     {
+                        dxdt[i + 3*num_states] -= Q->getRate(i, j, age, rate) * safe_x[j + 3*num_states];
+                        dxdt[i + num_states] -= Q->getRate(i, j, age, rate) * safe_x[j + 3*num_states];
                         dxdt[i + num_states] += Q->getRate(j, i, age, rate) * safe_x[j + num_states];
                     }
                 }
                 
             }
             
+//            if ( backward_time == false && conditioned == false )
+//            {
+//                dxdt[i + num_states] = -dxdt[i + num_states];
+//            }
+            
         } // end if extinction_only
         
     } // end for num_states
+    
+    if ( compute_average_time_in_state == true )
+    {
+        double sum_probs = 0.0;
+        for (size_t i = 0; i < num_states; ++i)
+        {
+            sum_probs += safe_x[i+num_states];
+        }
+        for (size_t i = 0; i < num_states; ++i)
+        {
+            dxdt[i+2*num_states] = safe_x[i+num_states] / sum_probs;
+        }
+    }
     
 }
 

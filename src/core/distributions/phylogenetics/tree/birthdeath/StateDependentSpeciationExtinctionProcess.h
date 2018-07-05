@@ -50,6 +50,7 @@ namespace RevBayesCore {
         virtual StateDependentSpeciationExtinctionProcess*              clone(void) const;
         virtual                                                         ~StateDependentSpeciationExtinctionProcess(void);                                                              //!< Virtual destructor
 
+        void                                                            computeAverageBranchRates( void );
         double                                                          computeLnProbability(void);
         void                                                            fireTreeChangeEvent(const TopologyNode &n, const unsigned& m=0);                                                 //!< The tree has changed and we want to know which part.
         const AbstractHomologousDiscreteCharacterData&                  getCharacterData() const;
@@ -65,10 +66,11 @@ namespace RevBayesCore {
         virtual void                                                    setValue(Tree *v, bool f=false);                                                                    //!< Set the current value, e.g. attach an observation (clamp)
         
         void                                                            drawJointConditionalAncestralStates(std::vector<size_t>& startStates, std::vector<size_t>& endStates);
-        void                                                            recursivelyDrawJointConditionalAncestralStates(const TopologyNode &node, std::vector<size_t>& startStates, std::vector<size_t>& endStates);
         void                                                            drawStochasticCharacterMap(std::vector<std::string*>& character_histories);
+        void                                                            numericallyIntegrateProcess(state_type &likelihoods, double begin_age, double end_age, size_t i, bool use_backward, bool extinction_only, bool conditioned, bool compute_average_time=false) const; //!< Wrapper function for the ODE time stepper function.
+        void                                                            recursivelyComputeAverageBranchRate(const TopologyNode &node, const std::vector<double> start_state_probs);
+        void                                                            recursivelyDrawJointConditionalAncestralStates(const TopologyNode &node, std::vector<size_t>& startStates, std::vector<size_t>& endStates);
         void                                                            recursivelyDrawStochasticCharacterMap(const TopologyNode &node, size_t start_state, std::vector<std::string*>& character_histories);
-        void                                                            numericallyIntegrateProcess(state_type &likelihoods, double begin_age, double end_age, bool use_backward, bool extinction_only) const; //!< Wrapper function for the ODE time stepper function.
         void                                                            resizeVectors(size_t num_nodes);
         
     protected:
@@ -117,6 +119,7 @@ namespace RevBayesCore {
         bool                                                            sample_character_history;                                                                           //!< are we sampling the character history along branches?
         std::vector<double>                                             average_speciation;
         std::vector<double>                                             average_extinction;
+        mutable std::vector< std::vector<double> >                      average_time_in_states;
         std::vector<double>                                             time_in_states;
         std::string                                                     simmap;
         

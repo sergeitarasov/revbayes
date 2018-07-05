@@ -24,13 +24,13 @@ namespace RevBayesCore {
         
     public:
         
-        SSE_ODE( const std::vector<double> &m, const RateGenerator* q, double r, bool backward_time, bool extinction_only);
+        SSE_ODE( const std::vector<double> &m, const RateGenerator* q, double r, bool backward_time, bool extinction_only, bool conditioned=true, bool compute_average_time=false);
         
         void operator() ( const state_type &x , state_type &dxdt , const double t );
         
-        void            setEventMap( const std::map<std::vector<unsigned>, double> &e );
-        void            setSpeciationRate( const std::vector<double> &s );
-        void            setSerialSamplingRate( const std::vector<double> &s );
+        void                                        setEventMap( const std::map<std::vector<unsigned>, double> &e );
+        void                                        setSpeciationRate( const std::vector<double> &s );
+        void                                        setSerialSamplingRate( const std::vector<double> &s );
         
     private:
         
@@ -46,6 +46,8 @@ namespace RevBayesCore {
         bool                                        extinction_only;                    //!< calculate only extinction probabilities
         bool                                        use_speciation_from_event_map;      //!< do we use the speciation rates from the event map?
         bool                                        backward_time;                      //!< computation backward in time (otherwise forward)?
+        bool                                        conditioned;                        //!< computation backward in time (otherwise forward)?
+        bool                                        compute_average_time_in_state;      //!< should we compute the average time in a state?
 
     };
     

@@ -197,10 +197,10 @@ MethodTable Dist_CharacterDependentBirthDeathProcess::getDistributionMethods( vo
     methods.addFunction( new MemberProcedure( "getCharHistory", RlString::getClassTypeSpec(), getCharHistoryArgRules   ) );
     
     ArgumentRules* avgSpeciationArgRules = new ArgumentRules();
-    methods.addFunction( new DistributionMemberFunction<Dist_CharacterDependentBirthDeathProcess, ModelVector<RealPos> >( "averageSpeciationRate", variable, avgSpeciationArgRules   ) );
+    methods.addFunction( new DistributionMemberFunction<Dist_CharacterDependentBirthDeathProcess, ModelVector<RealPos> >( "averageSpeciationRate", variable, avgSpeciationArgRules, true   ) );
 
     ArgumentRules* avgExtinctionArgRules = new ArgumentRules();
-    methods.addFunction( new DistributionMemberFunction<Dist_CharacterDependentBirthDeathProcess, ModelVector<RealPos> >( "averageExtinctionRate", variable, avgExtinctionArgRules   ) );
+    methods.addFunction( new DistributionMemberFunction<Dist_CharacterDependentBirthDeathProcess, ModelVector<RealPos> >( "averageExtinctionRate", variable, avgExtinctionArgRules, true   ) );
     
     ArgumentRules* timeInStateArgRules = new ArgumentRules();
     methods.addFunction( new DistributionMemberFunction<Dist_CharacterDependentBirthDeathProcess, ModelVector<RealPos> >( "getTimeInState", variable, timeInStateArgRules   ) );
