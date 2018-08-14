@@ -26,14 +26,13 @@ namespace RevBayesCore {
     
         namespace BetaBinomial {
         
-            double                      pdf(double n, double p, double x);                                    /*!< Binomial(n,p) probability density */
-            double                      pdf(double y, double n, double pp, double a, double b, bool log);     /*!< Beta Binomial(n,pp) probability density */
-            double                      lnPdf(double n, double pp, double a, double b, double y);                       /*!< Beta Binomial(n,pp) log_e probability density */
-            double                      cdf(double n, double p, double x);                                    /*!< Beta Binomial(n,p) cumulative probability */
-            double                      quantile(double n, double p);                               		    /*!< Beta Binomial(n,p) quantile */
-            int                         rv(double n, double pp, double a, double b, RandomNumberGenerator& rng);             /*!< Beta Binomial(n,pp) random variable */
+            double                      pdf(double y, double n, double a, double b, bool log);     /*!< Beta Binomial probability density */
+            double                      lnPdf(double n, double a, double b, double y);                       /*!< Beta Binomial log_e probability density */
+            double                      cdf(double n, double a, double b, double x);                                    /*!< Beta Binomial cumulative probability */
+            double                      quantile(double p, double n, double a, double b);                               		    /*!< Beta Binomial(n,p) quantile */
+            int                         rv(double n, double a, double b, RandomNumberGenerator& rng);             /*!< Beta Binomial random variable */
 	
-            double                      do_search(double y, double *z, double p, double n, double pr, double incr); // ?????
+            double                      do_search(double y, double *z, double a, double b, double n, double pr, double incr); // ?????
         }
     }
 }

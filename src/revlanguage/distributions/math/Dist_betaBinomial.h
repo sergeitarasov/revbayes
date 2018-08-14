@@ -8,10 +8,6 @@
 #ifndef REVLANGUAGE_DISTRIBUTIONS_MATH_DIST_BETABINOMIAL_H_
 #define REVLANGUAGE_DISTRIBUTIONS_MATH_DIST_BETABINOMIAL_H_
 
-
-
-
-
 #endif /* REVLANGUAGE_DISTRIBUTIONS_MATH_DIST_BETABINOMIAL_H_ */
 
 #ifndef Dist_betaBinomial_H
@@ -56,7 +52,6 @@ namespace RevLanguage {
         const MemberRules&                              getParameterRules(void) const;                                                          //!< Get member rules (const)
         void                                            printValue(std::ostream& o) const;                                                      //!< Print the general information on the function ('usage')
 
-
         // Distribution functions you have to override
         RevBayesCore::BetaBinomialDistribution*             createDistribution(void) const;
 
@@ -71,7 +66,6 @@ namespace RevLanguage {
         std::string                                     getHelpTitle(void) const;                                                               //!< Get the title of this help entry
 
         void                                            setConstParameter(const std::string& name, const RevPtr<const RevVariable> &var);       //!< Set member variable
-
 
     private:
 

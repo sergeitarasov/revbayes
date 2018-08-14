@@ -42,7 +42,7 @@ using namespace RevBayesCore;
  * \return Returns the probability density.
  * \throws Does not throw an error.
  */
-double RbStatistics::BetaBinomial::cdf(double n, double p, double x)
+double RbStatistics::BetaBinomial::cdf(double n, double a, double b, double x)
 {
 	throw RbException("The Beta Binomial cdf is not yet implemented in RB.");
 }
@@ -79,12 +79,12 @@ double RbStatistics::BetaBinomial::cdf(double n, double p, double x)
  */
 
 
-int RbStatistics::BetaBinomial::rv(double n, double pp, double a, double b, RevBayesCore::RandomNumberGenerator &rng)
+int RbStatistics::BetaBinomial::rv(double n, double a, double b, RevBayesCore::RandomNumberGenerator &rng)
 {
 	int y;
 
 	double p = RbStatistics::Beta::rv(a,b,rng);
-	y = RbStatistics::Binomial::rv(n,pp,rng);
+	y = RbStatistics::Binomial::rv(n,p,rng);
 	return y;
 }
 
@@ -99,10 +99,9 @@ int RbStatistics::BetaBinomial::rv(double n, double pp, double a, double b, RevB
  * \return Returns the probability density.
  * \throws Does not throw an error.
  */
-double RbStatistics::BetaBinomial::lnPdf(double n, double pp, double a, double b, double value) {
+double RbStatistics::BetaBinomial::lnPdf(double n, double a, double b, double value) {
 
-    double aa = 1.0 - pp;
-    return value;
+    return pdf(value, n, a, b, true);
 }
 
 /*!
@@ -111,7 +110,6 @@ double RbStatistics::BetaBinomial::lnPdf(double n, double pp, double a, double b
  *
  * \brief Beta-Binomial probability density.
  * \param n is the number of trials. 
- * \param pp is the success probability.
  * \param y is the number of successes.
  * \param a is the alpha parameter for the beta distribution
  * \param b is the beta parameter for the beta distribution
@@ -119,20 +117,11 @@ double RbStatistics::BetaBinomial::lnPdf(double n, double pp, double a, double b
  * \throws Does not throw an error.
  */
 
-//double RbStatistics::BetaBinomial::pdf(double y, double n, double pp, double a, double b, bool asLog)
-//{
 
-//}
-
-
-double RbStatistics::BetaBinomial::pdf(double y, double n, double pp, double a, double b, bool asLog)
+double RbStatistics::BetaBinomial::pdf(double y, double n, double a, double b, bool asLog)
 {
 
     double constant;
-    if(pp == 0)
-    		return((y == 0) ? (asLog ? 0.0 : 1.0 ) : (asLog ? RbConstants::Double::neginf : 0.0));
-
-    //TODO: conditionals
     if (a==0)
     		return((y == 0) ? (asLog ? 0.0 : 1.0) : (asLog ? RbConstants::Double::neginf : 0.0) );
     		//return constant;
@@ -170,14 +159,14 @@ double RbStatistics::BetaBinomial::pdf(double y, double n, double pp, double a, 
  *
  * \brief Beta Binomial probability density.
  * \param n is the number of trials. 
- * \param p is the success probability. 
- * \param x is the number of successes. 
+ * \param a is the alpha parameter.
+ * \param b is the beta parameter.
  * \return Returns the probability density.
  * \throws Does not throw an error.
  */
 
 //double RbStatistics::BetaBinomial::quantile(double quantile_prob, double n, double p)
-double quantile(double quantile_prob, double n, double p)
+double quantile(double quantile_prob, double n, double a, double b)
 {
 	throw RbException("There is no simple formula for this, and it is not yet implemented in RB.");
 }

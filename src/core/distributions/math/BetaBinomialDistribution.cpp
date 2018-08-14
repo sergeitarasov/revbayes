@@ -13,9 +13,8 @@
 
 using namespace RevBayesCore;
 
-BetaBinomialDistribution::BetaBinomialDistribution(const TypedDagNode<long> *m, const TypedDagNode<double> *q, const TypedDagNode<long> *alpha, const TypedDagNode<long> *beta) : TypedDistribution<long>( new long( 0 ) ),
+BetaBinomialDistribution::BetaBinomialDistribution(const TypedDagNode<long> *m, const TypedDagNode<double> *alpha, const TypedDagNode<double> *beta) : TypedDistribution<long>( new long( 0 ) ),
     n( m ),
-    p( q ),
 	a( alpha ),
 	b( beta )
 {
@@ -24,11 +23,10 @@ BetaBinomialDistribution::BetaBinomialDistribution(const TypedDagNode<long> *m, 
     // in that way other class can easily access the set of our parameters
     // this will also ensure that the parameters are not getting deleted before we do
     addParameter( n );
-    addParameter( p );
     addParameter( a );
     addParameter( b );
 
-    *value = RbStatistics::BetaBinomial::rv(n->getValue(), p->getValue(), alpha->getValue(), beta->getValue(), *GLOBAL_RNG);
+    *value = RbStatistics::BetaBinomial::rv(n->getValue(), alpha->getValue(), beta->getValue(), *GLOBAL_RNG);
 }
 
 
@@ -54,15 +52,14 @@ double BetaBinomialDistribution::computeLnProbability( void )
         return RbConstants::Double::neginf;
     }
 
-    return RbStatistics::BetaBinomial::lnPdf(n->getValue(), p->getValue(), a->getValue(), b->getValue(), *value); //CAREFUL
-    //return RbStatistics::BetaBinomial::lnPdf(n->getValue(), p->getValue(), q->getValue(), *value); //CAREFUL
+    return RbStatistics::BetaBinomial::lnPdf(n->getValue(), a->getValue(), b->getValue(), *value);
 }
 
 
 
 void BetaBinomialDistribution::redrawValue( void ) {
 
-    *value = RbStatistics::BetaBinomial::rv(n->getValue(), p->getValue(), a->getValue(), b->getValue(), *GLOBAL_RNG);
+    *value = RbStatistics::BetaBinomial::rv(n->getValue(), a->getValue(), b->getValue(), *GLOBAL_RNG);
 }
 
 
@@ -70,9 +67,13 @@ void BetaBinomialDistribution::redrawValue( void ) {
 void BetaBinomialDistribution::swapParameterInternal(const DagNode *oldP, const DagNode *newP)
 {
 
-    if (oldP == p)
+    if (oldP == a)
     {
-        p = static_cast<const TypedDagNode<double>* >( newP );
+        a = static_cast<const TypedDagNode<double>* >( newP );
+    }
+    else if (oldP == b)
+    {
+        b = static_cast<const TypedDagNode<double>* >( newP );
     }
     else if (oldP == n)
     {
@@ -80,9 +81,3 @@ void BetaBinomialDistribution::swapParameterInternal(const DagNode *oldP, const 
     }
 
 }
-
-
-
-
-
-

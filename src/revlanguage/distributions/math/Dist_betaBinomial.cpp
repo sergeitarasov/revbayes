@@ -2,7 +2,7 @@
 #include "ArgumentRules.h"
 #include "BetaBinomialDistribution.h"
 #include "ContinuousStochasticNode.h"
-#include "Dist_betaBinomial.h"  //don't forget to edit/populate the header file
+#include "Dist_betaBinomial.h"
 #include "Probability.h"
 #include "RealPos.h"
 #include "RbException.h"
@@ -36,10 +36,9 @@ RevBayesCore::BetaBinomialDistribution* Dist_betaBinomial::createDistribution( v
 
     // get the parameters
     RevBayesCore::TypedDagNode<long>*    vn = static_cast<const Natural     &>( n->getRevObject() ).getDagNode();
-    RevBayesCore::TypedDagNode<double>* vp = static_cast<const Probability &>( p->getRevObject() ).getDagNode();
-    RevBayesCore::TypedDagNode<long>* va = static_cast<const Natural &>( a->getRevObject() ).getDagNode();
-    RevBayesCore::TypedDagNode<long>* vb = static_cast<const Natural &>( b->getRevObject() ).getDagNode();
-    RevBayesCore::BetaBinomialDistribution* d  = new RevBayesCore::BetaBinomialDistribution( vn, vp, va, vb );
+    RevBayesCore::TypedDagNode<double>* va = static_cast<const RealPos &>( a->getRevObject() ).getDagNode();
+    RevBayesCore::TypedDagNode<double>* vb = static_cast<const RealPos &>( b->getRevObject() ).getDagNode();
+    RevBayesCore::BetaBinomialDistribution* d  = new RevBayesCore::BetaBinomialDistribution( vn, va, vb );
     return d;
 }
 
@@ -196,8 +195,10 @@ const MemberRules& Dist_betaBinomial::getParameterRules(void) const
 
     if ( !rules_set )
     {
-        dist_member_rules.push_back( new ArgumentRule( "p", Probability::getClassTypeSpec(), "Probability of success.", ArgumentRule::BY_CONSTANT_REFERENCE, ArgumentRule::ANY ) );
+
         dist_member_rules.push_back( new ArgumentRule( "n", Natural::getClassTypeSpec()    , "Number of trials.", ArgumentRule::BY_CONSTANT_REFERENCE, ArgumentRule::ANY ) );
+        dist_member_rules.push_back( new ArgumentRule( "a", RealPos::getClassTypeSpec()    , "alpha parameter", ArgumentRule::BY_CONSTANT_REFERENCE, ArgumentRule::ANY ) );
+        dist_member_rules.push_back( new ArgumentRule( "b", RealPos::getClassTypeSpec()    , "beta parameter", ArgumentRule::BY_CONSTANT_REFERENCE, ArgumentRule::ANY ) );
         rules_set = true;
     }
 
@@ -218,9 +219,9 @@ void Dist_betaBinomial::printValue(std::ostream& o) const
 {
 
     o << "BetaBinomial(p=";
-    if ( p != NULL )
+    if ( a != NULL )
     {
-        o << p->getName();
+        o << b->getName();
     }
     else
     {
@@ -238,14 +239,17 @@ void Dist_betaBinomial::printValue(std::ostream& o) const
 /** Set a member variable */
 void Dist_betaBinomial::setConstParameter(const std::string& name, const RevPtr<const RevVariable> &var)
 {
-
-    if ( name == "p" )
-    {
-        p = var;
-    }
-    else if ( name == "n" )
+    if ( name == "n" )
     {
         n = var;
+    }
+    else if ( name == "a" )
+    {
+        a = var;
+    }
+    else if ( name == "b" )
+    {
+        b = var;
     }
     else
     {
