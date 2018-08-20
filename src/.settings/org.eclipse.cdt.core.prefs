@@ -1,4 +1,14 @@
 eclipse.preferences.version=1
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004050907.2026321371/PATH/delimiter=\:
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004050907.2026321371/PATH/operation=replace
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004050907.2026321371/PATH/value=/bin\:/usr/bin\:/usr/sbin\:/sbin\:/usr/local/bin
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004050907.2026321371/append=true
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004050907.2026321371/appendContributed=true
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004050907/PATH/delimiter=\:
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004050907/PATH/operation=replace
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004050907/PATH/value=/bin\:/usr/bin\:/usr/sbin\:/sbin/usr/local/bin
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004050907/append=true
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.2004050907/appendContributed=true
 environment/project/cdt.managedbuild.toolchain.gnu.macosx.base.426727372.110401213/PATH/delimiter=\:
 environment/project/cdt.managedbuild.toolchain.gnu.macosx.base.426727372.110401213/PATH/operation=append
 environment/project/cdt.managedbuild.toolchain.gnu.macosx.base.426727372.110401213/PATH/value=$PATH\:/usr/local/bin

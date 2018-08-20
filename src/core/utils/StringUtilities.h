@@ -47,8 +47,8 @@ namespace StringUtilities {
     
     /**
      * Generic to_string function
-     * @param value
-     * @return
+     * @ param value
+     * @ return
      */
     template <typename T>
     std::string to_string(T value) {
