@@ -113,47 +113,6 @@ std::string Dist_poisson::getDistributionFunctionName( void ) const
 }
 
 
-/**
- * Get the author(s) of this function so they can receive credit (and blame) for it.
- */
-
-
-
-/**
- * Get the (brief) description for this function
- */
-
-
-
-/**
- * Get the more detailed description of the function
- */
-
-
-
-/**
- * Get an executable and instructive example.
- * These example should help the users to show how this function works but
- * are also used to test if this function still works.
- */
-
-/**
- * Get some references/citations for this function
- *
- */
-
-
-
-/**
- * Get the names of similar and suggested other functions
- */
-
-
-
-/**
- * Get the title of this help entry
- */
-
 
 /** 
  * Get the member rules used to create the constructor of this object.

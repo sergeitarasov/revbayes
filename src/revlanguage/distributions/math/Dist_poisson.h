@@ -42,7 +42,10 @@ namespace RevLanguage {
         
     protected:
         
+<<<<<<< HEAD
                                                                       //!< Get the title of this help entry
+=======
+>>>>>>> e0fce83ab192c724d8151b6d11f298b0e6a7ece7
 
         void                                            setConstParameter(const std::string& name, const RevPtr<const RevVariable> &var);               //!< Set member variable
         
