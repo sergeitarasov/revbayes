@@ -22,7 +22,7 @@ using po::variables_map;
 #ifdef RB_MPI
 #include <mpi.h>
 #endif
-
+//
 
 using std::string;
 using std::vector;
