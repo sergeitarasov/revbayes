@@ -20,6 +20,17 @@
 #include "PomoState.h"
 #include "NaturalNumbersState.h"
 
+//Mine
+#include "ArgumentRule.h"
+#include "ArgumentRules.h"
+#include "RlSimplex.h"
+#include "StochasticNode.h"
+#include "TypedDistribution.h"
+#include "MixtureDistribution.h"
+#include "RealPos.h"
+#include "RlTypedDistribution.h"
+#include "TypeSpec.h"
+
 using namespace RevLanguage;
 
 Dist_phyloCTMC::Dist_phyloCTMC() : TypedDistribution< AbstractHomologousDiscreteCharacterData >()
@@ -48,6 +59,9 @@ RevBayesCore::TypedDistribution< RevBayesCore::AbstractHomologousDiscreteCharact
     // get the parameters
     RevBayesCore::TypedDagNode<RevBayesCore::Tree>* tau = static_cast<const Tree &>( tree->getRevObject() ).getDagNode();
     size_t n = size_t( static_cast<const Natural &>( nSites->getRevObject() ).getValue() );
+    
+    
+    
     const std::string& dt = static_cast<const RlString &>( type->getRevObject() ).getValue();
     bool ambig = static_cast<const RlBoolean &>( treatAmbiguousAsGap->getRevObject() ).getValue();
     size_t nNodes = tau->getValue().getNumberOfNodes();
@@ -60,6 +74,26 @@ RevBayesCore::TypedDistribution< RevBayesCore::AbstractHomologousDiscreteCharact
     {
         site_ratesNode = static_cast<const ModelVector<RealPos> &>( site_rates->getRevObject() ).getDagNode();
     }
+    
+    //***************Mine
+    
+    bool ttt ( char_mix_part->getRevObject() != RevNullObject::getInstance() );
+    std::cout<<"Bool "<< ttt <<std::endl;
+    
+    RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RbVector<double> > >* char_mix_partNode=NULL;
+
+
+    if ( char_mix_part->getRevObject() != RevNullObject::getInstance() )
+    {
+        std::cout<<"getInstance TRUE " <<std::endl;
+
+        char_mix_partNode = static_cast<const ModelVector<ModelVector<RealPos> > &>( char_mix_part->getRevObject() ).getDagNode();
+    }
+    
+//    RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RbVector<double> > >* char_mix_partNode = static_cast<const ModelVector<ModelVector<RealPos> > &>( char_mix_part->getRevObject() ).getDagNode();
+
+    // *********Mine End
+    
     
     const RevBayesCore::TypedDagNode< RevBayesCore::Simplex > *site_rates_probsNode = NULL;
     if ( site_rates_probs->getRevObject() != RevNullObject::getInstance() )
@@ -605,6 +639,182 @@ RevBayesCore::TypedDistribution< RevBayesCore::AbstractHomologousDiscreteCharact
 
         d = dist;
     }
+    
+    // Mine ************** Character Mixture
+    
+    else if ( dt == "CharacterMixture" )
+    {
+        // we get the number of states from the rates matrix
+        // set the rate matrix
+        size_t nChars = 1;
+        if ( q->getRevObject().isType( ModelVector<RateGenerator>::getClassTypeSpec() ) )
+        {
+            std::cout<<" IF 1 "<< std::endl;
+            throw RbException( "The rate matrix must be specified using fnFreeK()" );
+            
+//            RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RateGenerator> >* rm = static_cast<const ModelVector<RateGenerator> &>( q->getRevObject() ).getDagNode();
+//            nChars = rm->getValue()[0].getNumberOfStates();
+        }
+        else
+        {
+            std::cout<<" IF 2 "<< std::endl;
+            
+            RevBayesCore::TypedDagNode<RevBayesCore::RateGenerator>* rm = static_cast<const RateGenerator &>( q->getRevObject() ).getDagNode();
+            nChars = rm->getValue().getNumberOfStates();
+        }
+        
+        std::cout<<" Nchars "<< nChars << std::endl;
+        
+//        if ( nChars != 2 ) // Get n of states from characters not from Q
+//        {
+//            throw RbException( "By far, only binary characters allowed for type=CharacterMixture" );
+//        }
+        
+        if (char_mix_partNode!=NULL)
+        {
+            std::cout<<"Using customized partitions for type=CharacterMixture. "<< std::endl;
+            std::cout<<"Partitions: "<< char_mix_partNode->getValue() <<std::endl;
+            std::cout<<"Number of partitions: "<< char_mix_partNode->getValue().size() <<std::endl;
+            std::cout<<"Element 1,1: "<< (char_mix_partNode->getValue()[1][1]) <<std::endl;
+            std::cout<<"Partition Element 1 size: "<< (char_mix_partNode->getValue()[1]).size() <<std::endl;
+            
+            // Check if size of subpartition equals dim of Q
+            for (int i=0; i < char_mix_partNode->getValue().size(); ++i )
+            {
+                if (nChars!=char_mix_partNode->getValue()[i].size() )
+                {
+                    std::stringstream ss;
+                    ss << "Number of elements in partition " << i+1 << " does not match the number of states in the rate matrix\n";
+
+                    throw RbException(ss.str());
+                }
+                
+                // Check if subpartitions consist of only of 1s and 0s
+                for (int j=0; j < char_mix_partNode->getValue()[i].size(); ++j )
+                {
+                    //std::cout<<"Subp: "<< i << " elem: "<< j<< std::endl;
+                    //std::cout<<"Subp: "<< char_mix_partNode->getValue()[i][j] <<   std::endl;
+                    
+                    if (char_mix_partNode->getValue()[i][j]!= 0 && char_mix_partNode->getValue()[i][j]!= 1 )
+                    {
+                        std::stringstream ss;
+                        ss << "Elements in subpartition " << i+1 << " do not equal 1 or 0\n";
+                        throw RbException(ss.str());
+                    }
+                }
+                
+                // ??? Check if subpartitions are not constant
+
+            }    
+        }
+        else
+        {
+            std::cout<<"Using default partitions for type=CharacterMixture. "<< std::endl; // Use another stream
+        }
+
+        
+        
+        
+        int cd = RevBayesCore::AscertainmentBias::ALL;
+        // split the coding option on "|"
+        if (code == "informative")
+        {
+            cd = RevBayesCore::AscertainmentBias::INFORMATIVE;
+        }
+        else if (code == "variable")
+        {
+            cd = RevBayesCore::AscertainmentBias::VARIABLE;
+        }
+        else if (code != "all")
+        {
+            std::stringstream ss;
+            ss << "Invalid coding option \"" << code << "\"\n";
+            ss << "\tAvailable Standard state codings: all, informative, variable\n";
+            ss << "\tDefault: all.\n";
+            throw RbException(ss.str());
+        }
+        
+        RevBayesCore::PhyloCTMCSiteHomogeneous<RevBayesCore::StandardState> *dist;
+        if (cd == RevBayesCore::AscertainmentBias::ALL)
+        {
+            dist = new RevBayesCore::PhyloCTMCSiteHomogeneous<RevBayesCore::StandardState>(tau, nChars, true, n, ambig, internal, gapmatch);
+        }
+        else
+        {
+            dist = new RevBayesCore::PhyloCTMCSiteHomogeneousConditional<RevBayesCore::StandardState>(tau, nChars, true, n, ambig, RevBayesCore::AscertainmentBias::Coding(cd), internal, gapmatch);
+        }
+        
+        // set the root frequencies (by default these are NULL so this is OK)
+        dist->setRootFrequencies( rf );
+        
+        // set the probability for invariant site (by default this p_inv=0.0)
+        dist->setPInv( p_invNode );
+        
+        if ( rate->getRevObject().isType( ModelVector<RealPos>::getClassTypeSpec() ) )
+        {
+            RevBayesCore::TypedDagNode< RevBayesCore::RbVector<double> >* clockRates = static_cast<const ModelVector<RealPos> &>( rate->getRevObject() ).getDagNode();
+            
+            // sanity check
+            if ( (nNodes-1) != clockRates->getValue().size() )
+            {
+                throw RbException( "The number of clock rates does not match the number of branches" );
+            }
+            
+            dist->setClockRate( clockRates );
+        }
+        else
+        {
+            RevBayesCore::TypedDagNode<double>* clockRate = static_cast<const RealPos &>( rate->getRevObject() ).getDagNode();
+            dist->setClockRate( clockRate );
+        }
+        dist->setUseSiteMatrices(use_site_matrices, sp);
+        
+        // set the rate matrix
+        if ( q->getRevObject().isType( ModelVector<RateGenerator>::getClassTypeSpec() ) )
+        {
+            RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RateGenerator> >* rm = static_cast<const ModelVector<RateGenerator> &>( q->getRevObject() ).getDagNode();
+            
+            if (use_site_matrices == false)
+            {
+                // sanity check
+                if ( (nNodes-1) != rm->getValue().size())
+                {
+                    throw RbException( "The number of substitution matrices does not match the number of branches" );
+                }
+                
+                // sanity check
+                if ( root_frequencies == NULL || root_frequencies->getRevObject() == RevNullObject::getInstance() )
+                {
+                    throw RbException( "If you provide branch-heterogeneous substitution matrices, then you also need to provide root frequencies." );
+                }
+            }
+            
+            
+            dist->setRateMatrix( rm );
+        }
+        else
+        {
+            RevBayesCore::TypedDagNode<RevBayesCore::RateGenerator>* rm = static_cast<const RateGenerator &>( q->getRevObject() ).getDagNode();
+            dist->setRateMatrix( rm );
+        }
+        
+        if ( site_ratesNode != NULL && site_ratesNode->getValue().size() > 0 )
+        {
+            dist->setSiteRates( site_ratesNode );
+        }
+        
+        if ( site_rates_probsNode != NULL && site_rates_probsNode->getValue().size() > 0 )
+        {
+            dist->setSiteRatesProbs( site_rates_probsNode );
+        }
+        
+        
+        d = dist;
+    }
+    
+    // ********************* End Char Mixture
+    
+    
     else if ( dt == "NaturalNumbers" )
     {
         // we get the number of states from the rates matrix
@@ -941,6 +1151,9 @@ const MemberRules& Dist_phyloCTMC::getParameterRules(void) const
         dist_member_rules.push_back( new ArgumentRule( "pInv", Probability::getClassTypeSpec(), "The probability of a site being invariant.", ArgumentRule::BY_CONSTANT_REFERENCE, ArgumentRule::ANY, new Probability(0.0) ) );
 
         dist_member_rules.push_back( new ArgumentRule( "nSites", Natural::getClassTypeSpec(), "The number of sites, used for simulation.", ArgumentRule::BY_VALUE, ArgumentRule::ANY, new Natural() ) );
+        
+ 
+        
 
         std::vector<std::string> options;
         options.push_back( "DNA" );
@@ -953,6 +1166,7 @@ const MemberRules& Dist_phyloCTMC::getParameterRules(void) const
         options.push_back( "NaturalNumbers" );
         options.push_back( "Binary" );
         options.push_back( "Restriction" );
+        options.push_back( "CharacterMixture" ); //Mine
         dist_member_rules.push_back( new OptionRule( "type", new RlString("DNA"), options, "The data type, used for simulation and initialization." ) );
 
         dist_member_rules.push_back( new ArgumentRule( "treatAmbiguousAsGap", RlBoolean::getClassTypeSpec(), "Should we treat ambiguous characters as gaps/missing?", ArgumentRule::BY_VALUE, ArgumentRule::ANY, new RlBoolean( false ) ) );
@@ -961,7 +1175,14 @@ const MemberRules& Dist_phyloCTMC::getParameterRules(void) const
 
         dist_member_rules.push_back( new ArgumentRule( "storeInternalNodes", RlBoolean::getClassTypeSpec(), "Should we store internal node states in the character matrix?", ArgumentRule::BY_VALUE, ArgumentRule::ANY, new RlBoolean( false ) ) );
         
+       
         dist_member_rules.push_back( new ArgumentRule( "gapMatchClamped", RlBoolean::getClassTypeSpec(), "Should we set the simulated character to be gap or missing if the corresponding character in the clamped matrix is gap or missing?", ArgumentRule::BY_VALUE, ArgumentRule::ANY, new RlBoolean( true ) ) );
+        
+        //Mine "CharMixturePartitions"
+        dist_member_rules.push_back( new ArgumentRule( "CharMixturePartitions", ModelVector<ModelVector<RealPos> > ::getClassTypeSpec(), "Character partitions for Common Hidden Mechanism model. For CHMM select type = CharacterMixture and use binary characters only ", ArgumentRule::BY_CONSTANT_REFERENCE, ArgumentRule::ANY, NULL ) );
+        
+        //Mine
+        
 
         rules_set = true;
     }
@@ -1047,6 +1268,7 @@ void Dist_phyloCTMC::printValue(std::ostream& o) const
         o << "?";
     }
     o << ", nSites=";
+    
     if ( nSites != NULL )
     {
         o << nSites->getName();
@@ -1055,6 +1277,18 @@ void Dist_phyloCTMC::printValue(std::ostream& o) const
     {
         o << "?";
     }
+    
+    //Mine
+    if ( nSites != NULL )
+    {
+        o << char_mix_part->getName();
+    }
+    else
+    {
+        o << "?";
+    }
+    //Mine end
+    
     o << ")";
 
 }
@@ -1112,6 +1346,8 @@ void Dist_phyloCTMC::setConstParameter(const std::string& name, const RevPtr<con
     {
         storeInternalNodes = var;
     }
+    
+    
     else if ( name == "gapMatchClamped" )
     {
         gapMatchClamped = var;
@@ -1120,6 +1356,15 @@ void Dist_phyloCTMC::setConstParameter(const std::string& name, const RevPtr<con
     {
         coding = var;
     }
+    
+    // Mine
+    else if ( name == "CharMixturePartitions" )
+    {
+        char_mix_part = var;
+    }
+    //Mine
+    
+    
     else
     {
         Distribution::setConstParameter(name, var);
