@@ -38,15 +38,15 @@ namespace RevBayesCore {
     public:
         RbCharMixture(bool test=true);                         //!< Constructor to create two partitions for test purposes
         //RbCharMixture(dag XXX);                    //!< Constructor using DAG vector (DAG -> Bitset)
-        RbCharMixture(int N_states, const RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RbVector<RevBayesCore::RbVector<double> > > >* dag_part_schemes);
-        RbCharMixture(int N_states);               //!< Constructor using N of states (ConventionalSet -> BitSet)
+        RbCharMixture(size_t N_states, const RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RbVector<RevBayesCore::RbVector<double> > > >* dag_part_schemes);
+        RbCharMixture(size_t N_states);               //!< Constructor using N of states (ConventionalSet -> BitSet)
         ~RbCharMixture(void);
         
         RbBitSet                           get_0(int i) const; // get schemes for state 0
         RbBitSet                           get_1(int i) const; // get schemes for state 1
         RbBitSet                           get_part(int i, unsigned long tip_state) const; // get part scheme for tip given its observable state
         size_t                             get_N_part_schemes(void) const; //get_n_part(void) const;
-        cmxV3                              get_Conven_part_schemes(int N_states);  //get_all_parttions(int N_states);
+        cmxV3                              get_Conven_part_schemes(size_t N_states);  //get_all_parttions(int N_states);
         void                               print_Conven_part_schemes(void); //PrintRawPart(void);
    
         
@@ -61,9 +61,9 @@ namespace RevBayesCore {
         cmxV3                              init_partSTATE_2(void);
         
         size_t                             N_part_schemes; //n_part; // number of non-mirrored partitioning schemes
-        int                                N_of_Q_states; //n_states=4; //number of all (i.e. hidden) states in Q
+        size_t                                N_of_Q_states; //n_states=4; //number of all (i.e. hidden) states in Q
         cmxV3                              Conven_part_schemes; //Char_Partitions; // Conventional representation of partitioning schemes i.e.[01,23]
-        void                               convert2BitSet(RbBitSet* array0, const cmxV3& Part2Conv, size_t N_part_schemes, int N_of_Q_states);
+        void                               convert2BitSet(RbBitSet* array0, const cmxV3& Part2Conv, size_t N_part_schemes, size_t N_of_Q_states);
         
     };
     

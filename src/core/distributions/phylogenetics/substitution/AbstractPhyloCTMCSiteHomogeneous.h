@@ -19,6 +19,8 @@
 #include "TreeChangeEventListener.h"
 #include "TypedDistribution.h"
 
+#include "RbCharMixture.h" //Mine
+
 #include <memory.h>
 
 namespace RevBayesCore {
@@ -75,7 +77,7 @@ namespace RevBayesCore {
 
     public:
         // Note, we need the size of the alignment in the constructor to correctly simulate an initial state
-        AbstractPhyloCTMCSiteHomogeneous(const TypedDagNode<Tree> *t, size_t nChars, size_t nMix, bool c, size_t nSites, bool amb, bool wd = false, bool internal = false, bool gapmatch = true );
+        AbstractPhyloCTMCSiteHomogeneous(const TypedDagNode<Tree> *t, size_t nChars, size_t nMix, bool c, size_t nSites, bool amb, bool wd = false, bool internal = false, bool gapmatch = true); //Mine CharacterMixture  added
         AbstractPhyloCTMCSiteHomogeneous(const AbstractPhyloCTMCSiteHomogeneous &n);                                                                                          //!< Copy constructor
         virtual                                                            ~AbstractPhyloCTMCSiteHomogeneous(void);                                                              //!< Virtual destructor
 
@@ -112,7 +114,9 @@ namespace RevBayesCore {
         void                                                                setSiteRatesProbs(const TypedDagNode< Simplex > *rp);
         void                                                                setUseMarginalLikelihoods(bool tf);
         void                                                                setUseSiteMatrices(bool sm, const TypedDagNode< Simplex > *s = NULL);
-
+        
+        
+        void                                                                setCharMix(bool charmix, size_t N_states, const RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RbVector<RevBayesCore::RbVector<double> > > >* dag_part_schemes); //Mine
 
     protected:
 
@@ -167,6 +171,9 @@ namespace RevBayesCore {
         size_t                                                              num_matrices;
         const TypedDagNode<Tree>*                                           tau;
         std::vector<TransitionProbabilityMatrix>                            transition_prob_matrices;
+        
+        bool                                                                useCharMix; //Mine
+        RbCharMixture                                                       CharMixObj; //Mine
 
         // the likelihoods
         mutable double*                                                     partialLikelihoods;
@@ -272,7 +279,7 @@ namespace RevBayesCore {
 
 
 template<class charType>
-RevBayesCore::AbstractPhyloCTMCSiteHomogeneous<charType>::AbstractPhyloCTMCSiteHomogeneous(const TypedDagNode<Tree> *t, size_t nChars, size_t nMix, bool c, size_t nSites, bool amb, bool internal, bool gapmatch, bool wd) :
+RevBayesCore::AbstractPhyloCTMCSiteHomogeneous<charType>::AbstractPhyloCTMCSiteHomogeneous(const TypedDagNode<Tree> *t, size_t nChars, size_t nMix, bool c, size_t nSites, bool amb, bool internal, bool gapmatch, bool wd) : // Mine CharacterMixture
 TypedDistribution< AbstractHomologousDiscreteCharacterData >(  NULL ),
 lnProb( 0.0 ),
 storedLnProb( 0.0 ),
@@ -314,7 +321,8 @@ pattern_block_end( num_patterns ),
 pattern_block_size( num_patterns ),
 store_internal_nodes( internal ),
 gap_match_clamped( gapmatch ),
-template_state()
+template_state(),
+useCharMix(false) //Mine
 {
 
     // initialize with default parameters
@@ -405,7 +413,8 @@ pattern_block_end( n.pattern_block_end ),
 pattern_block_size( n.pattern_block_size ),
 store_internal_nodes( n.store_internal_nodes ),
 gap_match_clamped( n.gap_match_clamped ),
-template_state( n.template_state )
+template_state( n.template_state ),
+useCharMix(n.useCharMix) //Mine
 {
 
     // initialize with default parameters
@@ -423,6 +432,7 @@ template_state( n.template_state )
     nodeOffset                  =  n.nodeOffset;
     mixtureOffset               =  n.mixtureOffset;
     siteOffset                  =  n.siteOffset;
+    CharMixObj                  =  n.CharMixObj; //Mine
 
     // flags specifying which model variants we use
     branch_heterogeneous_clock_rates               = n.branch_heterogeneous_clock_rates;
@@ -2886,6 +2896,26 @@ void RevBayesCore::AbstractPhyloCTMCSiteHomogeneous<charType>::setMcmcMode(bool 
     }
 
 }
+
+
+//Mine
+template<class charType>
+void RevBayesCore::AbstractPhyloCTMCSiteHomogeneous<charType>::setCharMix(bool charmix, size_t N_states, const RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RbVector<RevBayesCore::RbVector<double> > > >* dag_part_schemes)
+{
+    useCharMix=charmix;
+    
+    if (dag_part_schemes==NULL)
+    {
+        CharMixObj=RbCharMixture(N_states);
+    }
+    else if (dag_part_schemes!=NULL)
+    {
+      CharMixObj=RbCharMixture(N_states, dag_part_schemes);
+    }
+    
+    
+}
+//End Mine
 
 
 template<class charType>

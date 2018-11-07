@@ -55,7 +55,7 @@ namespace RevBayesCore {
 #include <cstring>
 
 template<class charType>
-RevBayesCore::PhyloCTMCSiteHomogeneous<charType>::PhyloCTMCSiteHomogeneous(const TypedDagNode<Tree> *t, size_t nChars, bool c, size_t nSites, bool amb, bool internal, bool gapmatch) : AbstractPhyloCTMCSiteHomogeneous<charType>(  t, nChars, 1, c, nSites, amb, internal, gapmatch )
+RevBayesCore::PhyloCTMCSiteHomogeneous<charType>::PhyloCTMCSiteHomogeneous(const TypedDagNode<Tree> *t, size_t nChars, bool c, size_t nSites, bool amb, bool internal, bool gapmatch) : AbstractPhyloCTMCSiteHomogeneous<charType>(  t, nChars, 1, c, nSites, amb, internal, gapmatch)
 {
 
 }
@@ -349,8 +349,16 @@ void RevBayesCore::PhyloCTMCSiteHomogeneous<charType>::computeTipLikelihood(cons
     std::cout<<"computeTipLikelihood :: Node index " << node_index << std::endl; //Mine
     std::cout<<"****************************************************"<< std::endl;
     
+    
+    
     // Mine; declare var to run CharMix algorithm
-    bool useCharMix=true; //Mine
+    const bool &useCharMix=this->useCharMix; //Mine
+    std::cout<< " USE CHAR MIX "<< useCharMix <<std::endl;
+    
+    std::cout<< " PRINT CHAR MIX "<< std::endl;
+    this->CharMixObj.print_Conven_part_schemes();
+    
+    std::cout<< " PRINT CHAR MIX END "<< std::endl;
     
     //************************ Mine
    //RbBitSet myRB=3;
@@ -375,8 +383,8 @@ void RevBayesCore::PhyloCTMCSiteHomogeneous<charType>::computeTipLikelihood(cons
     std::cout<<"***** Get_part() 0, char=0; 1, char=0 **** "<< CharMix.get_part(0, 0)<< " "<< CharMix.get_part(1, 0)  << std::endl;
     std::cout<<"***** Get_part() 0,1; 1,1 **** "<< CharMix.get_part(0, 1)<< " "<< CharMix.get_part(1, 1)  << std::endl;
     
-    
-    RbCharMixture CharMixRw(4);
+    size_t incll=4;
+    RbCharMixture CharMixRw=RbCharMixture(incll);
     CharMixRw.print_Conven_part_schemes();
     // CharMixRw.PrintRawPart();
    // CharMixRw.convert2BitSet();

@@ -72,7 +72,7 @@ RbCharMixture::RbCharMixture(bool test)
 
 
 // Constructor using DAG vector (DAG -> Bitset)
-RbCharMixture::RbCharMixture(int N_states, const RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RbVector<RevBayesCore::RbVector<double> > > >* dag_part_schemes)
+RbCharMixture::RbCharMixture(size_t N_states, const RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RbVector<RevBayesCore::RbVector<double> > > >* dag_part_schemes)
 {
 
     N_of_Q_states = N_states;
@@ -122,7 +122,7 @@ RbCharMixture::RbCharMixture(int N_states, const RevBayesCore::TypedDagNode< Rev
 }
 
 
-RbCharMixture::RbCharMixture(int N_states)
+RbCharMixture::RbCharMixture(size_t N_states)
 {
     N_of_Q_states = N_states;
     Conven_part_schemes = get_Conven_part_schemes(N_states);
@@ -158,7 +158,7 @@ RbCharMixture::~RbCharMixture(void)
 
 // Convert Conventional Part representation to BitSet
 //cmxV3 Part2Conv is Conven_part_schemes
-void RbCharMixture::convert2BitSet(RbBitSet* array0, const cmxV3& Part2Conv, size_t N_part_schemes, int N_of_Q_states)
+void RbCharMixture::convert2BitSet(RbBitSet* array0, const cmxV3& Part2Conv, size_t N_part_schemes, size_t N_of_Q_states)
 {
     
     //cmxV3 &Part2Conv=this->Conven_part_schemes;
@@ -185,7 +185,7 @@ void RbCharMixture::convert2BitSet(RbBitSet* array0, const cmxV3& Part2Conv, siz
 
 // make set of N states that states in Q (0 , 1.. N-1), and return all partitioning schemes of these states into 2 partitions.
 // N states = number of states in Q
-cmxV3 RbCharMixture::get_Conven_part_schemes(int N_states)
+cmxV3 RbCharMixture::get_Conven_part_schemes(size_t N_states)
 {
     // intialize two-state part
     cmxV3 partST2 = init_partSTATE_2();

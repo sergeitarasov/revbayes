@@ -686,7 +686,7 @@ RevBayesCore::TypedDistribution< RevBayesCore::AbstractHomologousDiscreteCharact
             //std::cout<<"RB convet elem 1,1: "<< mymyrb[0][0][0] << std::endl;
             std::cout<<"Printing schemes: "<< std::endl;
             mymyrb.print_Conven_part_schemes();
-            
+
             std::cout<<"Printing bit schems: "<< std::endl;
             for (int i=0; i<mymyrb.get_N_part_schemes(); i++)
             {
@@ -750,7 +750,7 @@ RevBayesCore::TypedDistribution< RevBayesCore::AbstractHomologousDiscreteCharact
         }
         
         RevBayesCore::PhyloCTMCSiteHomogeneous<RevBayesCore::StandardState> *dist;
-        if (cd == RevBayesCore::AscertainmentBias::ALL)
+        if (cd == RevBayesCore::AscertainmentBias::ALL) //this is default //Mine
         {
             dist = new RevBayesCore::PhyloCTMCSiteHomogeneous<RevBayesCore::StandardState>(tau, nChars, true, n, ambig, internal, gapmatch);
         }
@@ -758,6 +758,11 @@ RevBayesCore::TypedDistribution< RevBayesCore::AbstractHomologousDiscreteCharact
         {
             dist = new RevBayesCore::PhyloCTMCSiteHomogeneousConditional<RevBayesCore::StandardState>(tau, nChars, true, n, ambig, RevBayesCore::AscertainmentBias::Coding(cd), internal, gapmatch);
         }
+        
+        // set CharMixture
+        dist->setCharMix(true, nChars, char_mix_partNode);
+        
+        
         
         // set the root frequencies (by default these are NULL so this is OK)
         dist->setRootFrequencies( rf );
