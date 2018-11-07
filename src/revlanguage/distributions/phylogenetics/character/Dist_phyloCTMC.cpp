@@ -31,6 +31,8 @@
 #include "RlTypedDistribution.h"
 #include "TypeSpec.h"
 
+#include "RbCharMixture.h"
+
 using namespace RevLanguage;
 
 Dist_phyloCTMC::Dist_phyloCTMC() : TypedDistribution< AbstractHomologousDiscreteCharacterData >()
@@ -80,17 +82,18 @@ RevBayesCore::TypedDistribution< RevBayesCore::AbstractHomologousDiscreteCharact
     bool ttt ( char_mix_part->getRevObject() != RevNullObject::getInstance() );
     std::cout<<"Bool "<< ttt <<std::endl;
     
-    RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RbVector<double> > >* char_mix_partNode=NULL;
+    //RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RbVector<double> > >* char_mix_partNode=NULL;
+    RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RbVector<RevBayesCore::RbVector<double> > > >* char_mix_partNode=NULL;
 
 
     if ( char_mix_part->getRevObject() != RevNullObject::getInstance() )
     {
         std::cout<<"getInstance TRUE " <<std::endl;
 
-        char_mix_partNode = static_cast<const ModelVector<ModelVector<RealPos> > &>( char_mix_part->getRevObject() ).getDagNode();
+       // char_mix_partNode = static_cast<const ModelVector<ModelVector<RealPos> > &>( char_mix_part->getRevObject() ).getDagNode();
+        char_mix_partNode = static_cast<const ModelVector<ModelVector<ModelVector<RealPos> > > &>( char_mix_part->getRevObject() ).getDagNode();
     }
     
-//    RevBayesCore::TypedDagNode< RevBayesCore::RbVector<RevBayesCore::RbVector<double> > >* char_mix_partNode = static_cast<const ModelVector<ModelVector<RealPos> > &>( char_mix_part->getRevObject() ).getDagNode();
 
     // *********Mine End
     
@@ -678,30 +681,42 @@ RevBayesCore::TypedDistribution< RevBayesCore::AbstractHomologousDiscreteCharact
             std::cout<<"Element 1,1: "<< (char_mix_partNode->getValue()[1][1]) <<std::endl;
             std::cout<<"Partition Element 1 size: "<< (char_mix_partNode->getValue()[1]).size() <<std::endl;
             
+            RevBayesCore::RbCharMixture mymyrb(4, char_mix_partNode);
+            std::cout<<"Getting Rb to Rmx: "<< std::endl;
+            //std::cout<<"RB convet elem 1,1: "<< mymyrb[0][0][0] << std::endl;
+            std::cout<<"Printing schemes: "<< std::endl;
+            mymyrb.print_Conven_part_schemes();
+            
+            std::cout<<"Printing bit schems: "<< std::endl;
+            for (int i=0; i<mymyrb.get_N_part_schemes(); i++)
+            {
+                std::cout<<"PRINT PART 2 BIT **** "<< mymyrb.get_0(i) << std::endl;
+            }
+            
             // Check if size of subpartition equals dim of Q
             for (int i=0; i < char_mix_partNode->getValue().size(); ++i )
             {
-                if (nChars!=char_mix_partNode->getValue()[i].size() )
-                {
-                    std::stringstream ss;
-                    ss << "Number of elements in partition " << i+1 << " does not match the number of states in the rate matrix\n";
-
-                    throw RbException(ss.str());
-                }
+//                if (nChars!=char_mix_partNode->getValue()[i].size() )
+//                {
+//                    std::stringstream ss;
+//                    ss << "Number of elements in partition " << i+1 << " does not match the number of states in the rate matrix\n";
+//
+//                    throw RbException(ss.str());
+//                }
                 
                 // Check if subpartitions consist of only of 1s and 0s
-                for (int j=0; j < char_mix_partNode->getValue()[i].size(); ++j )
-                {
-                    //std::cout<<"Subp: "<< i << " elem: "<< j<< std::endl;
-                    //std::cout<<"Subp: "<< char_mix_partNode->getValue()[i][j] <<   std::endl;
-                    
-                    if (char_mix_partNode->getValue()[i][j]!= 0 && char_mix_partNode->getValue()[i][j]!= 1 )
-                    {
-                        std::stringstream ss;
-                        ss << "Elements in subpartition " << i+1 << " do not equal 1 or 0\n";
-                        throw RbException(ss.str());
-                    }
-                }
+//                for (int j=0; j < char_mix_partNode->getValue()[i].size(); ++j )
+//                {
+//                    //std::cout<<"Subp: "<< i << " elem: "<< j<< std::endl;
+//                    //std::cout<<"Subp: "<< char_mix_partNode->getValue()[i][j] <<   std::endl;
+//
+//                    if (char_mix_partNode->getValue()[i][j]!= 0 && char_mix_partNode->getValue()[i][j]!= 1 )
+//                    {
+//                        std::stringstream ss;
+//                        ss << "Elements in subpartition " << i+1 << " do not equal 1 or 0\n";
+//                        throw RbException(ss.str());
+//                    }
+//                }
                 
                 // ??? Check if subpartitions are not constant
 
@@ -1179,8 +1194,10 @@ const MemberRules& Dist_phyloCTMC::getParameterRules(void) const
         dist_member_rules.push_back( new ArgumentRule( "gapMatchClamped", RlBoolean::getClassTypeSpec(), "Should we set the simulated character to be gap or missing if the corresponding character in the clamped matrix is gap or missing?", ArgumentRule::BY_VALUE, ArgumentRule::ANY, new RlBoolean( true ) ) );
         
         //Mine "CharMixturePartitions"
-        dist_member_rules.push_back( new ArgumentRule( "CharMixturePartitions", ModelVector<ModelVector<RealPos> > ::getClassTypeSpec(), "Character partitions for Common Hidden Mechanism model. For CHMM select type = CharacterMixture and use binary characters only ", ArgumentRule::BY_CONSTANT_REFERENCE, ArgumentRule::ANY, NULL ) );
+        dist_member_rules.push_back( new ArgumentRule( "CharMixturePartitions", ModelVector<ModelVector<ModelVector<RealPos> > > ::getClassTypeSpec(), "Character partitions for Common Hidden Mechanism model. For CHMM select type = CharacterMixture and use binary characters only ", ArgumentRule::BY_CONSTANT_REFERENCE, ArgumentRule::ANY, NULL ) );
         
+//        dist_member_rules.push_back( new ArgumentRule( "CharMixturePartitions", ModelVector<ModelVector<RealPos> > ::getClassTypeSpec(), "Character partitions for Common Hidden Mechanism model. For CHMM select type = CharacterMixture and use binary characters only ", ArgumentRule::BY_CONSTANT_REFERENCE, ArgumentRule::ANY, NULL ) );
+
         //Mine
         
 
