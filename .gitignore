@@ -1,4 +1,8 @@
 # ---------- Generated files -------------------
+/.local-build/
+/tmp/
+__pycache__/
+*.pyc
 src/generated_include_dirs.cmake
 src/*/CMakeLists.txt
 

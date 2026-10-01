@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "runtime integration, not SBC",
+  "checks": [
+    {
+      "check": "Rev_absolute_labelled_density",
+      "value": -23.4149,
+      "expected": -23.414925199726387
+    },
+    {
+      "check": "combined_joint_MCMC",
+      "samples": 201,
+      "generations": 2000
+    },
+    {
+      "check": "morphology_joint_MCMC",
+      "samples": 201,
+      "generations": 2000
+    },
+    {
+      "check": "dna_joint_MCMC",
+      "samples": 201,
+      "generations": 2000
+    },
+    {
+      "check": "checkpoint_restore_and_MCMC",
+      "status": "passed"
+    }
+  ]
+}

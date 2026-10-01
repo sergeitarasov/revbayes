@@ -1,0 +1,154 @@
+{
+  "scope": "Single size-selected simulated dataset; known ages/status/origin/rho/clock; not SBC",
+  "chains": {
+    "fixed_tree": {
+      "lambda0": {
+        "truth": 0.8,
+        "mean": 1.103929472017489,
+        "median": 1.086914,
+        "ci95": [
+          0.7110523,
+          1.603665
+        ],
+        "truth_in_ci95": true,
+        "approx_batch_ess": 499.6976018470391
+      },
+      "alpha": {
+        "truth": 0.015,
+        "mean": 0.017566493018738288,
+        "median": 0.01755031,
+        "ci95": [
+          0.01076774,
+          0.02456416
+        ],
+        "truth_in_ci95": true,
+        "approx_batch_ess": 458.4388710101103
+      },
+      "mu": {
+        "truth": 0.15,
+        "mean": 0.1884408849469082,
+        "median": 0.186838,
+        "ci95": [
+          0.1287042,
+          0.2584124
+        ],
+        "truth_in_ci95": true,
+        "approx_batch_ess": 1601
+      },
+      "psi": {
+        "truth": 0.3,
+        "mean": 0.2770729362273579,
+        "median": 0.2763338,
+        "ci95": [
+          0.2260456,
+          0.3343807
+        ],
+        "truth_in_ci95": true,
+        "approx_batch_ess": 1332.5981112838997
+      },
+      "retained_samples": 1601
+    },
+    "joint_1": {
+      "lambda0": {
+        "truth": 0.8,
+        "mean": 1.1599181087047064,
+        "median": 1.139837,
+        "ci95": [
+          0.7228978,
+          1.724332
+        ],
+        "truth_in_ci95": true,
+        "approx_batch_ess": 608.0651939749642
+      },
+      "alpha": {
+        "truth": 0.015,
+        "mean": 0.01847865542482299,
+        "median": 0.01844595,
+        "ci95": [
+          0.01107234,
+          0.02578841
+        ],
+        "truth_in_ci95": true,
+        "approx_batch_ess": 571.6742491759586
+      },
+      "mu": {
+        "truth": 0.15,
+        "mean": 0.19446368817159518,
+        "median": 0.1932422,
+        "ci95": [
+          0.1294397,
+          0.2669672
+        ],
+        "truth_in_ci95": true,
+        "approx_batch_ess": 2371.421459950343
+      },
+      "psi": {
+        "truth": 0.3,
+        "mean": 0.2729943943773428,
+        "median": 0.2717528,
+        "ci95": [
+          0.2194811,
+          0.3359404
+        ],
+        "truth_in_ci95": true,
+        "approx_batch_ess": 939.9370668295642
+      },
+      "retained_samples": 2401
+    },
+    "joint_2": {
+      "lambda0": {
+        "truth": 0.8,
+        "mean": 1.2000407575593504,
+        "median": 1.181441,
+        "ci95": [
+          0.7656686,
+          1.781074
+        ],
+        "truth_in_ci95": true,
+        "approx_batch_ess": 561.0679525118127
+      },
+      "alpha": {
+        "truth": 0.015,
+        "mean": 0.019062478062057474,
+        "median": 0.01894755,
+        "ci95": [
+          0.01169599,
+          0.02630517
+        ],
+        "truth_in_ci95": true,
+        "approx_batch_ess": 548.5870235432601
+      },
+      "mu": {
+        "truth": 0.15,
+        "mean": 0.19410074037067887,
+        "median": 0.1924221,
+        "ci95": [
+          0.1330343,
+          0.2710445
+        ],
+        "truth_in_ci95": true,
+        "approx_batch_ess": 1709.919740095837
+      },
+      "psi": {
+        "truth": 0.3,
+        "mean": 0.26907053723448565,
+        "median": 0.2677997,
+        "ci95": [
+          0.2153083,
+          0.3303961
+        ],
+        "truth_in_ci95": true,
+        "approx_batch_ess": 1108.4971295750765
+      },
+      "retained_samples": 2401
+    }
+  },
+  "split_Rhat_joint": {
+    "lambda0": 1.0090840197853825,
+    "alpha": 1.0096914421056555,
+    "mu": 1.0004867350880269,
+    "psi": 1.0041790869771792
+  },
+  "diagnostics": "Classical split Rhat and approximate batch-means ESS; assess before interpreting recovery",
+  "additional_discard_fraction": 0.2
+}

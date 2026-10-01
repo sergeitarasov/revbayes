@@ -1,0 +1,35 @@
+# Mapping an actual DD-FBD simulation onto the Rev input objects.
+# Run from the repository root: .local-build/revbayes-build/rb examples/DDFBD/seed7_mapping.Rev
+# This evaluates the known simulated extended tree; it is not a fitted analysis.
+setOption("outputPrecision", "15", save=false)
+initial <- readTrees("validation/DDFBD/example_seed7/extended_tree.nwk")[1]
+occurrence_species <- v("sp2", "sp1", "sp1", "sp7", "sp8", "sp7", "sp4", "sp1", "sp10")
+occurrence_ages <- v(2.614691614282314, 2.504910997630459, 1.660438677156236, 1.5214974492329403, 0.7286290967018241, 0.5645495228258728, 0.35123237737846447, 0.2723784929449007, 0.07603802007315608)
+species_tree ~ dnDDFBD(originAge=3.0, lambda0=0.8, alpha=0.15,
+    mu=0.25, psi=0.7, rho=0.8, occurrenceSpecies=occurrence_species,
+    occurrenceAges=occurrence_ages, sampledExtant=v("sp8","sp10"),
+    initialTree=initial, condition="none", maxHiddenLineages=128,
+    numericalTolerance=1e-13)
+check_tree ~ dnDDFBD(originAge=3.0, lambda0=0.8, alpha=0.15,
+    mu=0.25, psi=0.7, rho=0.8, occurrenceSpecies=occurrence_species,
+    occurrenceAges=occurrence_ages, sampledExtant=v("sp8","sp10"),
+    initialTree=initial, condition="none", maxHiddenLineages=256,
+    numericalTolerance=1e-13)
+if (abs(species_tree.lnProbability()-check_tree.lnProbability()) > 1e-8) { stop("Hidden cutoff mismatch") }
+# Check the represented-species count; sample ages are checked after projection.
+if (species_tree.ntips() != 6) { stop("Expected six retained species") }
+observation_tree := fnSpeciesObservationTree(species_tree,
+    sampleNames=v("occ1", "occ2", "occ3", "occ4", "occ5", "occ6", "occ7", "occ8", "occ9", "sp8_now", "sp10_now"),
+    speciesNames=v("sp2", "sp1", "sp1", "sp7", "sp8", "sp7", "sp4", "sp1", "sp10", "sp8", "sp10"),
+    ages=v(2.614691614282314, 2.504910997630459, 1.660438677156236, 1.5214974492329403, 0.7286290967018241, 0.5645495228258728, 0.35123237737846447, 0.2723784929449007, 0.07603802007315608, 0.0, 0.0))
+if (observation_tree.ntips() != 11) { stop("Expected nine fossils and two living samples") }
+check_ages <- v(2.614691614282314, 2.504910997630459, 1.660438677156236, 1.5214974492329403, 0.7286290967018241, 0.5645495228258728, 0.35123237737846447, 0.2723784929449007, 0.07603802007315608, 0.0, 0.0)
+for (i in 1:11) {
+    if (abs(observation_tree.nodeAge(i)-check_ages[i]) > 1e-10) { stop("Observation placed at wrong age") }
+}
+print("SEED7_LABELLED_LOG_DENSITY=" + species_tree.lnProbability())
+print("SEED7_CUTOFF_CHANGE=" + (check_tree.lnProbability()-species_tree.lnProbability()))
+print("SEED7_SPECIES=" + species_tree.ntips() + "; OBSERVATIONS=" + observation_tree.ntips())
+write(observation_tree, filename="examples/DDFBD/output/seed7.observation_tree.nwk")
+print("SEED7_MAPPING_PASSED")
+q()

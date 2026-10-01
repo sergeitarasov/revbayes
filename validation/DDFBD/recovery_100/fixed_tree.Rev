@@ -1,0 +1,11 @@
+seed(32002)
+joint = false
+prefix = "fixed_tree"
+burnin_generations = 2000
+generations = 20000
+start_lambda = 0.55
+start_alpha = 0.008
+start_mu = 0.1
+start_psi = 0.2
+source("model.Rev")
+q()

@@ -1,0 +1,4 @@
+Scaling(variable=lambda0,num_tried_current=19882,num_tried_total=21824,num_accepted_current=9327,num_accepted_total=10213,tuning_value=0.626046)
+Scaling(variable=alpha,num_tried_current=19906,num_tried_total=21962,num_accepted_current=8112,num_accepted_total=9064,tuning_value=0.775057)
+Scaling(variable=mu,num_tried_current=20088,num_tried_total=22136,num_accepted_current=9027,num_accepted_total=10030,tuning_value=1.07406)
+Scaling(variable=psi,num_tried_current=20124,num_tried_total=22078,num_accepted_current=9543,num_accepted_total=10445,tuning_value=0.635983)

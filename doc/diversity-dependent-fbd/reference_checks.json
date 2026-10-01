@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "scope": "planning prototype only; raw oriented density",
+  "checks": [
+    {
+      "check": "constant_FBD_one_extant",
+      "log_likelihood": -1.8285455735525986,
+      "reference": -1.8285455735526273,
+      "absolute_error": 2.864375403532904e-14
+    },
+    {
+      "check": "constant_FBD_two_extant",
+      "log_likelihood": -3.8980208378237036,
+      "reference": -3.898020837824833,
+      "absolute_error": 1.1293188606487092e-12
+    },
+    {
+      "check": "constant_FBD_sampled_ancestor",
+      "log_likelihood": -5.10199364214964,
+      "reference": -5.101993642150768,
+      "absolute_error": 1.127986593019159e-12
+    },
+    {
+      "check": "constant_FBD_terminal_fossil",
+      "log_likelihood": -5.493162286465473,
+      "reference": -5.493162286466106,
+      "absolute_error": 6.323830348264892e-13
+    },
+    {
+      "check": "constant_FBD_fossil_only",
+      "log_likelihood": -3.4236870221938775,
+      "reference": -3.4236870221939,
+      "absolute_error": 2.2648549702353193e-14
+    },
+    {
+      "check": "constant_FBD_mixed",
+      "log_likelihood": -8.903924787978461,
+      "reference": -8.903924787983623,
+      "absolute_error": 5.162092975297128e-12
+    },
+    {
+      "check": "DD_forward_adjoint_and_step_halving",
+      "forward": -10.232218194966908,
+      "backward": -10.232218194966906,
+      "adjoint_error": 1.7763568394002505e-15,
+      "step_halving_error": 6.728839707648149e-12
+    },
+    {
+      "check": "DD_complete_pure_birth",
+      "log_likelihood": -3.043978470257433,
+      "reference": -3.0439784702574655,
+      "absolute_error": 3.241851231905457e-14
+    },
+    {
+      "check": "DD_hidden_cap_convergence",
+      "caps": [
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "log_likelihoods": [
+        -10.694976155944032,
+        -9.670807419698857,
+        -9.411727059333185,
+        -9.407317643967666,
+        -9.4073176234347
+      ],
+      "final_difference": 2.0532965550046356e-08
+    },
+    {
+      "check": "DD_alpha_zero_limit",
+      "absolute_error": 1.982936659317147e-08
+    },
+    {
+      "check": "named_species_locked_founder_restricted_case",
+      "log_likelihood": -4.50055586739744,
+      "reference": -4.500555867397552,
+      "absolute_error": 1.1191048088221578e-13
+    }
+  ]
+}

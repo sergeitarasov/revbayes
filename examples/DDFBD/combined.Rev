@@ -1,0 +1,8 @@
+# Run from examples/DDFBD with a binary built from this checkout.
+# Synthetic demonstration, not a calibrated empirical analysis.
+use_morphology = true
+use_dna = true
+generations = 2000
+prefix = "combined"
+source("model.Rev")
+q()

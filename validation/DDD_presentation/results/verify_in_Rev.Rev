@@ -1,0 +1,2510 @@
+max_error = 0.0
+check_count = 0
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep01.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-4.790199250036923))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.125254492354399))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.6807594716608047))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.33279774309898802,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-4.7604073121178123))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep02.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-4.1685270456360808))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-4.3728131116238327))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-4.8006010687132274))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.38410623860827597,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-4.1670993930758566))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep03.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.263188573051313))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.25864013049037))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.844491851586175))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.94099381845256502,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.773435189441452))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep04.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.030198522065653))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.960507270844431))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.481604821999595))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.99292035198003004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.356736288024207))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep05.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.1463146434475231))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.718546433849458))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-4.4149449197391313))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20000999999999999,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.8351420237813243))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep06.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.2266230655919479))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.0635079613975691))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.2888381992529148))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.56438951659816605,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.0571950283082074))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep07.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-14.755912092218242))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-13.252145470853989))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.435735274609518))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.1934400723309699,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.93158750736591))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep08.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.456900043522243))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.033138878982745))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-14.270875021448921))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.19626265203219,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-13.804720556286414))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep09.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.0166617276127834))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.8459161697943633))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.0690434736301526))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.56716120507740397,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.8405044706105897))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep10.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-14.931644565185415))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-13.802200827360625))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-13.303525670095388))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.98370257079824497,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-13.181815926088511))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep11.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.270308432607475))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.084274987046573))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-14.495817257457606))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.12524793308558,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-14.216444163807866))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep12.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.2799953912240234))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.783093635181082))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.7510467816344111))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.71495543892671398,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.7234035956928082))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep13.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-21.739734620424336))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-19.839298189305495))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-18.658772777741099))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.59104987686704,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.189502686447032))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep14.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.6304385482534016))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.4000687668170082))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.566965381566245))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59631474012657404,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.4000038876098104))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep15.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.240853570968547))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.242841772508854))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.839360857904097))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.92974434743363099,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.777607304214897))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep16.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.300287218247368))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.261282017356885))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.811074945389237))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.97104961268684398,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.710848657367318))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep17.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-4.9459830745866045))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.311986506359939))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.8998116719014968))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.32296560186318801,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-4.9053685991413287))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep18.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-13.638706171013601))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.750984553286012))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.43678588330738))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.87933645762117396,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.413713002968361))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep19.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.0675920675091621))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.5626232078683575))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.5284989381254928))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.71593927413228997,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.5010561900816661))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep20.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-13.069629742832728))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.134694849960233))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.778815245824859))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.90613724586194799,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.738263130690699))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep21.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-21.670953805389694))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-19.697931441373182))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-18.441456211610753))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.74725103918059,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.608425821760665))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep22.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.993096079132679))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.813198582706292))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.2337069717812597))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.0709249397043501,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.0023672041451963))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep23.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-14.335504871384176))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-13.171767921995963))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.647495458765473))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.99447568662603403,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.509106580912416))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep24.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.9947607415288831))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.8160656502454939))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.0323975206543459))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.57079872730048697,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.8118055136557132))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age3_rep25.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.9254859819125247))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.9188780186069927))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.2239286351953718))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.497283502848687,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.8701490374172254))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep01.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-23.375546351817363))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-23.122132556532684))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-23.48002490955205))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.56117086866714405,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-23.110002002600581))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep02.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-18.856982601195408))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-18.994103710830604))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-19.744618389189334))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.46296585530580397,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-18.807769610896163))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep03.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-29.469147219758753))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-28.421690277085666))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-27.80703193506584))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.6336443551462001,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.929975856681246))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep04.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-39.672377844761975))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-38.416131525634242))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-37.869316360891041))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.93207758218836201,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-37.778668400539523))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep05.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.247236952884528))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-31.160061145483954))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-30.709496802878096))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.93653335933946003,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-30.635779770068069))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep06.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.122273034804657))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-31.133692902989743))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-30.678854534791213))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.09892210345738,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-30.495871703099933))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep07.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-20.602019259367495))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-20.245242974133355))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-20.666987518982079))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.57555382611194195,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-20.23938678365581))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep08.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.106268732663281))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-25.200363255106005))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-24.64587853172743))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.66413318278458,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-23.778521133744199))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep09.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.818339599730812))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.213666571777424))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.095778122085306))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.79162619224050201,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.095626351397318))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep10.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-34.945976782588126))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-33.414184363197549))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.400269361178694))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.0361782746089099,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-30.52798458038891))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep11.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-35.599657058952651))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-34.338486587149227))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-33.597177932752039))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.0953246709566802,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.485621278232188))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep12.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-28.802516916875206))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-28.104040241664869))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-28.01361473213576))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.73931226207060297,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-27.997259329013517))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep13.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-20.794363610548146))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-20.864602237589892))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-21.433459406730339))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.47456151698787202,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-20.735081626049929))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep14.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-34.555328034487289))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-33.01306840018097))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.032491063324962))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.68063368332075,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-30.727413686925271))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep15.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.585457546897793))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-31.404338946753729))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-30.765286509465046))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.20239595628297,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-30.353607143123128))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep16.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-29.363903758882515))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-28.49548218634137))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-28.117694397022287))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.1714338907644299,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-27.937032475259631))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep17.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-30.454099323475035))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-29.509295382762836))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-29.195404709599071))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.85509581909100396,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-29.182596071832432))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep18.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-23.512569233155819))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-22.913775808362583))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-22.614948990122521))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.11605593670203,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-22.460693360230117))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep19.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-24.710012287290368))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-24.299458600451082))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-24.448630202360047))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.62701131073364702,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-24.294853070681626))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep20.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-33.445089886211818))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.644206158885389))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.557869978193253))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.72865737372850203,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.526516191924927))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep21.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-30.537480943671092))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-29.774593107481138))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-29.566369105442231))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.83202620131742799,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-29.563273659052467))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep22.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-29.779126820179179))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-28.913372516889204))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-28.634572875419799))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.85184670233538196,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-28.624328478682504))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep23.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-38.039256310364166))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-37.206891199024106))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-37.074309933588488))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.74773924110282097,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-37.058043476650624))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep24.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-33.252907673387135))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.198217867784635))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-31.665434862496618))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2135278697084899,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-31.339123958519874))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDlinear_age8_rep25.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.40000000000000002,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-24.009125018568934))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-23.645621393198812))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-23.681967776305548))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.66299012644381095,mu=0.2,K=15,rateModel="DDDlinear",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-23.63048767950945))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep01.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-1.7987972478947727))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.1242719090567808))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.6773179615239471))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20000999999999999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-0.94003541878945018))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep02.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-1.7987972478947727))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.1242719090567808))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.6773179615239471))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20000999999999999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-0.94003541878945018))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep03.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.251917486441894))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-14.803124853946425))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-14.234349059803247))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=7.7544666692645601,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.895188909972646))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep04.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.1980226928787241))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.1211566569984779))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.0967970528259281))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.0782029375586699,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.0930004373174))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep05.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.6644081620288507))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.4111250533906841))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.133995176222097))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.5317675974737401,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.9161326716129885))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep06.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.8100949727977085))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.9666476725193887))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.282289864317391))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.21830254642989699,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.5985743487209634))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep07.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.979486105754114))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.1465948146964036))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.4779367586688359))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.201706865961987,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.734843165941482))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep08.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.4543447084842591))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.6344073394523941))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.9787252551608496))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20000999999999999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.1501411490701838))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep09.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.455431895645189))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.3687889647953462))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.3107740197712099))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.31148496319347,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.3087679200814))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep10.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-1.7987972478947727))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.1242719090567808))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.6773179615239471))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20000999999999999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-0.94003541878945018))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep11.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.1902750101581256))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.1220797960261404))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.1159910503992228))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.0042129182331401,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.1047721868325375))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep12.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.4303517631356115))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.1771391763401926))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.9016196144058028))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.4927788678121199,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.6911362419106251))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep13.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-12.256262422719065))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.854875686699325))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.372677194685577))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.9106480413281202,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.700047554826916))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep14.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.0552126431680069))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.8787134936084513))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.7229895957515629))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.60184231203197,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.6882077674167926))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep15.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.1403032813804916))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.9749100240541244))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.8232975600409631))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.70261938278866,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.7793275805562621))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep16.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.347681932162862))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.080687113432024))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.7673997944965745))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.9136622781982502,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.3474871818400409))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep17.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-1.7987972478947727))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.1242719090567808))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-2.6773179615239471))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20000999999999999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-0.94003541878945018))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep18.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.020569037874264))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.7644496424436582))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.4798041001543911))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.6977071193701398,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.2323718576310529))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep19.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.408302762607047))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.923304243773543))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.305686132237533))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=8,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-13.795643071947557))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep20.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.573562883065577))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.249995973340097))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.8783364479228375))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.12114141925607,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.4826981477551637))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep21.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.1435532139015834))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.1855504740442839))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.3252462419502171))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.521868915828816,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.1387250099016102))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep22.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.0113171628211131))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.8410630236200323))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.6845464108730717))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.6981617202544399,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.6393905249508824))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep23.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.955751190980148))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.619926168331641))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.210190755192432))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=5.43030778610943,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.47743492500175))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep24.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.7162010825817209))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.4628742859119015))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.1857471241613968))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.5262737863173301,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.9685508782340388))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age3_rep25.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.292616699415563))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.4714528898026482))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.8172173848497355))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20000999999999999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.0014587637355312))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep01.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-22.317798394629168))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-22.063480791634586))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-21.748674620760873))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=6.5070394516096997,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-21.095860797600814))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep02.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-19.57976560488218))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-19.431908469852413))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-19.353641121935222))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.1915290511636201,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-19.353615539235371))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep03.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.1630706633708758))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.5089700594149047))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.1190251929462871))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20000999999999999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.4160563428135049))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep04.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-34.771582792043837))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-34.388867864346452))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-33.893948419612293))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=8,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.383088166780631))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep05.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-20.06338109619524))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-19.938362551585204))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-19.857359346008984))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2956910003626101,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-19.855201607381748))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep06.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.13406029660606))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.134540911495057))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.251407339490479))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.69194853102795695,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.126114840077017))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep07.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.385321463591489))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.7936455332569778))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.4669333773124036))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20000999999999999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.3145124292765509))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep08.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-20.837941903567508))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-20.687924945781969))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-20.56197008865502))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.5611044959081599,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-20.538000828946359))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep09.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.5001266616147904))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.8475279174667296))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.4690455897533852))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20000999999999999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.7830309711311907))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep10.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-31.876823057795761))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-31.497244564142346))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-31.018284338737523))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=6.3731785937460099,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-30.017618906142186))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep11.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-27.126280666482948))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.833617419442469))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.483172677918105))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=4.66541010069413,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-25.932879818759314))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep12.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.002676187968376))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-25.73164697494758))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-25.421812592354215))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.0947101758844902,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-25.097359159874408))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep13.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-14.334951868388346))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-14.364218471696725))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-14.492472295460331))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.58576179938719697,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-14.334778615035997))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep14.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.1439593732031224))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.3720896883924354))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.8368573101701777))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.26625999413693402,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.8902094488070933))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep15.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-27.147198915584873))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.901927782400826))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.645500210911813))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.2926535302011599,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.481331331090008))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep16.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.54631876205282))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-26.194907677648008))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-25.730396831033964))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=8,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-24.051319470719907))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep17.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-4.9903823469703026))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-5.4421175108205393))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-6.2241056193258855))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20000999999999999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-3.9081611538684378))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep18.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.121405020769096))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.200499859843243))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.401709976727092))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.447427518984228,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-11.094592418105798))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep19.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.5588535870129432))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.7626355304563237))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-8.1963210113679761))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.301171052916065,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-7.3714705336314958))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep20.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-33.372413273699678))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-33.077222614780609))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.742433263018846))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.1814849069830902,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-32.389014759818899))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep21.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.248036951650748))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.250267135044494))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.375156938055044))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.68699685480025796,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.240604616806296))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep22.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-18.514008141919561))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-18.389342330516776))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-18.257963380051557))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.1889030614826899,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-18.134354870456335))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep23.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-25.818943160788223))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-25.586520057521923))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-25.351894452845919))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.1498065324150999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-25.222597145141727))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep24.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.196826517565151))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.414743033844644))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-10.830578857164275))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.22161965380592499,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-9.8834354974573024))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/trees/DDDpower_age8_rep25.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.59999999999999998,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.508968448849302))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.395304945604448))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.268238052206353))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.4196493842443099,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.124066617828028))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+tree = readTrees("validation/DDD_presentation/results/illustrative.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20000999999999999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.678384061687627))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.20944846810863613,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.639855681546717))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.2193323373484044,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.602602245537785))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.22968262619023999,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.566636254140423))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.24052134496632302,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.531970354721752))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.2518715426759921,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.498617360805586))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.26375735600042755,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.466590271225234))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.27620406063033714,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.435902288995495))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.28923812501579405,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.406566839731529))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.30288726665252858,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.378597589432255))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.31718051102436928,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.352008461437617))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.33214825332717623,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.326813652359155))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.34782232310552608,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.303027646775135))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.36423605193960057,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.280665230473327))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.38142434432621847,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.259741502013666))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.39942375190474178,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.240271882377268))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.41827255118570122,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.222272122458037))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.43801082494743371,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.205758308145318))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.45868054747382614,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.190746862739701))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.48032567381442648,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.177254546433851))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.50299223325673736,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.165298452586647))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.52672842720946667,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.154896000509872))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.55158473170488498,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.146064924482754))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.57761400473826918,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.13882325870423))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.60487159867269125,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.133189317889268))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.63341547794818709,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.129181673213731))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.66330634234561958,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.126819123310669))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.69460775606735958,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.126120660022252))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.72738628290928287,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.12710542861425))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.76171162781153101,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.129792682165538))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.79765678508904925,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.134201729852125))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.83529819365712188,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.140351878856361))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.87471589958199625,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.148262369646442))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.91599372630226839,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.157952304387937))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=0.95921945288301302,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.169440568272378))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.0044850006817214,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.182745743573307))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.0518866288230033,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.197886016271898))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.101525138897733,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.214879075132245))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.153506089321948,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.233742003149136))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2079400198113375,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.254491161340342))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.2649426864486784,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.277142064915063))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.3246353078441004,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.301709251912765))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.3871448229116468,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.328206144482989))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.4526041608103082,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.356644903058802))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.5211525236235688,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.387036273769576))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.592935682378593,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.419389429543735))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.6681062870345549,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.45371180546541))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.7468241910993065,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.490008929077295))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.8292567915647082,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.528284246458536))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=1.9155793848834897,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.568538945058211))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.0059755397446644,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.610771774425837))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.100637487440201,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.654978866154904))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.1997665306530894,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.701153554537386))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.3035734715361174,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.749286199619529))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.412279059991663,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.799364014546825))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.526114463105817,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.851370899285723))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.64532175673508,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.905287283009384))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.7701544402910283,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-15.961089977625084))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=2.900877975817671,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.018752045101142))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.0377703525078359,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.078242681405804))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.1811226778590953,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.139527119999599))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.3312397967263139,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.202566557909314))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.4884409395872744,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.267318107444527))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.6530604013999604,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.333734776593499))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=3.8254482524950797,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.40176548103101))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=4.0059710830156163,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.471355090482199))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=4.1950127824864509,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.542444511902648))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=4.3929753561718616,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.614970811544413))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=4.6002797799569368,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.688867377478562))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=4.8173668955707907,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.764064123533934))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=5.0446983480553875,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.840487734892893))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=5.2827575674734684,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.918061954769065))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=5.532050796943266,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-16.99670791069234))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=5.7931081691861763,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.076344477969712))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=6.0664848338766557,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.15688867690216))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=6.3527621381917871,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.238256099358004))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=6.6525488630709155,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.3203613593667))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=6.9664825178143692,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.403118561553981))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=7.2952306957742827,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.486441780525631))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=7.6394924940204154,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.570245543773154))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+lnL := fnDiversityDependentLogLikelihood(tree,lambda0=7.9999999999999982,mu=0.2,K=15,rateModel="DDDpower",start="crown",condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(lnL-(-17.654445310343682))
+if (err > 1e-7) { stop("Simulation comparison failed") }
+if (err > max_error) { max_error = err }
+check_count = check_count + 1
+print("SIMULATION_REV_CHECKS_PASSED count=" + check_count + " max_error=" + max_error)
+q()

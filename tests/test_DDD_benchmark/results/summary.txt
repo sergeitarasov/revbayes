@@ -1,0 +1,9 @@
+DDD 5.2.5; 144 matched likelihood comparisons
+Maximum absolute log-likelihood discrepancy: 3.5704772471945e-13
+Independent ODE-backend discrepancy: 8.92619311798626e-12
+Constant-rate maximum discrepancy (H=512): 3.5527136788005e-13
+Stress-case DDD discrepancy (H=256): 8.64112692511299e-08
+Stress-case kernel change H=128 to 256: 1.98152747543645e-08
+Simulated tree: 6 extant tips, seed 1439
+  DDD_lambda kernel_lambda DDD_loglik kernel_loglik
+1   4.271567      4.271567  -7.460315     -7.460315

@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "scope": "runtime integration, not SBC",
+  "checks": [
+    {
+      "check": "Rev_absolute_labelled_density",
+      "value": -23.4149,
+      "expected": -23.414925199726387
+    },
+    {
+      "check": "combined_joint_MCMC",
+      "samples": 21,
+      "generations": 200
+    },
+    {
+      "check": "morphology_joint_MCMC",
+      "samples": 21,
+      "generations": 200
+    },
+    {
+      "check": "dna_joint_MCMC",
+      "samples": 21,
+      "generations": 200
+    },
+    {
+      "check": "sampling_conditioned_joint_MCMC",
+      "generations": 100
+    },
+    {
+      "check": "sampledExtant_conditioned_joint_MCMC",
+      "generations": 100
+    },
+    {
+      "check": "checkpoint_restore_and_MCMC",
+      "status": "passed"
+    }
+  ]
+}

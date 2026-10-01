@@ -1,0 +1,63 @@
+# DIVERSITY-DEPENDENT LIKELIHOODS IN REVBAYES
+# Run from the repository root:
+# .local-build/revbayes-build/rb examples/DDD/likelihood.Rev
+# This function is part of this development build, not an upstream release.
+
+# 1. Input: rooted binary time tree, all living species sampled, tips at age zero.
+# The supplied six-tip tree was simulated with DDD 5.2.5, seed 1439:
+# lambda0=0.8, mu=0.2, K=8, ddmodel=2, crown age=3.
+# Replace this path with your own ultrametric tree.
+tree = readTrees("examples/DDD/data/simulated.tre")[1]
+
+# 2. DDD model 2: lambda(N) = lambda0*(N+1)^[-log(lambda0/mu)/log(K+1)].
+# N includes all living lineages, even ones with no sampled descendants.
+# Crown conditioning starts with two lineages and requires both sides to survive.
+lnL := fnDiversityDependentLogLikelihood(tree, lambda0=0.8, mu=0.2,
+            K=8, rateModel="DDDpower", start="crown", condition="survival",
+            density="DDDphylogeny", maxHiddenLineages=128, numericalTolerance=1e-13)
+print("Power-law lnL = " + lnL)
+# Expected: -7.9263828301537 (screen output can be rounded).
+if (abs(lnL - (-7.92638283015368)) > 1e-7) { stop("Example likelihood mismatch") }
+
+# 3. Check the hidden-lineage cutoff separately from numericalTolerance.
+lnL_larger := fnDiversityDependentLogLikelihood(tree, lambda0=0.8, mu=0.2,
+            K=8, rateModel="DDDpower", start="crown", condition="survival",
+            maxHiddenLineages=256, numericalTolerance=1e-13)
+print("Cutoff change, 128 to 256 = " + (lnL_larger-lnL))
+if (abs(lnL_larger-lnL) > 1e-7) { stop("Increase hidden-lineage cutoff") }
+
+# 4. Other supported rate laws; these are DIFFERENT models.
+lnL_linear := fnDiversityDependentLogLikelihood(tree, lambda0=0.8, mu=0.2,
+                 K=8, rateModel="DDDlinear", condition="survival")
+lnL_exponential := fnDiversityDependentLogLikelihood(tree, lambda0=0.8, mu=0.2,
+                      alpha=0.2, rateModel="exponential", condition="survival")
+print("Linear lnL = " + lnL_linear)
+print("Exponential-in-N lnL = " + lnL_exponential)
+# DDDlinear: max(0,lambda0-(lambda0-mu)*N/K).
+# exponential: lambda0*exp[-alpha*(N-1)] (not DDD model 2).
+
+# 5. Likelihood profile over lambda0, with mu and K fixed.
+# This is a coarse grid illustration, not an MCMC or an exact optimizer.
+lambda_grid = seq(0.3,6.0,0.1)
+best_lnL = -1e100
+best_lambda = 0.3
+write("lambda0\tlnL\n", filename="examples/DDD/output/profile.tsv")
+for (i in 1:lambda_grid.size()) {
+    grid_lnL = fnDiversityDependentLogLikelihood(tree, lambda0=lambda_grid[i], mu=0.2,
+                   K=8, rateModel="DDDpower", start="crown", condition="survival",
+                   maxHiddenLineages=128, numericalTolerance=1e-13)
+    write(lambda_grid[i], "\t", grid_lnL, "\n", separator="",
+          filename="examples/DDD/output/profile.tsv", append=true)
+    if (grid_lnL > best_lnL) {
+        best_lnL = grid_lnL
+        best_lambda = lambda_grid[i]
+    }
+}
+print("Grid best lambda0 = " + best_lambda + "; lnL = " + best_lnL)
+# The continuous optimum is approximately 4.271567; the grid best is 4.3.
+
+# Stem analyses instead use start="stem", originAge=<age older than root>.
+# condition="none" and "nTaxa" match DDD cond=0 and cond=2.
+# A deterministic lnL variable does NOT by itself add a factor to an MCMC target.
+print("DDD_EXAMPLE_COMPLETE")
+q()

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "pdf_pages": 11,
+  "figure_pairs": 6,
+  "figure_zip_files": 13,
+  "visual_review": "All pages inspected; corrected title overlap and plot legend clipping.",
+  "report_sha256": "9f2ab3f31c8166bf35179bb89f69187fec5d08c6daac1a053330d27d04062926"
+}

@@ -126,9 +126,12 @@ FossilizedBirthDeathSpeciationProcess* FossilizedBirthDeathSpeciationProcess::cl
  * Compute the log-transformed probability of the current value under the current parameter values.
  *
  */
-double FossilizedBirthDeathSpeciationProcess::computeLnProbabilityDivergenceTimes( void )
+double FossilizedBirthDeathSpeciationProcess::computeLnProbabilityDivergenceTimes( void ) const
 {
-    double lnProb = computeLnProbabilityRanges();
+    // The shared range evaluator updates its likelihood and endpoint caches.
+    // Tree likelihood evaluation enters through the non-const public
+    // computeLnProbability(), but this virtual hook has a const interface.
+    double lnProb = const_cast<FossilizedBirthDeathSpeciationProcess*>(this)->computeLnProbabilityRanges();
 
     lnProb += computeLnProbabilityTimes();
 

@@ -1,0 +1,172 @@
+{
+  "parameters": {
+    "lambda0": 0.8,
+    "alpha": 0.15,
+    "mu": 0.25,
+    "psi": 0.7,
+    "rho": 0.8
+  },
+  "origin": 3,
+  "seed": 7,
+  "events": [
+    {
+      "time": 0.22360848241988815,
+      "type": "birth",
+      "species": 1,
+      "child": 2,
+      "total_before": 1
+    },
+    {
+      "time": 0.23871045057437731,
+      "type": "birth",
+      "species": 1,
+      "child": 3,
+      "total_before": 2
+    },
+    {
+      "time": 0.25162085058371336,
+      "type": "birth",
+      "species": 3,
+      "child": 4,
+      "total_before": 3
+    },
+    {
+      "time": 0.2670079512650148,
+      "type": "birth",
+      "species": 4,
+      "child": 5,
+      "total_before": 4
+    },
+    {
+      "time": 0.28069998035738936,
+      "type": "birth",
+      "species": 4,
+      "child": 6,
+      "total_before": 5
+    },
+    {
+      "time": 0.3853083857176859,
+      "type": "fossil",
+      "species": 2,
+      "total_before": 6
+    },
+    {
+      "time": 0.49508900236954134,
+      "type": "fossil",
+      "species": 1,
+      "total_before": 6
+    },
+    {
+      "time": 0.5585113109505312,
+      "type": "birth",
+      "species": 2,
+      "child": 7,
+      "total_before": 6
+    },
+    {
+      "time": 0.777541069887395,
+      "type": "death",
+      "species": 3,
+      "total_before": 7
+    },
+    {
+      "time": 0.8751921125330074,
+      "type": "death",
+      "species": 6,
+      "total_before": 6
+    },
+    {
+      "time": 1.1190288835980322,
+      "type": "birth",
+      "species": 2,
+      "child": 8,
+      "total_before": 5
+    },
+    {
+      "time": 1.2253093790899272,
+      "type": "death",
+      "species": 2,
+      "total_before": 6
+    },
+    {
+      "time": 1.339561322843764,
+      "type": "fossil",
+      "species": 1,
+      "total_before": 5
+    },
+    {
+      "time": 1.4785025507670597,
+      "type": "fossil",
+      "species": 7,
+      "total_before": 5
+    },
+    {
+      "time": 1.5588314182304024,
+      "type": "death",
+      "species": 5,
+      "total_before": 5
+    },
+    {
+      "time": 1.9988174067357292,
+      "type": "birth",
+      "species": 7,
+      "child": 9,
+      "total_before": 4
+    },
+    {
+      "time": 2.226559207150152,
+      "type": "birth",
+      "species": 4,
+      "child": 10,
+      "total_before": 5
+    },
+    {
+      "time": 2.271370903298176,
+      "type": "fossil",
+      "species": 8,
+      "total_before": 6
+    },
+    {
+      "time": 2.435450477174127,
+      "type": "fossil",
+      "species": 7,
+      "total_before": 6
+    },
+    {
+      "time": 2.444991708851219,
+      "type": "death",
+      "species": 9,
+      "total_before": 6
+    },
+    {
+      "time": 2.6487676226215355,
+      "type": "fossil",
+      "species": 4,
+      "total_before": 5
+    },
+    {
+      "time": 2.7276215070550993,
+      "type": "fossil",
+      "species": 1,
+      "total_before": 5
+    },
+    {
+      "time": 2.850155964575851,
+      "type": "death",
+      "species": 7,
+      "total_before": 5
+    },
+    {
+      "time": 2.923961979926844,
+      "type": "fossil",
+      "species": 10,
+      "total_before": 4
+    }
+  ],
+  "sampled_present": [
+    8,
+    10
+  ],
+  "simulation_condition": "unconditional",
+  "complete_history_log_density": -41.17103054908989
+}

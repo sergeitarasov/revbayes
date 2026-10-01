@@ -1,0 +1,60 @@
+   Processing file "model.Rev"
+   Attempting to read the contents of file "extended_tree.nwk"
+   Successfully read file
+   Successfully read one character matrix from file 'data/morphology.nex'
+   
+   Running burn-in phase of Monte Carlo sampler for 5000 iterations.
+   This simulation runs 1 independent replicate.
+   The simulator uses 35 different moves in a random move schedule with 12.8 moves per iteration
+   
+
+Progress:
+0---------------25---------------50---------------75--------------100
+********************************************************************
+
+   
+   Running MCMC simulation
+   This simulation runs 1 independent replicate.
+   The simulator uses 35 different moves in a random move schedule with 12.8 moves per iteration
+   
+
+                  Name                  | Param              |  Weight  |  Tried   | Accepted | Acc. Ratio| Parameters
+===============================================================================================================================
+Scaling                                  lambda0                  1.0000      35626      17485      0.4908 lambda = 0.5993
+Scaling                                  alpha                    1.0000      35368      15711      0.4442 lambda = 0.6697
+Scaling                                  mu                       1.0000      35548      15850      0.4459 lambda = 1.0491
+Scaling                                  psi                      1.0000      35523      15187      0.4275 lambda = 0.7287
+OrderedTreeSwap                          species_tree             2.0000      71192        589      0.0083 
+NodeTimeSlideUniform                     species_tree             3.0000     106498      46211      0.4339 
+RootTimeSlideUniform                     species_tree             1.0000      35645       4647      0.1304 
+FossilTipTimeSlideUniform                species_tree              0.1000       3624       2644      0.7296 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3467       2306      0.6651 delta = 7767.5367
+FossilTipTimeSlideUniform                species_tree              0.1000       3469       2615      0.7538 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3530       2587      0.7329 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3548       1896      0.5344 delta = 412.4061
+FossilTipTimeSlideUniform                species_tree              0.1000       3603       3199      0.8879 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3632       1988      0.5474 delta = 254.1590
+FossilTipTimeSlideUniform                species_tree              0.1000       3557       2149      0.6042 delta = 449.4442
+FossilTipTimeSlideUniform                species_tree              0.1000       3399       2960      0.8708 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3585       2563      0.7149 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3575       3190      0.8923 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3554       2275      0.6401 delta = 4323.2963
+FossilTipTimeSlideUniform                species_tree              0.1000       3554       1938      0.5453 delta = 55.4714
+FossilTipTimeSlideUniform                species_tree              0.1000       3560       2631      0.7390 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3510       2157      0.6145 delta = 1973.2757
+FossilTipTimeSlideUniform                species_tree              0.1000       3580       2598      0.7257 delta = 9469.2284
+FossilTipTimeSlideUniform                species_tree              0.1000       3549       3298      0.9293 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3417       3185      0.9321 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3621       2571      0.7100 delta = 5005.6076
+FossilTipTimeSlideUniform                species_tree              0.1000       3570       2858      0.8006 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3553       2546      0.7166 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3597       3375      0.9383 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3692       3304      0.8949 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3553       2747      0.7731 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3555       3195      0.8987 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3674       2874      0.7823 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3559       3161      0.8882 delta = 10000.0000
+FossilTipTimeSlideUniform                species_tree              0.1000       3513       3004      0.8551 delta = 10000.0000
+
+RECOVERY_CHAIN_COMPLETE
+   Processing of file "model.Rev" completed

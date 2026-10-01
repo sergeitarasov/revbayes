@@ -1,0 +1,4 @@
+   Attempting to read the contents of file "simulated.tre"
+   Successfully read file
+DDD power-law log likelihood: -7.92638
+Exponential-in-diversity log likelihood: -7.42176

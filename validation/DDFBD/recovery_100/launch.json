@@ -1,0 +1,7 @@
+{
+  "supervisor_pid": 69237,
+  "caffeinate_pid": 69238,
+  "started": "2026-10-01T09:21:03.197078+02:00",
+  "python": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "directory": "/Users/taravser/GitHub/rb-fbdp/revbayes/validation/DDFBD/recovery_100"
+}

@@ -1,0 +1,6 @@
+   Attempting to read the contents of file "extended_tree.nwk"
+   Successfully read file
+SEED7_LABELLED_LOG_DENSITY=-33.8822
+SEED7_CUTOFF_CHANGE=-2.55795e-13
+SEED7_SPECIES=6; OBSERVATIONS=11
+SEED7_MAPPING_PASSED

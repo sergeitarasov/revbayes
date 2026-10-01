@@ -1,0 +1,5 @@
+   Attempting to read the contents of file "fixed.tre"
+   Successfully read file
+   Attempting to read the contents of file "simulated.tre"
+   Successfully read file
+DDD_REV_CHECKS_PASSED max_error=3.58824e-13

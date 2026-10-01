@@ -1,0 +1,594 @@
+max_error = 0.0
+tree = readTrees("tests/test_DDD_benchmark/results/fixed.tre")[1]
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="crown",originAge=3,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.0506603770960847))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="crown",originAge=3,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.0506603770960847))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="crown",originAge=3,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-5.4389081691279104))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="crown",originAge=3,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-5.4389081691279104))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-3.4719831368770286))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-3.4719831368770286))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="stem",originAge=4,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.8880771380368895))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="stem",originAge=4,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.8880771380368895))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="stem",originAge=4,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.5939200008155447))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="stem",originAge=4,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.5939200008155447))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-4.5719953930315782))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-4.5719953930315782))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="crown",originAge=3,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.4446345842801094))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="crown",originAge=3,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.4446345842801094))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="crown",originAge=3,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-5.109045758003341))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="crown",originAge=3,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-5.109045758003341))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-3.5206215553485225))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-3.5206215553485225))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="stem",originAge=4,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-7.5524717915374708))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="stem",originAge=4,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-7.5524717915374708))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="stem",originAge=4,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.7953298436927136))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="stem",originAge=4,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.7953298436927136))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-4.6300200133501832))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-4.6300200133501832))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="crown",originAge=3,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-8.2753338295948531))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="crown",originAge=3,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-8.2753338295948531))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="crown",originAge=3,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-8.0677403802983783))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="crown",originAge=3,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-8.0677403802983783))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-3.6981471540032391))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-3.6981471540032391))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="stem",originAge=4,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-9.148145686772807))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="stem",originAge=4,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-9.148145686772807))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="stem",originAge=4,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-9.0561320876117861))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="stem",originAge=4,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-9.0561320876117861))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-5.3319116564470654))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-5.3319116564470654))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="crown",originAge=3,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-5.6868824648764313))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="crown",originAge=3,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-5.6868824648764296))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="crown",originAge=3,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-4.9137660710875402))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="crown",originAge=3,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-4.9137660710875357))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-3.4115069489921011))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-3.4115069489920957))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="stem",originAge=4,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.7578494054167564))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="stem",originAge=4,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.7578494054167546))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="stem",originAge=4,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.3718207451786553))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="stem",originAge=4,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.3718207451786562))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-4.4134757186637437))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-4.4134757186637437))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="crown",originAge=3,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.5205153828863835))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="crown",originAge=3,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.5205153828863711))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="crown",originAge=3,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-5.1425073877452014))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="crown",originAge=3,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-5.1425073877451943))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-3.5207622662997267))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-3.5207622662997187))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="stem",originAge=4,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-7.6999669938480615))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="stem",originAge=4,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-7.699966993848065))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="stem",originAge=4,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.908087883743077))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="stem",originAge=4,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.9080878837430797))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-4.6292150147683628))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-4.6292150147683646))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="crown",originAge=3,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-5.2160741109509168))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="crown",originAge=3,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-5.2160741109509186))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="crown",originAge=3,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-4.8550141082629237))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="crown",originAge=3,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-4.8550141082629237))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-3.3561608742042415))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-3.3561608742042432))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="stem",originAge=4,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.2018947726634117))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="stem",originAge=4,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.2018947726634064))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="stem",originAge=4,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.0466319387532526))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="stem",originAge=4,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.0466319387532454))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-4.3024737668388031))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-4.3024737668387969))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+tree = readTrees("tests/test_DDD_benchmark/results/simulated.tre")[1]
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="crown",originAge=3,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-8.0088931086909376))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="crown",originAge=3,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-8.0088931086909376))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="crown",originAge=3,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-7.3971409007227633))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="crown",originAge=3,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-7.3971409007227633))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-5.665695086355151))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-5.665695086355151))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="stem",originAge=4,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-8.8572471065312239))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="stem",originAge=4,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-8.8572471065312239))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="stem",originAge=4,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-8.5630899693098783))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="stem",originAge=4,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-8.5630899693098783))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.5061376277040264))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDlinear",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.5061376277040264))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="crown",originAge=3,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-9.1383688910706375))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="crown",originAge=3,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-9.1383688910706375))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="crown",originAge=3,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-7.8027800647938692))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="crown",originAge=3,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-7.8027800647938692))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-5.5722837326486268))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-5.5722837326486268))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="stem",originAge=4,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-10.251902663637038))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="stem",originAge=4,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-10.251902663637038))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="stem",originAge=4,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-9.4947607157922818))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="stem",originAge=4,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-9.4947607157922818))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.4259416673183818))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDlinear",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.4259416673183818))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="crown",originAge=3,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-9.2360342004346823))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="crown",originAge=3,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-9.2360342004346823))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="crown",originAge=3,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-9.0284407511382092))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="crown",originAge=3,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-9.0284407511382092))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-5.4853253277866862))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-5.4853253277866862))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="stem",originAge=4,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-10.11039299892934))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="stem",originAge=4,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-10.11039299892934))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="stem",originAge=4,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-10.018379399768319))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="stem",originAge=4,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-10.018379399768319))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.6145873905196844))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDlinear",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.6145873905196844))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="crown",originAge=3,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-8.6994992239425724))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="crown",originAge=3,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-8.6994992239425741))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="crown",originAge=3,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-7.9263828301536812))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="crown",originAge=3,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-7.9263828301536803))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-5.6539140380116466))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-5.6539140380116457))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="stem",originAge=4,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-9.7743983692419594))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="stem",originAge=4,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-9.7743983692419487))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="stem",originAge=4,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-9.3883697090038574))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="stem",originAge=4,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-9.3883697090038503))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.4698437094796617))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.80000000000000004,mu=0.20000000000000001,K=8,rateModel="DDDpower",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.469843709479651))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="crown",originAge=3,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-9.3045438626674368))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="crown",originAge=3,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-9.3045438626674351))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="crown",originAge=3,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-7.9265358675262547))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="crown",originAge=3,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-7.9265358675262583))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-5.5554535120724999))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-5.5554535120724999))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="stem",originAge=4,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-10.485808983105661))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="stem",originAge=4,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-10.485808983105683))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="stem",originAge=4,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-9.6939298730006769))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="stem",originAge=4,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-9.6939298730006964))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.4111792567294259))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=0.5,mu=0.34999999999999998,K=5,rateModel="DDDpower",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.4111792567294463))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="crown",originAge=3,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-8.128385030102665))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="crown",originAge=3,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-8.1283850301026632))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="crown",originAge=3,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-7.7673250274146719))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="crown",originAge=3,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-7.7673250274146683))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-5.7647764112576647))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="crown",originAge=3,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-5.764776411257662))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="stem",originAge=4,condition="none",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-9.1179722320798078))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="stem",originAge=4,condition="none",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-9.1179722320798078))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="stem",originAge=4,condition="survival",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-8.9627093981696486))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="stem",originAge=4,condition="survival",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-8.9627093981696468))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=64,numericalTolerance=1e-13)
+err = abs(ll - (-6.5828812859789192))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+ll := fnDiversityDependentLogLikelihood(tree,lambda0=1.2,mu=0.10000000000000001,K=15,rateModel="DDDpower",start="stem",originAge=4,condition="nTaxa",maxHiddenLineages=128,numericalTolerance=1e-13)
+err = abs(ll - (-6.5828812859789174))
+if (err > 1e-7) { stop("DDD benchmark mismatch") }
+if (err > max_error) { max_error = err }
+bt := fnDiversityDependentLogLikelihood(tree,lambda0=0.8,mu=0.2,K=8,rateModel="DDDpower",density="branchingTimes")
+ph := fnDiversityDependentLogLikelihood(tree,lambda0=0.8,mu=0.2,K=8,rateModel="DDDpower")
+if (abs(bt-ph-(4.7874917427820458)) > 1e-8) { stop("Density convention mismatch") }
+lambda ~ dnUniform(0.21,2.0)
+lambda.setValue(0.8)
+dd_live := fnDiversityDependentLogLikelihood(tree,lambda0=lambda,mu=0.2,K=8,rateModel="DDDpower")
+before = dd_live
+lambda.setValue(1.1)
+after := fnDiversityDependentLogLikelihood(tree,lambda0=1.1,mu=0.2,K=8,rateModel="DDDpower")
+if (abs(dd_live-after) > 1e-8) { stop("DAG update mismatch") }
+if (abs(dd_live-before) < 1e-6) { stop("DAG parameter did not update") }
+fitted := fnDiversityDependentLogLikelihood(tree,lambda0=4.2715668395271083,mu=0.2,K=8,rateModel="DDDpower")
+if (abs(fitted-(-7.4603145540548059)) > 1e-7) { stop("Fitted Rev likelihood mismatch") }
+print("DDD_REV_CHECKS_PASSED max_error=" + max_error)
+q()

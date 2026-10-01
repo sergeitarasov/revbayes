@@ -1,0 +1,318 @@
+{
+  "status": "passed",
+  "scope": "standalone extended-tree kernel only",
+  "checks": [
+    {
+      "check": "constant_theorem2_founder_protected",
+      "actual": -5.731977204690205,
+      "expected": -5.731977204688603,
+      "absolute_error": 1.602273869139026e-12
+    },
+    {
+      "check": "constant_theorem2_fossil_extinct",
+      "actual": -7.588369281354773,
+      "expected": -7.588369281352845,
+      "absolute_error": 1.928235349168972e-12
+    },
+    {
+      "check": "constant_theorem2_fossil_living_unsampled",
+      "actual": -7.450340508590952,
+      "expected": -7.450340508590072,
+      "absolute_error": 8.801848139228241e-13
+    },
+    {
+      "check": "constant_theorem2_parent_protected_across_birth",
+      "actual": -12.958277528012125,
+      "expected": -12.958277528009443,
+      "absolute_error": 2.682298827494378e-12
+    },
+    {
+      "check": "constant_theorem2_unprotected_split_three_species",
+      "actual": -17.49883983618664,
+      "expected": -17.498839836183002,
+      "absolute_error": 3.637978807091713e-12
+    },
+    {
+      "check": "constant_theorem2_two_buds_same_named_parent",
+      "actual": -18.123547984084347,
+      "expected": -18.123547984080073,
+      "absolute_error": 4.273914555597003e-12
+    },
+    {
+      "check": "constant_theorem2_all_extinct",
+      "actual": -12.223204473272803,
+      "expected": -12.223204473270192,
+      "absolute_error": 2.611244553918368e-12
+    },
+    {
+      "check": "constant_theorem2_extant_only",
+      "actual": -5.2845236314528705,
+      "expected": -5.284523631452235,
+      "absolute_error": 6.359357485052897e-13
+    },
+    {
+      "check": "simulated_extended_theorem2_seed0",
+      "actual": -2.9538790467013767,
+      "expected": -2.9538790467012084,
+      "absolute_error": 1.6830981053317373e-13
+    },
+    {
+      "check": "simulated_extended_theorem2_seed1",
+      "actual": -19.603583981005663,
+      "expected": -19.603583981004306,
+      "absolute_error": 1.3571366253017914e-12
+    },
+    {
+      "check": "simulated_extended_theorem2_seed2",
+      "actual": -2.9538790467013767,
+      "expected": -2.9538790467012084,
+      "absolute_error": 1.6830981053317373e-13
+    },
+    {
+      "check": "simulated_extended_theorem2_seed5",
+      "actual": -5.058672469725602,
+      "expected": -5.058672469724363,
+      "absolute_error": 1.2390088954816747e-12
+    },
+    {
+      "check": "simulated_extended_theorem2_seed6",
+      "actual": -17.323167502268273,
+      "expected": -17.323167502265278,
+      "absolute_error": 2.9949376312288223e-12
+    },
+    {
+      "check": "simulated_extended_theorem2_seed7",
+      "actual": -27.880241429644578,
+      "expected": -27.880241429641217,
+      "absolute_error": 3.360867140145274e-12
+    },
+    {
+      "check": "constant_none",
+      "actual": 0.2227134822364652,
+      "expected": 0.22271348223651807,
+      "absolute_error": 5.287437154777308e-14
+    },
+    {
+      "check": "constant_noextant",
+      "actual": 0.3474538491907504,
+      "expected": 0.3474538491909063,
+      "absolute_error": 1.5593082380860324e-13
+    },
+    {
+      "check": "direct_logsampling",
+      "actual": -0.25194624785540837,
+      "expected": -0.2519462478552437,
+      "absolute_error": 1.6464607455191071e-13
+    },
+    {
+      "check": "direct_logextant",
+      "actual": -0.4268734130778772,
+      "expected": -0.4268734130771422,
+      "absolute_error": 7.349676423018536e-13
+    },
+    {
+      "check": "rare_fossil_sampling",
+      "actual": -40.34791938522471,
+      "expected": -40.34791938522471,
+      "absolute_error": 0
+    },
+    {
+      "check": "rare_extant_sampling",
+      "actual": -41.44653167389282,
+      "expected": -41.44653167389282,
+      "absolute_error": 0
+    },
+    {
+      "check": "rare_fossils_with_birth_death",
+      "actual": -39.86439431247591,
+      "expected": -39.86439431247561,
+      "absolute_error": 2.984279490192421e-13
+    },
+    {
+      "check": "rare_extant_with_birth_death",
+      "actual": -40.5465316738931,
+      "expected": -40.54653167389282,
+      "absolute_error": 2.7711166694643907e-13
+    },
+    {
+      "check": "no_sampling_not_cap_leakage_4",
+      "actual": "-Infinity",
+      "expected": "-Infinity",
+      "absolute_error": 0
+    },
+    {
+      "check": "no_sampling_not_cap_leakage_64",
+      "actual": "-Infinity",
+      "expected": "-Infinity",
+      "absolute_error": 0
+    },
+    {
+      "check": "direct_conditioning_cap_convergence",
+      "caps": [
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "log_probabilities": [
+        -0.68093718117653,
+        -0.42729337367325637,
+        -0.38010215687757654,
+        -0.37938675280419987,
+        -0.37938674787455606
+      ],
+      "final_difference": 4.9296438042745194e-09
+    },
+    {
+      "check": "DD_independent_RK4_parent_protected_across_birth",
+      "actual": -13.519474019269506,
+      "expected": -13.519474019266472,
+      "absolute_error": 3.0340174816956278e-12
+    },
+    {
+      "check": "DD_independent_RK4_two_buds_same_named_parent",
+      "actual": -18.55248482914458,
+      "expected": -18.552484829142237,
+      "absolute_error": 2.34123831432953e-12
+    },
+    {
+      "check": "DD_independent_RK4_all_extinct",
+      "actual": -12.32122013625949,
+      "expected": -12.321220136256047,
+      "absolute_error": 3.4425795547576854e-12
+    },
+    {
+      "check": "identity_constraint_changes_density",
+      "correct": -6.314821450147442,
+      "ignored_identity": -5.639704487065672,
+      "log_difference": 0.6751169630817699
+    },
+    {
+      "check": "DD_complete_pure_birth",
+      "actual": -3.8963016396129113,
+      "expected": -3.8963016396129118,
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "check": "DD_observed_birth_log_underflow",
+      "actual": -1001.8862943611198,
+      "expected": -1001.8862943611199,
+      "absolute_error": 1.1368683772161603e-13
+    },
+    {
+      "check": "DD_extreme_complete_one_lineage",
+      "actual": -1000.0,
+      "expected": -1000.0,
+      "absolute_error": 0
+    },
+    {
+      "check": "DD_alpha_zero_limit",
+      "actual": -12.958277525042826,
+      "expected": -12.958277528009443,
+      "absolute_error": 2.966617174138264e-09
+    },
+    {
+      "check": "DD_cap_convergence",
+      "caps": [
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "log_likelihoods": [
+        -23.487419444752323,
+        -22.822985918227143,
+        -22.593154614266044,
+        -22.581432143343733,
+        -22.58142941163386,
+        -22.581429411632243
+      ],
+      "final_difference": 1.616484723854228e-12
+    },
+    {
+      "check": "DD_tolerance_convergence",
+      "actual": -18.552484859866837,
+      "expected": -18.55248482914265,
+      "absolute_error": 3.0724187638497824e-08
+    },
+    {
+      "check": "zero_birth_fossil_extinct",
+      "actual": -4.786554268076097,
+      "expected": -4.786554268074246,
+      "absolute_error": 1.850963826655061e-12
+    },
+    {
+      "check": "zero_birth_present",
+      "actual": -4.2892564076881,
+      "expected": -4.289256407687042,
+      "absolute_error": 1.0578204978628492e-12
+    },
+    {
+      "check": "zero_death_impossible",
+      "actual": "-Infinity",
+      "expected": "-Infinity",
+      "absolute_error": 0
+    },
+    {
+      "check": "zero_fossils_possible",
+      "actual": -1.422469261372092,
+      "expected": -1.4224692613715053,
+      "absolute_error": 5.866418462119327e-13
+    },
+    {
+      "check": "zero_psi_impossible",
+      "actual": "-Infinity",
+      "expected": "-Infinity",
+      "absolute_error": 0
+    },
+    {
+      "check": "zero_rho_fossils",
+      "actual": -5.714529906274144,
+      "expected": -5.714529906273189,
+      "absolute_error": 9.556799795973347e-13
+    },
+    {
+      "check": "zero_rho_extant_impossible",
+      "actual": "-Infinity",
+      "expected": "-Infinity",
+      "absolute_error": 0
+    },
+    {
+      "check": "complete_rho_unsampled_impossible",
+      "actual": "-Infinity",
+      "expected": "-Infinity",
+      "absolute_error": 0
+    },
+    {
+      "check": "critical_birth_death",
+      "actual": -1.5762060871806867,
+      "expected": -1.5762060871805208,
+      "absolute_error": 1.6586731987899839e-13
+    },
+    {
+      "check": "all_rates_zero",
+      "actual": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0
+    },
+    {
+      "check": "all_rates_zero_no_observation",
+      "actual": 0.6,
+      "expected": 0.6,
+      "absolute_error": 0
+    },
+    {
+      "check": "no_sampling_no_observation",
+      "actual": 0.9999999999992317,
+      "expected": 1.0,
+      "absolute_error": 7.682743330406083e-13
+    },
+    {
+      "check": "invalid_protection_rejected",
+      "message": "DDFBD protected count exceeds retained diversity"
+    }
+  ]
+}

@@ -879,6 +879,77 @@ sum(b))");
 	help_strings[string("dnDirichlet")][string("name")] = string(R"(dnDirichlet)");
 	help_arrays[string("dnDirichlet")][string("see_also")].push_back(string(R"(simplex)"));
 	help_strings[string("dnDirichlet")][string("title")] = string(R"(Dirichlet Distribution)");
+	help_strings[string("dnDiversityDependentFBD")][string("description")] = string(R"(A budding-speciation process on an oriented extended species tree. The per-species
+speciation rate is `lambda0 * exp(-alpha * (N - 1))`, where N counts all living
+species, including unsampled species. Extinction mu and fossil recovery psi are
+constant. Hidden species histories are numerically marginalized.)");
+	help_strings[string("dnDiversityDependentFBD")][string("details")] = string(R"(The alias is `dnDDFBD`. `occurrenceSpecies` and `occurrenceAges` contain one entry
+per recovered fossil record, with repeated species names allowed. Ages can be
+stochastic, for example with geological dating likelihoods or uniform bounds.
+The supplied records must be the complete observed point pattern. Supplying only
+first/last appearances while ignoring known interior counts is a different model
+and is not supported by this first implementation.
+
+`initialTree` is a binary extended tree with one tip per observed species. Child
+zero is the ancestral continuation at every budding event. A positive tip age is
+the species' latent extinction time, not its youngest fossil age. A zero tip age
+means the species is alive. Living/extinct status is fixed by the initial tree.
+`sampledExtant` lists species sampled alive at present; living fossil-bearing
+species absent from that list receive a factor (1-rho). Every retained species
+must have a fossil record or an extant sample. The species tree may include an
+initial stem above its root, bounded by `originAge`.
+
+Use `fnSpeciesObservationTree` to attach character data at specimen ages. Do not
+attach fossil characters directly to latent extinction endpoints. Include each
+character-bearing fossil exactly once among the occurrence records. DNA and
+morphology are optional separate `dnPhyloCTMC` components.
+
+Use `mvOrderedTreeSwap` for changes to topology and budding orientation. It
+preserves child slots and reverses exactly. Other generic topology moves have not
+been audited for the oriented state space. Standard node/root time moves and
+bounded fossil-tip moves can change node ages and extinction endpoints.
+
+The density retains orientations explicitly and includes the species-label
+factor 1/n!, without an additional factor 2^(n-1). `condition="none"` gives the
+unconditioned origin-started density. `"sampling"` conditions on at least one
+fossil or extant sample; `"sampledExtant"` conditions on at least one extant
+sample. Crown conditioning and conditioning on observed species number are not
+implemented.
+
+`maxHiddenLineages` is a numerical cutoff, not a biological carrying capacity.
+Increase it to check likelihood and posterior sensitivity. Outward transitions
+are killed while preserving the original diagonal hazard. Conditioning uses a
+separate total-count cutoff equal to maxHiddenLineages plus the number of retained
+species. `numericalTolerance` controls the positive matrix-exponential series,
+not truncation in hidden diversity. Rates and all event times are validated at
+each evaluation; numerical convergence failures are reported as errors.
+
+MCMC initialization uses the supplied tree. General prior redraw conditional on
+the specified named records is not implemented and throws rather than pretending
+that a starting tree is a random draw. The independent complete-history simulator
+is in `validation/DDFBD`.
+
+Current limitations: budding only; constant mu and psi; fixed living/extinct
+status; exact individual occurrence ages, optionally sampled in the DAG; no
+range-only ascertainment, taxonomic assignment uncertainty, or interval-count
+likelihood. Broad simulation-based calibration remains necessary before
+scientific use.)");
+	help_strings[string("dnDiversityDependentFBD")][string("example")] = string(R"(initial <- readTrees("extended_species.tre")[1]
+tree ~ dnDDFBD(originAge=7, lambda0=0.5, alpha=0.2, mu=0.2,
+    psi=0.3, rho=0.7,
+    occurrenceSpecies=v("A","A","B","B","C"),
+    occurrenceAges=v(4.0,2.0,2.0,1.0,1.0),
+    sampledExtant=v("A","C"), initialTree=initial,
+    condition="none", maxHiddenLineages=128))");
+	help_strings[string("dnDiversityDependentFBD")][string("name")] = string(R"(dnDiversityDependentFBD)");
+	help_references[string("dnDiversityDependentFBD")].push_back(RbHelpReference(R"(Stadler et al. (2018). The fossilized birth-death model for the analysis of stratigraphic range data under different speciation modes.)",R"(10.1016/j.jtbi.2018.03.005 )",R"()"));
+	help_references[string("dnDiversityDependentFBD")].push_back(RbHelpReference(R"(Etienne et al. (2012). Diversity-dependence brings molecular phylogenies closer to agreement with the fossil record.)",R"(10.1098/rspb.2011.1439 )",R"()"));
+	help_references[string("dnDiversityDependentFBD")].push_back(RbHelpReference(R"(Andreoletti et al. (2022). The Occurrence Birth-Death Process for Combined-Evidence Analysis in Macroevolution and Epidemiology.)",R"(10.1093/sysbio/syac037 )",R"()"));
+	help_arrays[string("dnDiversityDependentFBD")][string("see_also")].push_back(string(R"(fnSpeciesObservationTree)"));
+	help_arrays[string("dnDiversityDependentFBD")][string("see_also")].push_back(string(R"(mvOrderedTreeSwap)"));
+	help_arrays[string("dnDiversityDependentFBD")][string("see_also")].push_back(string(R"(dnFossilizedBirthDeathSpeciation)"));
+	help_arrays[string("dnDiversityDependentFBD")][string("see_also")].push_back(string(R"(dnOccurrenceBirthDeath)"));
+	help_strings[string("dnDiversityDependentFBD")][string("title")] = string(R"(Diversity-dependent fossilized birth-death with named species occurrences)");
 	help_strings[string("dnDiversityDependentYule")][string("name")] = string(R"(dnDiversityDependentYule)");
 	help_strings[string("dnDuplicationLoss")][string("name")] = string(R"(dnDuplicationLoss)");
 	help_strings[string("dnEmpiricalSample")][string("name")] = string(R"(dnEmpiricalSample)");
@@ -2127,6 +2198,21 @@ discrete_values := fnDiscretizeGamma( shape = alpha, rate = alpha, numCats = 4, 
 	help_strings[string("fnDiscretizeGammaQuadrature")][string("name")] = string(R"(fnDiscretizeGammaQuadrature)");
 	help_strings[string("fnDiscretizeLognormalQuadrature")][string("name")] = string(R"(fnDiscretizeLognormalQuadrature)");
 	help_strings[string("fnDistanceRateModifier")][string("name")] = string(R"(fnDistanceRateModifier)");
+	help_strings[string("fnDiversityDependentLogLikelihood")][string("description")] = string(R"(Returns the log likelihood of a rooted binary time tree whose tips are all at the present. Speciation depends on total diversity, including extinct lineages integrated out by a hidden-count calculation; extinction is constant. This is a likelihood evaluation function, not a tree-generating distribution.)");
+	help_strings[string("fnDiversityDependentLogLikelihood")][string("details")] = string(R"(The default rate model is `exponential`: lambda(N) = lambda0 * exp(-alpha * (N-1)). `DDDlinear` uses max(0, lambda0 - (lambda0-mu)*N/K); `DDDpower` uses lambda0 * (N+1)^(-log(lambda0/mu)/log(K+1)). The latter two match DDD models 1 and 2, respectively, and require lambda0 > mu > 0 and K > 0.
+
+`start="crown"` starts with two lineages at the root and omits the root speciation factor. `start="stem"` starts with one lineage at the supplied `originAge` and includes every internal speciation event. `condition` is `none`, `survival`, or `nTaxa`, matching DDD conditions 0, 1, or 2. Crown survival requires both initial sides to survive.
+
+`density="DDDphylogeny"` matches DDD's btorph=1 convention. `branchingTimes` adds log((n-1)!). This DDD convention must not be silently substituted for another labelled-tree prior convention.
+
+All extant species must be sampled. There are no fossil observations or missing extant species in this function. The hidden-count boundary is killed; increase `maxHiddenLineages` until the result converges. DDD's matrix backend uses a different top-boundary diagonal, so comparisons require convergence of both calculations. `numericalTolerance` controls propagation accuracy, not truncation error. A deterministic value assigned with `:=` updates with its DAG parameters but does not by itself contribute to an MCMC target density.)");
+	help_strings[string("fnDiversityDependentLogLikelihood")][string("example")] = string(R"(tree = readTrees("tree.tre")[1]
+lnL := fnDiversityDependentLogLikelihood(tree, lambda0=0.8, mu=0.2,
+           K=8, rateModel="DDDpower", start="crown", condition="survival")
+print(lnL))");
+	help_strings[string("fnDiversityDependentLogLikelihood")][string("name")] = string(R"(fnDiversityDependentLogLikelihood)");
+	help_arrays[string("fnDiversityDependentLogLikelihood")][string("see_also")].push_back(string(R"(dnDiversityDependentFBD)"));
+	help_strings[string("fnDiversityDependentLogLikelihood")][string("title")] = string(R"(Diversity-dependent likelihood of a complete extant tree)");
 	help_strings[string("fnDppConcFromMean")][string("name")] = string(R"(fnDppConcFromMean)");
 	help_strings[string("fnDppMeanFromConc")][string("name")] = string(R"(fnDppMeanFromConc)");
 	help_strings[string("fnEarlyBurst")][string("name")] = string(R"(fnEarlyBurst)");
@@ -2760,6 +2846,25 @@ M := fnScale(MM, 1/MM.rate()))");
 	help_strings[string("fnSmoothTimeLine")][string("details")] = string(R"(Thus function takes a vector of values and a matching vector of times and a maximum time. Then, it constructs a smooth timeline by using all values before the maximum, and replacing all values after the maximum with the last value before the maximum. Thus, the timeline is smooth after the maximum.)");
 	help_strings[string("fnSmoothTimeLine")][string("name")] = string(R"(fnSmoothTimeLine)");
 	help_strings[string("fnSmoothTimeLine")][string("title")] = string(R"(Create a smooth timeline)");
+	help_arrays[string("fnSpeciesObservationTree")][string("authors")].push_back(string(R"(RevBayes development contributors)"));
+	help_strings[string("fnSpeciesObservationTree")][string("description")] = string(R"(Construct a deterministic TimeTree for molecular or morphological data whose observations occur at specified times along named species lineages.)");
+	help_strings[string("fnSpeciesObservationTree")][string("details")] = string(R"(The input tree has one terminal endpoint per named species. At every bifurcation, child 0 continues the ancestral species and child 1 starts the new species. Endpoint names identify species; endpoint ages are extinction times or zero for living species. This orientation is part of the model and must be preserved by compatible tree proposals.
+
+The equally sized vectors sampleNames, speciesNames and ages identify character samples, their species, and their actual ages before the present. Sample names must be unique. Repeated species names are allowed. Fossil observations with surviving sampled descendants become zero-length sampled-ancestor tips; an observation with no sampled descendants becomes a terminal tip at its observation age. Unsampled species endpoints and resulting unary branching nodes are pruned. Tip indices follow sampleNames order.
+
+The initial species can have samples on its stem older than the species-tree root. The upstream species-tree distribution must constrain these to be younger than the origin. Other samples must occur after their species birth and before their endpoint. Out-of-support dynamic ages or placements raise MATH_ERROR, allowing Metropolis-Hastings rejection; malformed static identifiers raise an ordinary error.
+
+This function supplies the character-data genealogy only. It does not add a fossil-sampling likelihood. Fossil occurrences and living samples must also be represented in the species-tree distribution's sampling data. A species-level composite character row must have an explicitly chosen observation time; do not duplicate it for every occurrence.)");
+	help_strings[string("fnSpeciesObservationTree")][string("example")] = string(R"(# species_tree is an oriented extended species tree with endpoints A and B.
+# A has a historical character sample and a living sample; B has one fossil sample.
+observations := fnSpeciesObservationTree(species_tree,
+    sampleNames=v("A_fossil", "A_living", "B_fossil"),
+    speciesNames=v("A", "A", "B"), ages=v(3.0, 0.0, 2.0))
+# Use observations as tree= in dnPhyloCTMC; data row names must match sampleNames.)");
+	help_strings[string("fnSpeciesObservationTree")][string("name")] = string(R"(fnSpeciesObservationTree)");
+	help_references[string("fnSpeciesObservationTree")].push_back(RbHelpReference(R"()",R"()",R"()"));
+	help_arrays[string("fnSpeciesObservationTree")][string("see_also")].push_back(string(R"(fnPruneTree, dnPhyloCTMC)"));
+	help_strings[string("fnSpeciesObservationTree")][string("title")] = string(R"(Project an oriented budding-species tree onto dated character samples)");
 	help_strings[string("fnStateCountRateModifier")][string("name")] = string(R"(fnStateCountRateModifier)");
 	help_strings[string("fnStirling")][string("name")] = string(R"(fnStirling)");
 	help_strings[string("fnStitchTree")][string("name")] = string(R"(fnStitchTree)");
@@ -3920,6 +4025,17 @@ moves.append( mvNNI(tree=timetree, weight=taxa.size()) ))");
 	help_strings[string("mvNodeTimeSlidePathTruncatedNormal")][string("name")] = string(R"(mvNodeTimeSlidePathTruncatedNormal)");
 	help_strings[string("mvNodeTimeSlideUniform")][string("name")] = string(R"(mvNodeTimeSlideUniform)");
 	help_strings[string("mvNodeTimeSlideUniformAgeConstrained")][string("name")] = string(R"(mvNodeTimeSlideUniformAgeConstrained)");
+	help_arrays[string("mvOrderedTreeSwap")][string("authors")].push_back(string(R"(RevBayes development contributors)"));
+	help_strings[string("mvOrderedTreeSwap")][string("description")] = string(R"(Propose a topology or orientation update on a rooted time tree without changing node ages or node indices.)");
+	help_strings[string("mvOrderedTreeSwap")][string("details")] = string(R"(Draw two distinct nonroot nodes uniformly from the fixed node set. Ancestor-descendant pairs and pairs incompatible with strictly positive branch durations are rejected without resampling. Otherwise, exchange the selected subtrees in their exact original child slots. Swapping siblings reverses their order, which changes the budding-species orientation when child 0 denotes ancestral continuation. Swapping nonsiblings changes topology while preserving all other child slots.
+
+The proposal is self-inverse with log Hastings ratio zero. Undo restores exact child ordering and parent links. Species identity, fossil occurrences, origin and extinction constraints remain the responsibility of the tree distribution and observation-tree likelihood; incompatible proposals are rejected through their target probability.
+
+This move does not update ages. Combine it with appropriate age moves. Unlike ordinary unordered-tree rearrangements, it treats child order as part of the stochastic state.)");
+	help_strings[string("mvOrderedTreeSwap")][string("example")] = string(R"(moves.append(mvOrderedTreeSwap(species_tree, weight=10.0)))");
+	help_strings[string("mvOrderedTreeSwap")][string("name")] = string(R"(mvOrderedTreeSwap)");
+	help_arrays[string("mvOrderedTreeSwap")][string("see_also")].push_back(string(R"(fnSpeciesObservationTree, mvNodeTimeSlideUniform)"));
+	help_strings[string("mvOrderedTreeSwap")][string("title")] = string(R"(Swap ordered subtrees while preserving budding-species orientations)");
 	help_strings[string("mvRJSwitch")][string("name")] = string(R"(mvRJSwitch)");
 	help_arrays[string("mvRandomCategoryWalk")][string("authors")].push_back(string(R"(Sebastian Höhna)"));
 	help_strings[string("mvRandomCategoryWalk")][string("description")] = string(R"(This random walk proposal picks a random index of a vector. Then, it picks

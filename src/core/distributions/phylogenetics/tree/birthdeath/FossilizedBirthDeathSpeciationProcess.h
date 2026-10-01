@@ -56,7 +56,7 @@ namespace RevBayesCore {
 
         // Parameter management functions
         double                                          computeLnProbabilityTimes(void) const override;                            //!< Compute the log-transformed probability of the current value.
-        double                                          computeLnProbabilityDivergenceTimes(void);  /* override fail. should be const. */            //!< Compute the log-transformed probability of the current value.
+        double                                          computeLnProbabilityDivergenceTimes(void) const override;                 //!< Compute the log-transformed probability of the current value.
 
         double                                          lnProbNumTaxa(size_t n, double start, double end, bool MRCA) const override { throw RbException("Cannot compute P(nTaxa)."); }
         double                                          lnProbTreeShape(void) const override;

@@ -1,0 +1,15 @@
+# Run from examples/DDFBD (the Python integration runner supplies that cwd).
+seed(314159)
+setOption("outputPrecision", "15", save=false)
+initial_tree <- readTrees("data/extended_species.tre")[1]
+fossil_ages <- v(4.0, 2.0, 2.0, 1.0, 1.0)
+tree ~ dnDDFBD(originAge=7.0, lambda0=0.5, alpha=0.0, mu=0.2,
+    psi=0.3, rho=0.7, occurrenceSpecies=v("A","A","B","B","C"),
+    occurrenceAges=fossil_ages, sampledExtant=v("A","C"),
+    initialTree=initial_tree, maxHiddenLineages=96)
+if (abs(tree.lnProbability() + 23.414925199726387) > 1e-8) {
+    stop("DDFBD absolute labelled density differs from independent Theorem 2")
+}
+print("DDFBD_INITIAL_LOG_DENSITY="+tree.lnProbability())
+print("DDFBD_INTEGRATION_DENSITY_OK")
+q()

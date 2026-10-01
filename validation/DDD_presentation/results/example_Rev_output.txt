@@ -1,0 +1,8 @@
+   Attempting to read the contents of file "simulated.tre"
+   Successfully read file
+Power-law lnL = -7.92638
+Cutoff change, 128 to 256 = -8.61533e-14
+Linear lnL = -7.39714
+Exponential-in-N lnL = -7.42176
+Grid best lambda0 = 4.3; lnL = -7.46032
+DDD_EXAMPLE_COMPLETE

@@ -1,0 +1,32 @@
+   Processing file "model.Rev"
+   Attempting to read the contents of file "extended_species.tre"
+   Successfully read file
+   Successfully read one character matrix from file 'data/morphology.nex'
+   Successfully read one character matrix from file 'data/dna.nex'
+   
+   Running MCMC simulation
+   This simulation runs 1 independent replicate.
+   The simulator uses 16 different moves in a random move schedule with 29 moves per iteration
+   
+
+                  Name                  | Param              |  Weight  |  Tried   | Accepted | Acc. Ratio| Parameters
+===============================================================================================================================
+Sliding                                  fossil_age[1]            1.0000        178        173      0.9719 delta = 0.2000
+Sliding                                  fossil_age[2]            1.0000        209        206      0.9856 delta = 0.2000
+Sliding                                  fossil_age[3]            1.0000        211        204      0.9668 delta = 0.2000
+Sliding                                  fossil_age[4]            1.0000        200        190      0.9500 delta = 0.2000
+Sliding                                  fossil_age[5]            1.0000        196        194      0.9898 delta = 0.2000
+Scaling                                  lambda0                  2.0000        387        362      0.9354 lambda = 0.4000
+Sliding                                  alpha                    2.0000        411        374      0.9100 delta = 0.2000
+Scaling                                  mu                       2.0000        435        415      0.9540 lambda = 0.4000
+Scaling                                  psi                      2.0000        380        345      0.9079 lambda = 0.4000
+Sliding                                  origin                   1.0000        220        191      0.8682 delta = 1.0000
+OrderedTreeSwap                          species_tree             4.0000        769        293      0.3810 
+NodeTimeSlideUniform                     species_tree             3.0000        588        258      0.4388 
+RootTimeSlideUniform                     species_tree             2.0000        398        302      0.7588 
+FossilTipTimeSlideUniform                species_tree             2.0000        400        388      0.9700 delta = 0.3000
+Scaling                                  morph_clock              2.0000        407        384      0.9435 lambda = 0.3000
+Scaling                                  dna_clock                2.0000        411        370      0.9002 lambda = 0.3000
+
+   Processing of file "model.Rev" completed
+DDFBD_MCMC_COMPLETE

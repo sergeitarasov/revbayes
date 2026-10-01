@@ -1,0 +1,5 @@
+replicates_per_scenario=25
+lambda0=0.8; mu=0.2; K=15; crown_age=3 or 8
+rate_models=DDDlinear, DDDpower; crown survival conditioning; complete extant sampling
+lambda_search=[0.20001,8]; mu and K fixed; all accepted dd_sim trees retained
+reference_DDD_version=5.2.5

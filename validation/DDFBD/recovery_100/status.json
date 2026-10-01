@@ -1,0 +1,40 @@
+{
+  "supervisor_pid": 69237,
+  "started": "2026-10-01T09:21:03.377322+02:00",
+  "status": "complete",
+  "binary": "/Users/taravser/GitHub/rb-fbdp/revbayes/.local-build/revbayes-build/rb",
+  "binary_sha256": "bcda2e600fd567d937aa545555d8b857b541caee8b1bdf5ba94580e27c776e8d",
+  "jobs": {
+    "fixed_tree": {
+      "pid": 69241,
+      "script": "fixed_tree.Rev",
+      "stdout": "fixed_tree.stdout",
+      "returncode": 0,
+      "last_saved_generation": "20000"
+    },
+    "joint_1": {
+      "pid": 69242,
+      "script": "joint_1.Rev",
+      "stdout": "joint_1.stdout",
+      "returncode": 0,
+      "last_saved_generation": "30000"
+    },
+    "joint_2": {
+      "pid": 69243,
+      "script": "joint_2.Rev",
+      "stdout": "joint_2.stdout",
+      "returncode": 0,
+      "last_saved_generation": "30000"
+    }
+  },
+  "input_sha256": {
+    "model.Rev": "02e362e2b5ed1863ff9afcdaaa93d436cfe7046221a8fc2f0633f8b79e64c9c9",
+    "fixed_tree.Rev": "b7e1396c51aa14cd905151f41ee8176c7361aba3a824d7b4dcf99f945cefec80",
+    "joint_1.Rev": "5c94de5aaab17fc3590f19c5e43e03284fa406e1eee99240d344f7ace3866f84",
+    "joint_2.Rev": "8459a35fe6db6c1d0fbf9bf9e2eadcc69eedb63aa1c5578c55385e27e6f20248",
+    "data/manifest.json": "7034c8feb129689148f6c9e2586af06ecbe197c235e51e9d2c690cc565cd70b7",
+    "data/morphology.nex": "bf9c1e7044678cb4f72aead9a13a12dd1835b34ba419e56654041a0e672a6654"
+  },
+  "updated": "2026-10-01T09:51:42.599266+02:00",
+  "failures": []
+}

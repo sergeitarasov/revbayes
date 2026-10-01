@@ -1,0 +1,176 @@
+{
+  "tree": {
+    "age": 2.776391517580112,
+    "children": [
+      {
+        "age": 2.761289549425623,
+        "children": [
+          {
+            "age": 0,
+            "species": 1
+          },
+          {
+            "age": 0.7734407928498479,
+            "children": [
+              {
+                "age": 0,
+                "species": 4
+              },
+              {
+                "age": 0,
+                "species": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "age": 2.4414886890494687,
+        "children": [
+          {
+            "age": 1.8809711164019678,
+            "children": [
+              {
+                "age": 1.7746906209100728,
+                "species": 2
+              },
+              {
+                "age": 0,
+                "species": 8
+              }
+            ]
+          },
+          {
+            "age": 0.1498440354241488,
+            "species": 7
+          }
+        ]
+      }
+    ]
+  },
+  "species": [
+    {
+      "species_id": "sp1",
+      "species_number": 1,
+      "structural_attachment_age": 3,
+      "oldest_observation_age": 2.504910997630459,
+      "endpoint_age": 0,
+      "true_species_birth_age": 3.0,
+      "extinct": false,
+      "sampled_present": false,
+      "fossil_count": 3
+    },
+    {
+      "species_id": "sp2",
+      "species_number": 2,
+      "structural_attachment_age": 2.776391517580112,
+      "oldest_observation_age": 2.614691614282314,
+      "endpoint_age": 1.7746906209100728,
+      "true_species_birth_age": 2.776391517580112,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp4",
+      "species_number": 4,
+      "structural_attachment_age": 2.761289549425623,
+      "oldest_observation_age": 0.35123237737846447,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.748379149416287,
+      "extinct": false,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp7",
+      "species_number": 7,
+      "structural_attachment_age": 2.4414886890494687,
+      "oldest_observation_age": 1.5214974492329403,
+      "endpoint_age": 0.1498440354241488,
+      "true_species_birth_age": 2.4414886890494687,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp8",
+      "species_number": 8,
+      "structural_attachment_age": 1.8809711164019678,
+      "oldest_observation_age": 0.7286290967018241,
+      "endpoint_age": 0,
+      "true_species_birth_age": 1.8809711164019678,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp10",
+      "species_number": 10,
+      "structural_attachment_age": 0.7734407928498479,
+      "oldest_observation_age": 0.07603802007315608,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.7734407928498479,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    }
+  ],
+  "kernel_events": [
+    [
+      2.776391517580112,
+      "Birth"
+    ],
+    [
+      2.761289549425623,
+      "Birth"
+    ],
+    [
+      2.614691614282314,
+      "Protect"
+    ],
+    [
+      2.504910997630459,
+      "Protect"
+    ],
+    [
+      2.4414886890494687,
+      "Birth"
+    ],
+    [
+      1.8809711164019678,
+      "Birth"
+    ],
+    [
+      1.7746906209100728,
+      "Death"
+    ],
+    [
+      1.5214974492329403,
+      "Protect"
+    ],
+    [
+      0.7734407928498479,
+      "Birth"
+    ],
+    [
+      0.7286290967018241,
+      "Protect"
+    ],
+    [
+      0.35123237737846447,
+      "Protect"
+    ],
+    [
+      0.1498440354241488,
+      "Death"
+    ],
+    [
+      0.07603802007315608,
+      "Protect"
+    ]
+  ],
+  "fossilRecords": 9,
+  "sampledLiving": 2,
+  "unsampledLiving": 2
+}

@@ -1,0 +1,17 @@
+{
+  "seed": 7,
+  "origin": 3,
+  "parameters": {
+    "lambda0": 0.8,
+    "alpha": 0.15,
+    "mu": 0.25,
+    "psi": 0.7,
+    "rho": 0.8
+  },
+  "selection": "unconditional",
+  "observed_species": 6,
+  "fossils": 9,
+  "complete_history_log_density": -41.17103054908989,
+  "no_observations": false,
+  "newick_notes": "A child first, D child second. Root branch is the origin stem. Use JSON node ages/endpoint ages; a generic fossil-only Newick importer may translate ages."
+}

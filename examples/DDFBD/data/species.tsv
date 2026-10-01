@@ -1,0 +1,4 @@
+species_id	living	sampled_extant	initial_endpoint_age
+A	true	true	0.0
+B	false	false	0.4
+C	true	true	0.0

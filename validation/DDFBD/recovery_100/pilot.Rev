@@ -1,0 +1,11 @@
+seed(32001)
+joint = true
+prefix = "pilot"
+burnin_generations = 0
+generations = 10
+start_lambda = 0.55
+start_alpha = 0.008
+start_mu = 0.1
+start_psi = 0.2
+source("model.Rev")
+q()

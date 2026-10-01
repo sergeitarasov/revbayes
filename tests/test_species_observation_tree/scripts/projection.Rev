@@ -1,0 +1,14 @@
+# Run from tests/test_species_observation_tree with the newly built rb binary.
+species_tree <- readTrees("data/species.tre")[1]
+observations := fnSpeciesObservationTree(species_tree,
+    sampleNames=v("A_old", "A_mid", "A_now", "B_fossil"),
+    speciesNames=v("A", "A", "A", "B"), ages=v(7.0, 3.0, 0.0, 2.0))
+if (observations.ntips() != 4) { stop("Wrong observation count") }
+if (observations.rootAge() != 7.0) { stop("Initial stem sample lost") }
+if (observations.numSampledAncestors() != 2) { stop("Serial sampled ancestors lost") }
+if (observations.nodeAge(1) != 7.0) { stop("Sample index or age mismatch") }
+if (observations.nodeAge(2) != 3.0) { stop("Sample index or age mismatch") }
+if (observations.nodeAge(3) != 0.0) { stop("Living sample age mismatch") }
+if (observations.nodeAge(4) != 2.0) { stop("Fossil attached at extinction instead of sampling") }
+print("Species observation tree Rev projection checks passed")
+q()

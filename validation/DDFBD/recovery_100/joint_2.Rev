@@ -1,0 +1,11 @@
+seed(32004)
+joint = true
+prefix = "joint_2"
+burnin_generations = 5000
+generations = 30000
+start_lambda = 1.2
+start_alpha = 0.025
+start_mu = 0.3
+start_psi = 0.5
+source("model.Rev")
+q()

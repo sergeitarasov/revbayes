@@ -1,0 +1,102 @@
+# Synthetic recovery pilot: known origin, rho, character clock, ages and status.
+initial_tree <- readTrees("data/extended_tree.nwk")[1]
+occ_species <- v("sp1","sp1","sp1","sp1","sp5","sp1","sp9","sp1","sp2","sp5","sp22","sp20","sp7","sp13","sp13","sp32","sp19","sp41","sp36","sp29","sp16","sp33","sp29","sp14","sp38","sp37","sp46","sp44","sp24","sp52","sp11","sp53","sp27","sp58","sp2","sp18","sp64","sp37","sp7","sp45","sp35","sp35","sp15","sp44","sp56","sp1","sp29","sp19","sp86","sp5","sp67","sp88","sp27","sp78","sp67","sp57","sp10","sp38","sp96","sp61","sp54","sp86","sp94","sp66","sp75","sp47","sp18","sp68","sp80","sp103","sp4","sp69","sp62","sp11","sp68","sp49","sp51","sp80","sp18","sp58","sp100","sp90","sp29","sp73","sp97","sp22","sp115","sp69","sp111","sp10","sp4","sp35","sp73","sp58","sp47","sp52","sp16","sp57","sp79","sp4","sp74","sp99","sp46","sp65","sp83")
+occ_ages <- v(9.5939184903688428,8.8761372858929981,8.7722970363928461,7.4260426032675886,7.1443588143697196,6.7582167625210436,6.2651796034085869,6.0460227066148224,5.4615615265091941,5.4483665448847391,5.3876542788342237,5.3700319737607396,5.3447367168272164,5.1768739265212007,5.1019447406748899,4.9707380185878298,4.7806633150933076,4.7005762390394441,4.6608971863927593,4.5673323871523124,4.5553130670451987,4.463284980454354,4.4005579971485727,4.241642010355184,4.195398359831457,4.0927059297888473,4.0271683820667574,4.021362068523441,4.0137554497211312,3.9425290445909731,3.753335852086666,3.6982823585529747,3.5667937000996108,3.4845866057602759,3.4014258141003335,3.2074822780620309,3.1692769284418496,3.1479228897807001,3.0829301441721295,3.0553924465606865,3.0237049195274697,2.829414611430229,2.8043082216460196,2.8039857701033508,2.7566635835737507,2.6577493444705986,2.610618614461405,2.566092904984437,2.5423728749792627,2.5151679435357668,2.452139580678601,2.4436198678936147,2.4337194292628368,2.4148602429124804,2.3519635831021155,2.2721372368968122,2.2266223988375788,2.1707285761148487,2.1623170918772736,2.1285278930062024,2.0184507132250182,1.9614838126930163,1.9482243487888145,1.9471548519888824,1.8600701628031597,1.7136161355472428,1.6480921325867524,1.6102197570581875,1.5733717741132143,1.4655247150442534,1.3807229751139367,1.3489419251655477,1.3022982066816216,1.2955962247333606,1.269971204637681,1.2451542973151675,1.1996599886886976,1.1387000317144924,1.0915888465597501,1.0650423009670948,1.0631435901901085,1.0375003497844926,0.96804523467967485,0.95684977874256916,0.95249113379973416,0.93745314674526625,0.90356711791814526,0.90078144154126782,0.82596585227124564,0.81775198431212459,0.81564559941978665,0.75735572204498069,0.61518110848057006,0.59547297996335224,0.56471593431076705,0.50965488731960029,0.48635836562749191,0.48192639512466151,0.39312680290528235,0.34266885568257166,0.29767223883290761,0.26529386317292669,0.13679839273422445,0.10870481254847597,0.084506904344261002)
+sample_names <- v("occ1","occ2","occ3","occ4","occ5","occ6","occ7","occ8","occ9","occ10","occ11","occ12","occ13","occ14","occ15","occ16","occ17","occ18","occ19","occ20","occ21","occ22","occ23","occ24","occ25","occ26","occ27","occ28","occ29","occ30","occ31","occ32","occ33","occ34","occ35","occ36","occ37","occ38","occ39","occ40","occ41","occ42","occ43","occ44","occ45","occ46","occ47","occ48","occ49","occ50","occ51","occ52","occ53","occ54","occ55","occ56","occ57","occ58","occ59","occ60","occ61","occ62","occ63","occ64","occ65","occ66","occ67","occ68","occ69","occ70","occ71","occ72","occ73","occ74","occ75","occ76","occ77","occ78","occ79","occ80","occ81","occ82","occ83","occ84","occ85","occ86","occ87","occ88","occ89","occ90","occ91","occ92","occ93","occ94","occ95","occ96","occ97","occ98","occ99","occ100","occ101","occ102","occ103","occ104","occ105","sp3_now","sp4_now","sp15_now","sp16_now","sp19_now","sp20_now","sp27_now","sp31_now","sp39_now","sp45_now","sp46_now","sp49_now","sp51_now","sp58_now","sp61_now","sp62_now","sp63_now","sp64_now","sp68_now","sp72_now","sp73_now","sp74_now","sp77_now","sp78_now","sp79_now","sp80_now","sp82_now","sp83_now","sp85_now","sp86_now","sp87_now","sp88_now","sp89_now","sp90_now","sp94_now","sp95_now","sp97_now","sp98_now","sp99_now","sp101_now","sp102_now","sp104_now","sp108_now","sp109_now","sp112_now","sp114_now","sp115_now","sp116_now","sp117_now","sp118_now","sp120_now","sp122_now","sp123_now","sp125_now","sp127_now","sp128_now","sp129_now","sp130_now","sp131_now","sp132_now","sp133_now","sp134_now","sp135_now","sp137_now")
+sample_species <- v("sp1","sp1","sp1","sp1","sp5","sp1","sp9","sp1","sp2","sp5","sp22","sp20","sp7","sp13","sp13","sp32","sp19","sp41","sp36","sp29","sp16","sp33","sp29","sp14","sp38","sp37","sp46","sp44","sp24","sp52","sp11","sp53","sp27","sp58","sp2","sp18","sp64","sp37","sp7","sp45","sp35","sp35","sp15","sp44","sp56","sp1","sp29","sp19","sp86","sp5","sp67","sp88","sp27","sp78","sp67","sp57","sp10","sp38","sp96","sp61","sp54","sp86","sp94","sp66","sp75","sp47","sp18","sp68","sp80","sp103","sp4","sp69","sp62","sp11","sp68","sp49","sp51","sp80","sp18","sp58","sp100","sp90","sp29","sp73","sp97","sp22","sp115","sp69","sp111","sp10","sp4","sp35","sp73","sp58","sp47","sp52","sp16","sp57","sp79","sp4","sp74","sp99","sp46","sp65","sp83","sp3","sp4","sp15","sp16","sp19","sp20","sp27","sp31","sp39","sp45","sp46","sp49","sp51","sp58","sp61","sp62","sp63","sp64","sp68","sp72","sp73","sp74","sp77","sp78","sp79","sp80","sp82","sp83","sp85","sp86","sp87","sp88","sp89","sp90","sp94","sp95","sp97","sp98","sp99","sp101","sp102","sp104","sp108","sp109","sp112","sp114","sp115","sp116","sp117","sp118","sp120","sp122","sp123","sp125","sp127","sp128","sp129","sp130","sp131","sp132","sp133","sp134","sp135","sp137")
+sample_ages <- v(9.5939184903688428,8.8761372858929981,8.7722970363928461,7.4260426032675886,7.1443588143697196,6.7582167625210436,6.2651796034085869,6.0460227066148224,5.4615615265091941,5.4483665448847391,5.3876542788342237,5.3700319737607396,5.3447367168272164,5.1768739265212007,5.1019447406748899,4.9707380185878298,4.7806633150933076,4.7005762390394441,4.6608971863927593,4.5673323871523124,4.5553130670451987,4.463284980454354,4.4005579971485727,4.241642010355184,4.195398359831457,4.0927059297888473,4.0271683820667574,4.021362068523441,4.0137554497211312,3.9425290445909731,3.753335852086666,3.6982823585529747,3.5667937000996108,3.4845866057602759,3.4014258141003335,3.2074822780620309,3.1692769284418496,3.1479228897807001,3.0829301441721295,3.0553924465606865,3.0237049195274697,2.829414611430229,2.8043082216460196,2.8039857701033508,2.7566635835737507,2.6577493444705986,2.610618614461405,2.566092904984437,2.5423728749792627,2.5151679435357668,2.452139580678601,2.4436198678936147,2.4337194292628368,2.4148602429124804,2.3519635831021155,2.2721372368968122,2.2266223988375788,2.1707285761148487,2.1623170918772736,2.1285278930062024,2.0184507132250182,1.9614838126930163,1.9482243487888145,1.9471548519888824,1.8600701628031597,1.7136161355472428,1.6480921325867524,1.6102197570581875,1.5733717741132143,1.4655247150442534,1.3807229751139367,1.3489419251655477,1.3022982066816216,1.2955962247333606,1.269971204637681,1.2451542973151675,1.1996599886886976,1.1387000317144924,1.0915888465597501,1.0650423009670948,1.0631435901901085,1.0375003497844926,0.96804523467967485,0.95684977874256916,0.95249113379973416,0.93745314674526625,0.90356711791814526,0.90078144154126782,0.82596585227124564,0.81775198431212459,0.81564559941978665,0.75735572204498069,0.61518110848057006,0.59547297996335224,0.56471593431076705,0.50965488731960029,0.48635836562749191,0.48192639512466151,0.39312680290528235,0.34266885568257166,0.29767223883290761,0.26529386317292669,0.13679839273422445,0.10870481254847597,0.084506904344261002,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+extant <- v("sp3","sp4","sp15","sp16","sp19","sp20","sp27","sp31","sp39","sp45","sp46","sp49","sp51","sp58","sp61","sp62","sp63","sp64","sp68","sp72","sp73","sp74","sp77","sp78","sp79","sp80","sp82","sp83","sp85","sp86","sp87","sp88","sp89","sp90","sp94","sp95","sp97","sp98","sp99","sp101","sp102","sp104","sp108","sp109","sp112","sp114","sp115","sp116","sp117","sp118","sp120","sp122","sp123","sp125","sp127","sp128","sp129","sp130","sp131","sp132","sp133","sp134","sp135","sp137")
+origin <- 12.0
+rho <- 0.8
+clock <- 0.2
+moves = VectorMoves()
+lambda0 ~ dnExponential(1.0)
+alpha ~ dnExponential(50.0)
+mu ~ dnExponential(3.0)
+psi ~ dnExponential(2.0)
+lambda0.setValue(start_lambda)
+alpha.setValue(start_alpha)
+mu.setValue(start_mu)
+psi.setValue(start_psi)
+moves.append(mvScale(lambda0,lambda=0.5,weight=1))
+moves.append(mvScale(alpha,lambda=0.5,weight=1))
+moves.append(mvScale(mu,lambda=0.5,weight=1))
+moves.append(mvScale(psi,lambda=0.5,weight=1))
+species_tree ~ dnDDFBD(originAge=origin,lambda0=lambda0,alpha=alpha,mu=mu,psi=psi,rho=rho,
+    occurrenceSpecies=occ_species,occurrenceAges=occ_ages,sampledExtant=extant,
+    initialTree=initial_tree,condition="none",maxHiddenLineages=128,numericalTolerance=1e-11)
+observation_tree := fnSpeciesObservationTree(species_tree,sampleNames=sample_names,speciesNames=sample_species,ages=sample_ages)
+morph <- readDiscreteCharacterData("data/morphology.nex")
+characters ~ dnPhyloCTMC(tree=observation_tree,Q=fnJC(2),branchRates=clock,type="Standard",coding="all")
+characters.clamp(morph)
+endpoint_min <- 0.0
+if (joint) {
+    moves.append(mvOrderedTreeSwap(species_tree,weight=2))
+    moves.append(mvNodeTimeSlideUniform(species_tree,weight=3))
+    moves.append(mvRootTimeSlideUniform(species_tree,origin=origin,weight=1))
+}
+youngest_sp1 <- 2.6577493444705986
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp1",min=endpoint_min,max=youngest_sp1,delta=0.5,weight=0.1)) }
+youngest_sp2 <- 3.4014258141003335
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp2",min=endpoint_min,max=youngest_sp2,delta=0.5,weight=0.1)) }
+youngest_sp5 <- 2.5151679435357668
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp5",min=endpoint_min,max=youngest_sp5,delta=0.5,weight=0.1)) }
+youngest_sp7 <- 3.0829301441721295
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp7",min=endpoint_min,max=youngest_sp7,delta=0.5,weight=0.1)) }
+youngest_sp9 <- 6.2651796034085869
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp9",min=endpoint_min,max=youngest_sp9,delta=0.5,weight=0.1)) }
+youngest_sp11 <- 1.2955962247333606
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp11",min=endpoint_min,max=youngest_sp11,delta=0.5,weight=0.1)) }
+youngest_sp13 <- 5.1019447406748899
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp13",min=endpoint_min,max=youngest_sp13,delta=0.5,weight=0.1)) }
+youngest_sp14 <- 4.241642010355184
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp14",min=endpoint_min,max=youngest_sp14,delta=0.5,weight=0.1)) }
+youngest_sp18 <- 1.0915888465597501
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp18",min=endpoint_min,max=youngest_sp18,delta=0.5,weight=0.1)) }
+youngest_sp24 <- 4.0137554497211312
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp24",min=endpoint_min,max=youngest_sp24,delta=0.5,weight=0.1)) }
+youngest_sp29 <- 0.96804523467967485
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp29",min=endpoint_min,max=youngest_sp29,delta=0.5,weight=0.1)) }
+youngest_sp33 <- 4.463284980454354
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp33",min=endpoint_min,max=youngest_sp33,delta=0.5,weight=0.1)) }
+youngest_sp36 <- 4.6608971863927593
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp36",min=endpoint_min,max=youngest_sp36,delta=0.5,weight=0.1)) }
+youngest_sp37 <- 3.1479228897807001
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp37",min=endpoint_min,max=youngest_sp37,delta=0.5,weight=0.1)) }
+youngest_sp41 <- 4.7005762390394441
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp41",min=endpoint_min,max=youngest_sp41,delta=0.5,weight=0.1)) }
+youngest_sp44 <- 2.8039857701033508
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp44",min=endpoint_min,max=youngest_sp44,delta=0.5,weight=0.1)) }
+youngest_sp47 <- 0.56471593431076705
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp47",min=endpoint_min,max=youngest_sp47,delta=0.5,weight=0.1)) }
+youngest_sp52 <- 0.50965488731960029
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp52",min=endpoint_min,max=youngest_sp52,delta=0.5,weight=0.1)) }
+youngest_sp53 <- 3.6982823585529747
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp53",min=endpoint_min,max=youngest_sp53,delta=0.5,weight=0.1)) }
+youngest_sp54 <- 2.0184507132250182
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp54",min=endpoint_min,max=youngest_sp54,delta=0.5,weight=0.1)) }
+youngest_sp56 <- 2.7566635835737507
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp56",min=endpoint_min,max=youngest_sp56,delta=0.5,weight=0.1)) }
+youngest_sp57 <- 0.48192639512466151
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp57",min=endpoint_min,max=youngest_sp57,delta=0.5,weight=0.1)) }
+youngest_sp66 <- 1.9471548519888824
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp66",min=endpoint_min,max=youngest_sp66,delta=0.5,weight=0.1)) }
+youngest_sp67 <- 2.3519635831021155
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp67",min=endpoint_min,max=youngest_sp67,delta=0.5,weight=0.1)) }
+youngest_sp69 <- 0.90078144154126782
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp69",min=endpoint_min,max=youngest_sp69,delta=0.5,weight=0.1)) }
+youngest_sp96 <- 2.1623170918772736
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp96",min=endpoint_min,max=youngest_sp96,delta=0.5,weight=0.1)) }
+youngest_sp100 <- 1.0631435901901085
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp100",min=endpoint_min,max=youngest_sp100,delta=0.5,weight=0.1)) }
+youngest_sp103 <- 1.4655247150442534
+if (joint) { moves.append(mvTipTimeSlideUniform(species_tree,tip="sp103",min=endpoint_min,max=youngest_sp103,delta=0.5,weight=0.1)) }
+joint_model = model(species_tree,endpoint_min,youngest_sp1,youngest_sp2,youngest_sp5,youngest_sp7,youngest_sp9,youngest_sp11,youngest_sp13,youngest_sp14,youngest_sp18,youngest_sp24,youngest_sp29,youngest_sp33,youngest_sp36,youngest_sp37,youngest_sp41,youngest_sp44,youngest_sp47,youngest_sp52,youngest_sp53,youngest_sp54,youngest_sp56,youngest_sp57,youngest_sp66,youngest_sp67,youngest_sp69,youngest_sp96,youngest_sp100,youngest_sp103)
+monitors = VectorMonitors()
+monitors.append(mnModel(filename="output/"+prefix+".log",printgen=10))
+monitors.append(mnFile(filename="output/"+prefix+".trees",printgen=100,species_tree))
+analysis = mcmc(joint_model,monitors,moves)
+if (burnin_generations > 0) { analysis.burnin(generations=burnin_generations,tuningInterval=200) }
+analysis.run(generations=generations,checkpointFile="output/"+prefix+".state",checkpointInterval=1000)
+analysis.operatorSummary()
+print("RECOVERY_CHAIN_COMPLETE")

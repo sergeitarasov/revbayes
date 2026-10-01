@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "date": "2026-10-01",
+  "trees": 100,
+  "parameter_point_checks": 300,
+  "actual_Rev_checks": 481,
+  "actual_Rev_max_error": 5.1692e-12,
+  "max_parameter_point_error": 2.20978790821391e-12,
+  "max_fitted_lnL_difference": 7.92610421740392e-12,
+  "max_fitted_lambda_difference": 2.11610946854179e-06,
+  "max_fit_cutoff_change": 2.06057393370429e-13,
+  "lower_bound_fits": 11,
+  "upper_bound_fits": 3,
+  "reference": "DDD 5.2.5",
+  "kernel_sha256": "e5d16ee754a6bb40b881e9f51ba837ba3c588cbd4534a97d7432744150570e06",
+  "rb_sha256": "bcda2e600fd567d937aa545555d8b857b541caee8b1bdf5ba94580e27c776e8d",
+  "inputs_sha256": {
+    "group_summary.tsv": "a053b06dc4e045b8afb763a32095a19ec6fc31c903a4ad2061558616405d67e5",
+    "fits.tsv": "8c8797799138adf1880bae22a15e46d09b98d9ad619e08b7699706622425e59f",
+    "illustrative_diversity.tsv": "4cf7cd444c5fc8d2b5f6a95fc12bf0db710b9bab9312b64f8f36eaefaffcde3f",
+    "likelihood_comparisons.tsv": "93c53a32ec5e84ebe538b842c4fbb725d97d379e5fd81810a19e46739e56235b",
+    "simulations.tsv": "20928f2e47e717bf450807f08c9e894a9a0eaf9e6559b9db03deeb55f4ab18f0",
+    "likelihood_profile.tsv": "c76d3edcd6157e150a8fb7d22b36a10af59604761102939eba8bf2be485fa278",
+    "illustrative_metadata.tsv": "651919691ebe6cd1df97bfcd9c0061d247d366a4c3fb5350bb15a35dad271d76"
+  },
+  "scripts_sha256": {
+    "simulate_and_compare.R": "61b8a537f11d484c98e77a97af0594967f5efba75a515004cc4fbd59d6626830",
+    "build_report.py": "17ed2e33322668c428e068f6f0ede01836fa56bea1bd31fc1aa59bcc93146f22",
+    "make_figures.R": "6d98255c13a82ec0a4e5e2cd5307a9d67e5c7868bacf11e1b545e76cc1955803"
+  },
+  "scope": "Crown-conditioned complete extant trees. Only lambda0 fitted; mu and K fixed. Pilot, not joint recovery or FBD validation.",
+  "report_pages": 11,
+  "report_sha256": "9f2ab3f31c8166bf35179bb89f69187fec5d08c6daac1a053330d27d04062926"
+}

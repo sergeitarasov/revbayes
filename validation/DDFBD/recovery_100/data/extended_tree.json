@@ -1,0 +1,2912 @@
+{
+  "tree": {
+    "age": 8.238071354952872,
+    "children": [
+      {
+        "age": 7.994790361538021,
+        "children": [
+          {
+            "age": 7.406894140755852,
+            "children": [
+              {
+                "age": 6.8320806042171425,
+                "children": [
+                  {
+                    "age": 6.504568544169904,
+                    "children": [
+                      {
+                        "age": 5.614090152519052,
+                        "children": [
+                          {
+                            "age": 0.4899541318424454,
+                            "species": 1
+                          },
+                          {
+                            "age": 0,
+                            "species": 22
+                          }
+                        ]
+                      },
+                      {
+                        "age": 5.9501334804078105,
+                        "children": [
+                          {
+                            "age": 1.037964629540891,
+                            "children": [
+                              {
+                                "age": 0.8692685165668035,
+                                "species": 13
+                              },
+                              {
+                                "age": 0,
+                                "species": 115
+                              }
+                            ]
+                          },
+                          {
+                            "age": 4.186328879368117,
+                            "children": [
+                              {
+                                "age": 0,
+                                "species": 19
+                              },
+                              {
+                                "age": 0.04291059269033326,
+                                "species": 47
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "age": 5.453630046045648,
+                    "children": [
+                      {
+                        "age": 5.011847647041901,
+                        "children": [
+                          {
+                            "age": 4.999989454052145,
+                            "children": [
+                              {
+                                "age": 0.377898392136645,
+                                "species": 9
+                              },
+                              {
+                                "age": 1.9206114044852782,
+                                "children": [
+                                  {
+                                    "age": 0.8691921918070236,
+                                    "species": 37
+                                  },
+                                  {
+                                    "age": 0.5452508514179009,
+                                    "children": [
+                                      {
+                                        "age": 0,
+                                        "species": 102
+                                      },
+                                      {
+                                        "age": 0,
+                                        "species": 123
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "age": 3.3923673834888017,
+                            "species": 36
+                          }
+                        ]
+                      },
+                      {
+                        "age": 3.8888932541881776,
+                        "children": [
+                          {
+                            "age": 3.136067468973202,
+                            "species": 41
+                          },
+                          {
+                            "age": 0.3352622226007025,
+                            "species": 57
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "age": 6.756952169748355,
+                "children": [
+                  {
+                    "age": 5.812132890543089,
+                    "children": [
+                      {
+                        "age": 2.7842483363057493,
+                        "children": [
+                          {
+                            "age": 0.2569006542414698,
+                            "species": 33
+                          },
+                          {
+                            "age": 0,
+                            "species": 80
+                          }
+                        ]
+                      },
+                      {
+                        "age": 5.467778357488265,
+                        "children": [
+                          {
+                            "age": 3.8750534215506995,
+                            "children": [
+                              {
+                                "age": 3.292357387377603,
+                                "children": [
+                                  {
+                                    "age": 0.03309583065332511,
+                                    "children": [
+                                      {
+                                        "age": 0,
+                                        "species": 20
+                                      },
+                                      {
+                                        "age": 0,
+                                        "species": 135
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "age": 2.8019765073709237,
+                                    "children": [
+                                      {
+                                        "age": 0.963847480654108,
+                                        "species": 67
+                                      },
+                                      {
+                                        "age": 0,
+                                        "species": 78
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "age": 0,
+                                "species": 58
+                              }
+                            ]
+                          },
+                          {
+                            "age": 3.6351540499529253,
+                            "children": [
+                              {
+                                "age": 3.4201269676364827,
+                                "children": [
+                                  {
+                                    "age": 1.2783008892542895,
+                                    "species": 24
+                                  },
+                                  {
+                                    "age": 2.588289683568311,
+                                    "children": [
+                                      {
+                                        "age": 0.899686534422564,
+                                        "children": [
+                                          {
+                                            "age": 0.14404827317733648,
+                                            "children": [
+                                              {
+                                                "age": 0,
+                                                "species": 65
+                                              },
+                                              {
+                                                "age": 0,
+                                                "species": 130
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "age": 0,
+                                            "species": 116
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "age": 0.19747520593993606,
+                                        "children": [
+                                          {
+                                            "age": 0,
+                                            "species": 86
+                                          },
+                                          {
+                                            "age": 0,
+                                            "species": 127
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "age": 0.5725925786575328,
+                                "children": [
+                                  {
+                                    "age": 0.28568277257086727,
+                                    "children": [
+                                      {
+                                        "age": 0,
+                                        "species": 62
+                                      },
+                                      {
+                                        "age": 0,
+                                        "species": 137
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "age": 0,
+                                    "species": 122
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "age": 5.370795506587707,
+                    "children": [
+                      {
+                        "age": 3.593185925466795,
+                        "children": [
+                          {
+                            "age": 0.0589711929122263,
+                            "children": [
+                              {
+                                "age": 0,
+                                "species": 10
+                              },
+                              {
+                                "age": 0,
+                                "species": 132
+                              }
+                            ]
+                          },
+                          {
+                            "age": 1.272459967909425,
+                            "children": [
+                              {
+                                "age": 0,
+                                "species": 63
+                              },
+                              {
+                                "age": 0,
+                                "species": 111
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "age": 0.08535503131679256,
+                        "children": [
+                          {
+                            "age": 0,
+                            "species": 90
+                          },
+                          {
+                            "age": 0,
+                            "species": 131
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "age": 7.608564645763629,
+            "children": [
+              {
+                "age": 6.99367076698329,
+                "children": [
+                  {
+                    "age": 6.122423800288387,
+                    "children": [
+                      {
+                        "age": 5.3847425707559236,
+                        "children": [
+                          {
+                            "age": 4.955277749473829,
+                            "children": [
+                              {
+                                "age": 3.257902849139903,
+                                "children": [
+                                  {
+                                    "age": 1.5000026399302513,
+                                    "children": [
+                                      {
+                                        "age": 0,
+                                        "species": 3
+                                      },
+                                      {
+                                        "age": 0,
+                                        "species": 133
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "age": 0,
+                                    "species": 68
+                                  }
+                                ]
+                              },
+                              {
+                                "age": 3.9603785050754965,
+                                "children": [
+                                  {
+                                    "age": 2.460487953609027,
+                                    "children": [
+                                      {
+                                        "age": 2.0736986972528513,
+                                        "children": [
+                                          {
+                                            "age": 0,
+                                            "species": 38
+                                          },
+                                          {
+                                            "age": 0,
+                                            "species": 99
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "age": 0.0440942794223016,
+                                        "children": [
+                                          {
+                                            "age": 0,
+                                            "species": 89
+                                          },
+                                          {
+                                            "age": 0,
+                                            "species": 134
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "age": 3.909358230476448,
+                                    "children": [
+                                      {
+                                        "age": 3.1611509478389728,
+                                        "species": 53
+                                      },
+                                      {
+                                        "age": 0.1049694137318582,
+                                        "species": 56
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "age": 4.428904852812122,
+                            "children": [
+                              {
+                                "age": 0,
+                                "species": 27
+                              },
+                              {
+                                "age": 0,
+                                "species": 45
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "age": 5.227366943625798,
+                        "children": [
+                          {
+                            "age": 5.141168478536442,
+                            "children": [
+                              {
+                                "age": 3.954104143036407,
+                                "children": [
+                                  {
+                                    "age": 2.404835223383726,
+                                    "species": 14
+                                  },
+                                  {
+                                    "age": 3.4993635144132664,
+                                    "children": [
+                                      {
+                                        "age": 1.668759678001095,
+                                        "species": 54
+                                      },
+                                      {
+                                        "age": 0.1868302148273031,
+                                        "children": [
+                                          {
+                                            "age": 0,
+                                            "species": 64
+                                          },
+                                          {
+                                            "age": 0,
+                                            "species": 128
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "age": 5.057428673232581,
+                                "children": [
+                                  {
+                                    "age": 4.954425683438707,
+                                    "children": [
+                                      {
+                                        "age": 0,
+                                        "species": 32
+                                      },
+                                      {
+                                        "age": 4.619719620765872,
+                                        "children": [
+                                          {
+                                            "age": 3.171179733611165,
+                                            "children": [
+                                              {
+                                                "age": 0,
+                                                "species": 39
+                                              },
+                                              {
+                                                "age": 0.20226401256709714,
+                                                "species": 69
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "age": 4.003801551652701,
+                                            "children": [
+                                              {
+                                                "age": 0,
+                                                "species": 94
+                                              },
+                                              {
+                                                "age": 3.7802201234351642,
+                                                "children": [
+                                                  {
+                                                    "age": 1.1643778069950592,
+                                                    "children": [
+                                                      {
+                                                        "age": 0,
+                                                        "species": 51
+                                                      },
+                                                      {
+                                                        "age": 0,
+                                                        "species": 112
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "age": 0,
+                                                    "species": 61
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "age": 4.900642792399414,
+                                    "children": [
+                                      {
+                                        "age": 2.6401898757854987,
+                                        "children": [
+                                          {
+                                            "age": 0,
+                                            "species": 35
+                                          },
+                                          {
+                                            "age": 2.193024131294024,
+                                            "children": [
+                                              {
+                                                "age": 0,
+                                                "species": 82
+                                              },
+                                              {
+                                                "age": 0,
+                                                "species": 95
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "age": 1.9286522718470618,
+                                        "children": [
+                                          {
+                                            "age": 0,
+                                            "species": 46
+                                          },
+                                          {
+                                            "age": 0,
+                                            "species": 101
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "age": 0.7601766013016729,
+                            "children": [
+                              {
+                                "age": 0,
+                                "species": 77
+                              },
+                              {
+                                "age": 0,
+                                "species": 120
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "age": 5.241686396839034,
+                    "children": [
+                      {
+                        "age": 1.4496592321475195,
+                        "children": [
+                          {
+                            "age": 1.0802090368487303,
+                            "species": 11
+                          },
+                          {
+                            "age": 0,
+                            "species": 108
+                          }
+                        ]
+                      },
+                      {
+                        "age": 0.9332532642586582,
+                        "species": 29
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "age": 7.159753077035447,
+                "children": [
+                  {
+                    "age": 6.098578092682635,
+                    "children": [
+                      {
+                        "age": 5.0830315413445595,
+                        "children": [
+                          {
+                            "age": 0,
+                            "species": 4
+                          },
+                          {
+                            "age": 1.3164724060047401,
+                            "species": 44
+                          }
+                        ]
+                      },
+                      {
+                        "age": 0,
+                        "species": 15
+                      }
+                    ]
+                  },
+                  {
+                    "age": 2.5968151132277377,
+                    "children": [
+                      {
+                        "age": 2.1939267271971374,
+                        "species": 7
+                      },
+                      {
+                        "age": 2.5304856494085133,
+                        "children": [
+                          {
+                            "age": 0,
+                            "species": 85
+                          },
+                          {
+                            "age": 0,
+                            "species": 88
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "age": 7.499029610016146,
+        "children": [
+          {
+            "age": 6.06765469813573,
+            "children": [
+              {
+                "age": 5.216887016055356,
+                "children": [
+                  {
+                    "age": 2.9167209415438986,
+                    "species": 2
+                  },
+                  {
+                    "age": 2.1490723520298864,
+                    "children": [
+                      {
+                        "age": 0.15555688371451382,
+                        "children": [
+                          {
+                            "age": 0,
+                            "species": 31
+                          },
+                          {
+                            "age": 0,
+                            "species": 129
+                          }
+                        ]
+                      },
+                      {
+                        "age": 0,
+                        "species": 97
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "age": 6.003771396445581,
+                "children": [
+                  {
+                    "age": 0.7762899847021707,
+                    "children": [
+                      {
+                        "age": 0,
+                        "species": 16
+                      },
+                      {
+                        "age": 0,
+                        "species": 118
+                      }
+                    ]
+                  },
+                  {
+                    "age": 5.788431151342898,
+                    "children": [
+                      {
+                        "age": 4.082706690038699,
+                        "children": [
+                          {
+                            "age": 3.023853885410558,
+                            "children": [
+                              {
+                                "age": 0.7076518577166322,
+                                "species": 18
+                              },
+                              {
+                                "age": 0,
+                                "species": 73
+                              }
+                            ]
+                          },
+                          {
+                            "age": 2.93668548053731,
+                            "children": [
+                              {
+                                "age": 0,
+                                "species": 49
+                              },
+                              {
+                                "age": 0,
+                                "species": 75
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "age": 5.468471189079429,
+                        "children": [
+                          {
+                            "age": 0,
+                            "species": 98
+                          },
+                          {
+                            "age": 3.2982043660922873,
+                            "children": [
+                              {
+                                "age": 3.0745752647431512,
+                                "children": [
+                                  {
+                                    "age": 0.4050178790005745,
+                                    "species": 52
+                                  },
+                                  {
+                                    "age": 3.0217834957987257,
+                                    "children": [
+                                      {
+                                        "age": 2.6340679219484393,
+                                        "children": [
+                                          {
+                                            "age": 0,
+                                            "species": 72
+                                          },
+                                          {
+                                            "age": 0.8850657008063472,
+                                            "children": [
+                                              {
+                                                "age": 0,
+                                                "species": 83
+                                              },
+                                              {
+                                                "age": 0,
+                                                "species": 117
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "age": 0,
+                                        "species": 74
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "age": 2.798974819531164,
+                                "children": [
+                                  {
+                                    "age": 2.5377033877964053,
+                                    "children": [
+                                      {
+                                        "age": 1.4595488369616607,
+                                        "children": [
+                                          {
+                                            "age": 1.3702673333569848,
+                                            "children": [
+                                              {
+                                                "age": 1.3070032012248642,
+                                                "species": 66
+                                              },
+                                              {
+                                                "age": 0,
+                                                "species": 109
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "age": 1.1160369803285395,
+                                            "children": [
+                                              {
+                                                "age": 0,
+                                                "species": 125
+                                              },
+                                              {
+                                                "age": 0,
+                                                "species": 114
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "age": 1.6131147977088407,
+                                        "children": [
+                                          {
+                                            "age": 0,
+                                            "species": 87
+                                          },
+                                          {
+                                            "age": 0,
+                                            "species": 104
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "age": 0,
+                                    "species": 79
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "age": 2.6290322134663917,
+            "children": [
+              {
+                "age": 2.190165542459619,
+                "children": [
+                  {
+                    "age": 2.0484093196085595,
+                    "species": 5
+                  },
+                  {
+                    "age": 0.9773112401093975,
+                    "species": 96
+                  }
+                ]
+              },
+              {
+                "age": 1.8153040732963746,
+                "children": [
+                  {
+                    "age": 0.9474686904894813,
+                    "species": 100
+                  },
+                  {
+                    "age": 1.1086301598462711,
+                    "species": 103
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "species": [
+    {
+      "species_id": "sp1",
+      "species_number": 1,
+      "structural_attachment_age": 12,
+      "oldest_observation_age": 9.593918490368843,
+      "endpoint_age": 0.4899541318424454,
+      "true_species_birth_age": 12.0,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 7
+    },
+    {
+      "species_id": "sp2",
+      "species_number": 2,
+      "structural_attachment_age": 8.238071354952872,
+      "oldest_observation_age": 5.461561526509194,
+      "endpoint_age": 2.9167209415438986,
+      "true_species_birth_age": 8.238071354952872,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp3",
+      "species_number": 3,
+      "structural_attachment_age": 7.994790361538021,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 7.994790361538021,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp4",
+      "species_number": 4,
+      "structural_attachment_age": 7.608564645763629,
+      "oldest_observation_age": 1.3807229751139367,
+      "endpoint_age": 0,
+      "true_species_birth_age": 7.608564645763629,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 3
+    },
+    {
+      "species_id": "sp5",
+      "species_number": 5,
+      "structural_attachment_age": 7.499029610016146,
+      "oldest_observation_age": 7.14435881436972,
+      "endpoint_age": 2.0484093196085595,
+      "true_species_birth_age": 7.499029610016146,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 3
+    },
+    {
+      "species_id": "sp7",
+      "species_number": 7,
+      "structural_attachment_age": 7.159753077035447,
+      "oldest_observation_age": 5.344736716827216,
+      "endpoint_age": 2.1939267271971374,
+      "true_species_birth_age": 7.159753077035447,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp9",
+      "species_number": 9,
+      "structural_attachment_age": 6.8320806042171425,
+      "oldest_observation_age": 6.265179603408587,
+      "endpoint_age": 0.377898392136645,
+      "true_species_birth_age": 6.8320806042171425,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp10",
+      "species_number": 10,
+      "structural_attachment_age": 6.756952169748355,
+      "oldest_observation_age": 2.226622398837579,
+      "endpoint_age": 0,
+      "true_species_birth_age": 6.756952169748355,
+      "extinct": false,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp11",
+      "species_number": 11,
+      "structural_attachment_age": 6.99367076698329,
+      "oldest_observation_age": 3.753335852086666,
+      "endpoint_age": 1.0802090368487303,
+      "true_species_birth_age": 6.75367981270967,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp13",
+      "species_number": 13,
+      "structural_attachment_age": 6.504568544169904,
+      "oldest_observation_age": 5.176873926521201,
+      "endpoint_age": 0.8692685165668035,
+      "true_species_birth_age": 6.504568544169904,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp14",
+      "species_number": 14,
+      "structural_attachment_age": 6.122423800288387,
+      "oldest_observation_age": 4.241642010355184,
+      "endpoint_age": 2.404835223383726,
+      "true_species_birth_age": 6.122423800288387,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp15",
+      "species_number": 15,
+      "structural_attachment_age": 6.098578092682635,
+      "oldest_observation_age": 2.8043082216460196,
+      "endpoint_age": 0,
+      "true_species_birth_age": 6.098578092682635,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp16",
+      "species_number": 16,
+      "structural_attachment_age": 6.06765469813573,
+      "oldest_observation_age": 4.555313067045199,
+      "endpoint_age": 0,
+      "true_species_birth_age": 6.06765469813573,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp18",
+      "species_number": 18,
+      "structural_attachment_age": 6.003771396445581,
+      "oldest_observation_age": 3.207482278062031,
+      "endpoint_age": 0.7076518577166322,
+      "true_species_birth_age": 6.003771396445581,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 3
+    },
+    {
+      "species_id": "sp19",
+      "species_number": 19,
+      "structural_attachment_age": 5.9501334804078105,
+      "oldest_observation_age": 4.7806633150933076,
+      "endpoint_age": 0,
+      "true_species_birth_age": 5.9501334804078105,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp20",
+      "species_number": 20,
+      "structural_attachment_age": 5.812132890543089,
+      "oldest_observation_age": 5.37003197376074,
+      "endpoint_age": 0,
+      "true_species_birth_age": 5.812132890543089,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp22",
+      "species_number": 22,
+      "structural_attachment_age": 5.614090152519052,
+      "oldest_observation_age": 5.387654278834224,
+      "endpoint_age": 0,
+      "true_species_birth_age": 5.614090152519052,
+      "extinct": false,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp24",
+      "species_number": 24,
+      "structural_attachment_age": 5.467778357488265,
+      "oldest_observation_age": 4.013755449721131,
+      "endpoint_age": 1.2783008892542895,
+      "true_species_birth_age": 5.467778357488265,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp27",
+      "species_number": 27,
+      "structural_attachment_age": 5.3847425707559236,
+      "oldest_observation_age": 3.566793700099611,
+      "endpoint_age": 0,
+      "true_species_birth_age": 5.3847425707559236,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp29",
+      "species_number": 29,
+      "structural_attachment_age": 5.241686396839034,
+      "oldest_observation_age": 4.567332387152312,
+      "endpoint_age": 0.9332532642586582,
+      "true_species_birth_age": 5.241686396839034,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 4
+    },
+    {
+      "species_id": "sp31",
+      "species_number": 31,
+      "structural_attachment_age": 5.216887016055356,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 5.216887016055356,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp32",
+      "species_number": 32,
+      "structural_attachment_age": 5.141168478536442,
+      "oldest_observation_age": 4.97073801858783,
+      "endpoint_age": 0,
+      "true_species_birth_age": 5.141168478536442,
+      "extinct": false,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp33",
+      "species_number": 33,
+      "structural_attachment_age": 7.406894140755852,
+      "oldest_observation_age": 4.463284980454354,
+      "endpoint_age": 0.2569006542414698,
+      "true_species_birth_age": 5.133985206846708,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp35",
+      "species_number": 35,
+      "structural_attachment_age": 5.057428673232581,
+      "oldest_observation_age": 3.0237049195274697,
+      "endpoint_age": 0,
+      "true_species_birth_age": 5.057428673232581,
+      "extinct": false,
+      "sampled_present": false,
+      "fossil_count": 3
+    },
+    {
+      "species_id": "sp36",
+      "species_number": 36,
+      "structural_attachment_age": 5.011847647041901,
+      "oldest_observation_age": 4.660897186392759,
+      "endpoint_age": 3.3923673834888017,
+      "true_species_birth_age": 5.011847647041901,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp37",
+      "species_number": 37,
+      "structural_attachment_age": 4.999989454052145,
+      "oldest_observation_age": 4.092705929788847,
+      "endpoint_age": 0.8691921918070236,
+      "true_species_birth_age": 4.999989454052145,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp38",
+      "species_number": 38,
+      "structural_attachment_age": 4.955277749473829,
+      "oldest_observation_age": 4.195398359831457,
+      "endpoint_age": 0,
+      "true_species_birth_age": 4.955277749473829,
+      "extinct": false,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp39",
+      "species_number": 39,
+      "structural_attachment_age": 4.954425683438707,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 4.954425683438707,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp41",
+      "species_number": 41,
+      "structural_attachment_age": 5.453630046045648,
+      "oldest_observation_age": 4.700576239039444,
+      "endpoint_age": 3.136067468973202,
+      "true_species_birth_age": 4.8900585066011,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp44",
+      "species_number": 44,
+      "structural_attachment_age": 5.0830315413445595,
+      "oldest_observation_age": 4.021362068523441,
+      "endpoint_age": 1.3164724060047401,
+      "true_species_birth_age": 4.447327673422805,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp45",
+      "species_number": 45,
+      "structural_attachment_age": 4.428904852812122,
+      "oldest_observation_age": 3.0553924465606865,
+      "endpoint_age": 0,
+      "true_species_birth_age": 4.428904852812122,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp46",
+      "species_number": 46,
+      "structural_attachment_age": 4.900642792399414,
+      "oldest_observation_age": 4.027168382066757,
+      "endpoint_age": 0,
+      "true_species_birth_age": 4.425047846167718,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp47",
+      "species_number": 47,
+      "structural_attachment_age": 4.186328879368117,
+      "oldest_observation_age": 1.7136161355472428,
+      "endpoint_age": 0.04291059269033326,
+      "true_species_birth_age": 4.186328879368117,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp49",
+      "species_number": 49,
+      "structural_attachment_age": 4.082706690038699,
+      "oldest_observation_age": 1.2451542973151675,
+      "endpoint_age": 0,
+      "true_species_birth_age": 4.082706690038699,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp51",
+      "species_number": 51,
+      "structural_attachment_age": 4.003801551652701,
+      "oldest_observation_age": 1.1996599886886976,
+      "endpoint_age": 0,
+      "true_species_birth_age": 4.003801551652701,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp52",
+      "species_number": 52,
+      "structural_attachment_age": 5.468471189079429,
+      "oldest_observation_age": 3.942529044590973,
+      "endpoint_age": 0.4050178790005745,
+      "true_species_birth_age": 3.9840538770035288,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp53",
+      "species_number": 53,
+      "structural_attachment_age": 3.9603785050754965,
+      "oldest_observation_age": 3.6982823585529747,
+      "endpoint_age": 3.1611509478389728,
+      "true_species_birth_age": 3.9603785050754965,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp54",
+      "species_number": 54,
+      "structural_attachment_age": 3.954104143036407,
+      "oldest_observation_age": 2.0184507132250182,
+      "endpoint_age": 1.668759678001095,
+      "true_species_birth_age": 3.954104143036407,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp56",
+      "species_number": 56,
+      "structural_attachment_age": 3.909358230476448,
+      "oldest_observation_age": 2.7566635835737507,
+      "endpoint_age": 0.1049694137318582,
+      "true_species_birth_age": 3.909358230476448,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp57",
+      "species_number": 57,
+      "structural_attachment_age": 3.8888932541881776,
+      "oldest_observation_age": 2.2721372368968122,
+      "endpoint_age": 0.3352622226007025,
+      "true_species_birth_age": 3.8888932541881776,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp58",
+      "species_number": 58,
+      "structural_attachment_age": 3.8750534215506995,
+      "oldest_observation_age": 3.484586605760276,
+      "endpoint_age": 0,
+      "true_species_birth_age": 3.8750534215506995,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 3
+    },
+    {
+      "species_id": "sp61",
+      "species_number": 61,
+      "structural_attachment_age": 3.7802201234351642,
+      "oldest_observation_age": 2.1285278930062024,
+      "endpoint_age": 0,
+      "true_species_birth_age": 3.7802201234351642,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp62",
+      "species_number": 62,
+      "structural_attachment_age": 3.6351540499529253,
+      "oldest_observation_age": 1.3022982066816216,
+      "endpoint_age": 0,
+      "true_species_birth_age": 3.6351540499529253,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp63",
+      "species_number": 63,
+      "structural_attachment_age": 3.593185925466795,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 3.593185925466795,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp64",
+      "species_number": 64,
+      "structural_attachment_age": 3.4993635144132664,
+      "oldest_observation_age": 3.1692769284418496,
+      "endpoint_age": 0,
+      "true_species_birth_age": 3.4993635144132664,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp65",
+      "species_number": 65,
+      "structural_attachment_age": 3.4201269676364827,
+      "oldest_observation_age": 0.10870481254847597,
+      "endpoint_age": 0,
+      "true_species_birth_age": 3.4201269676364827,
+      "extinct": false,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp66",
+      "species_number": 66,
+      "structural_attachment_age": 3.2982043660922873,
+      "oldest_observation_age": 1.9471548519888824,
+      "endpoint_age": 1.3070032012248642,
+      "true_species_birth_age": 3.2982043660922873,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp67",
+      "species_number": 67,
+      "structural_attachment_age": 3.292357387377603,
+      "oldest_observation_age": 2.452139580678601,
+      "endpoint_age": 0.963847480654108,
+      "true_species_birth_age": 3.292357387377603,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp68",
+      "species_number": 68,
+      "structural_attachment_age": 3.257902849139903,
+      "oldest_observation_age": 1.6102197570581875,
+      "endpoint_age": 0,
+      "true_species_birth_age": 3.257902849139903,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp69",
+      "species_number": 69,
+      "structural_attachment_age": 3.171179733611165,
+      "oldest_observation_age": 1.3489419251655477,
+      "endpoint_age": 0.20226401256709714,
+      "true_species_birth_age": 3.171179733611165,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp72",
+      "species_number": 72,
+      "structural_attachment_age": 3.0745752647431512,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 3.0745752647431512,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp73",
+      "species_number": 73,
+      "structural_attachment_age": 3.023853885410558,
+      "oldest_observation_age": 0.9568497787425692,
+      "endpoint_age": 0,
+      "true_species_birth_age": 3.023853885410558,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp74",
+      "species_number": 74,
+      "structural_attachment_age": 3.0217834957987257,
+      "oldest_observation_age": 0.2976722388329076,
+      "endpoint_age": 0,
+      "true_species_birth_age": 3.0217834957987257,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp75",
+      "species_number": 75,
+      "structural_attachment_age": 2.93668548053731,
+      "oldest_observation_age": 1.8600701628031597,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.93668548053731,
+      "extinct": false,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp77",
+      "species_number": 77,
+      "structural_attachment_age": 5.227366943625798,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.8939535575709865,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp78",
+      "species_number": 78,
+      "structural_attachment_age": 2.8019765073709237,
+      "oldest_observation_age": 2.4148602429124804,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.8019765073709237,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp79",
+      "species_number": 79,
+      "structural_attachment_age": 2.798974819531164,
+      "oldest_observation_age": 0.39312680290528235,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.798974819531164,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp80",
+      "species_number": 80,
+      "structural_attachment_age": 2.7842483363057493,
+      "oldest_observation_age": 1.5733717741132143,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.7842483363057493,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp82",
+      "species_number": 82,
+      "structural_attachment_age": 2.6401898757854987,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.6401898757854987,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp83",
+      "species_number": 83,
+      "structural_attachment_age": 2.6340679219484393,
+      "oldest_observation_age": 0.084506904344261,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.6340679219484393,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp85",
+      "species_number": 85,
+      "structural_attachment_age": 2.5968151132277377,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.5968151132277377,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp86",
+      "species_number": 86,
+      "structural_attachment_age": 2.588289683568311,
+      "oldest_observation_age": 2.5423728749792627,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.588289683568311,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 2
+    },
+    {
+      "species_id": "sp87",
+      "species_number": 87,
+      "structural_attachment_age": 2.5377033877964053,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.5377033877964053,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp88",
+      "species_number": 88,
+      "structural_attachment_age": 2.5304856494085133,
+      "oldest_observation_age": 2.4436198678936147,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.5304856494085133,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp89",
+      "species_number": 89,
+      "structural_attachment_age": 2.460487953609027,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.460487953609027,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp90",
+      "species_number": 90,
+      "structural_attachment_age": 5.370795506587707,
+      "oldest_observation_age": 1.0375003497844926,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.4080247556679346,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp94",
+      "species_number": 94,
+      "structural_attachment_age": 4.619719620765872,
+      "oldest_observation_age": 1.9482243487888145,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.2149866264733724,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp95",
+      "species_number": 95,
+      "structural_attachment_age": 2.193024131294024,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.193024131294024,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp96",
+      "species_number": 96,
+      "structural_attachment_age": 2.190165542459619,
+      "oldest_observation_age": 2.1623170918772736,
+      "endpoint_age": 0.9773112401093975,
+      "true_species_birth_age": 2.190165542459619,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp97",
+      "species_number": 97,
+      "structural_attachment_age": 2.1490723520298864,
+      "oldest_observation_age": 0.9524911337997342,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.1490723520298864,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp98",
+      "species_number": 98,
+      "structural_attachment_age": 5.788431151342898,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.110533018872008,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp99",
+      "species_number": 99,
+      "structural_attachment_age": 2.0736986972528513,
+      "oldest_observation_age": 0.2652938631729267,
+      "endpoint_age": 0,
+      "true_species_birth_age": 2.0736986972528513,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp100",
+      "species_number": 100,
+      "structural_attachment_age": 2.6290322134663917,
+      "oldest_observation_age": 1.0631435901901085,
+      "endpoint_age": 0.9474686904894813,
+      "true_species_birth_age": 1.9731988370757403,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp101",
+      "species_number": 101,
+      "structural_attachment_age": 1.9286522718470618,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 1.9286522718470618,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp102",
+      "species_number": 102,
+      "structural_attachment_age": 1.9206114044852782,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 1.9206114044852782,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp103",
+      "species_number": 103,
+      "structural_attachment_age": 1.8153040732963746,
+      "oldest_observation_age": 1.4655247150442534,
+      "endpoint_age": 1.1086301598462711,
+      "true_species_birth_age": 1.8153040732963746,
+      "extinct": true,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp104",
+      "species_number": 104,
+      "structural_attachment_age": 1.6131147977088407,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 1.6131147977088407,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp108",
+      "species_number": 108,
+      "structural_attachment_age": 1.4496592321475195,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 1.4496592321475195,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp109",
+      "species_number": 109,
+      "structural_attachment_age": 1.3702673333569848,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 1.3702673333569848,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp111",
+      "species_number": 111,
+      "structural_attachment_age": 1.272459967909425,
+      "oldest_observation_age": 0.8259658522712456,
+      "endpoint_age": 0,
+      "true_species_birth_age": 1.272459967909425,
+      "extinct": false,
+      "sampled_present": false,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp112",
+      "species_number": 112,
+      "structural_attachment_age": 1.1643778069950592,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 1.1643778069950592,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp114",
+      "species_number": 114,
+      "structural_attachment_age": 1.1160369803285395,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 1.1160369803285395,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp115",
+      "species_number": 115,
+      "structural_attachment_age": 1.037964629540891,
+      "oldest_observation_age": 0.9035671179181453,
+      "endpoint_age": 0,
+      "true_species_birth_age": 1.037964629540891,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 1
+    },
+    {
+      "species_id": "sp116",
+      "species_number": 116,
+      "structural_attachment_age": 0.899686534422564,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.899686534422564,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp117",
+      "species_number": 117,
+      "structural_attachment_age": 0.8850657008063472,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.8850657008063472,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp118",
+      "species_number": 118,
+      "structural_attachment_age": 0.7762899847021707,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.7762899847021707,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp120",
+      "species_number": 120,
+      "structural_attachment_age": 0.7601766013016729,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.7601766013016729,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp122",
+      "species_number": 122,
+      "structural_attachment_age": 0.5725925786575328,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.5725925786575328,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp123",
+      "species_number": 123,
+      "structural_attachment_age": 0.5452508514179009,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.5452508514179009,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp125",
+      "species_number": 125,
+      "structural_attachment_age": 1.4595488369616607,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.3700561619614291,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp127",
+      "species_number": 127,
+      "structural_attachment_age": 0.19747520593993606,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.19747520593993606,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp128",
+      "species_number": 128,
+      "structural_attachment_age": 0.1868302148273031,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.1868302148273031,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp129",
+      "species_number": 129,
+      "structural_attachment_age": 0.15555688371451382,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.15555688371451382,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp130",
+      "species_number": 130,
+      "structural_attachment_age": 0.14404827317733648,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.14404827317733648,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp131",
+      "species_number": 131,
+      "structural_attachment_age": 0.08535503131679256,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.08535503131679256,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp132",
+      "species_number": 132,
+      "structural_attachment_age": 0.0589711929122263,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.0589711929122263,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp133",
+      "species_number": 133,
+      "structural_attachment_age": 1.5000026399302513,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.05116608532264166,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp134",
+      "species_number": 134,
+      "structural_attachment_age": 0.0440942794223016,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.0440942794223016,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp135",
+      "species_number": 135,
+      "structural_attachment_age": 0.03309583065332511,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.03309583065332511,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    },
+    {
+      "species_id": "sp137",
+      "species_number": 137,
+      "structural_attachment_age": 0.28568277257086727,
+      "oldest_observation_age": 0.0,
+      "endpoint_age": 0,
+      "true_species_birth_age": 0.020672154292944,
+      "extinct": false,
+      "sampled_present": true,
+      "fossil_count": 0
+    }
+  ],
+  "kernel_events": [
+    [
+      9.593918490368843,
+      "Protect"
+    ],
+    [
+      8.238071354952872,
+      "Birth"
+    ],
+    [
+      7.994790361538021,
+      "Birth"
+    ],
+    [
+      7.608564645763629,
+      "Birth"
+    ],
+    [
+      7.499029610016146,
+      "Birth"
+    ],
+    [
+      7.406894140755852,
+      "Birth"
+    ],
+    [
+      7.159753077035447,
+      "Birth"
+    ],
+    [
+      7.14435881436972,
+      "Protect"
+    ],
+    [
+      6.99367076698329,
+      "Birth"
+    ],
+    [
+      6.8320806042171425,
+      "Birth"
+    ],
+    [
+      6.756952169748355,
+      "Birth"
+    ],
+    [
+      6.504568544169904,
+      "Birth"
+    ],
+    [
+      6.265179603408587,
+      "Protect"
+    ],
+    [
+      6.122423800288387,
+      "Birth"
+    ],
+    [
+      6.098578092682635,
+      "Birth"
+    ],
+    [
+      6.06765469813573,
+      "Birth"
+    ],
+    [
+      6.003771396445581,
+      "Birth"
+    ],
+    [
+      5.9501334804078105,
+      "Birth"
+    ],
+    [
+      5.812132890543089,
+      "Birth"
+    ],
+    [
+      5.788431151342898,
+      "Birth"
+    ],
+    [
+      5.614090152519052,
+      "Birth"
+    ],
+    [
+      5.468471189079429,
+      "Birth"
+    ],
+    [
+      5.467778357488265,
+      "Birth"
+    ],
+    [
+      5.461561526509194,
+      "Protect"
+    ],
+    [
+      5.453630046045648,
+      "Birth"
+    ],
+    [
+      5.387654278834224,
+      "Protect"
+    ],
+    [
+      5.3847425707559236,
+      "Birth"
+    ],
+    [
+      5.370795506587707,
+      "Birth"
+    ],
+    [
+      5.37003197376074,
+      "Protect"
+    ],
+    [
+      5.344736716827216,
+      "Protect"
+    ],
+    [
+      5.241686396839034,
+      "Birth"
+    ],
+    [
+      5.227366943625798,
+      "Birth"
+    ],
+    [
+      5.216887016055356,
+      "Birth"
+    ],
+    [
+      5.176873926521201,
+      "Protect"
+    ],
+    [
+      5.141168478536442,
+      "Birth"
+    ],
+    [
+      5.0830315413445595,
+      "Birth"
+    ],
+    [
+      5.057428673232581,
+      "Birth"
+    ],
+    [
+      5.011847647041901,
+      "Birth"
+    ],
+    [
+      4.999989454052145,
+      "Birth"
+    ],
+    [
+      4.97073801858783,
+      "Protect"
+    ],
+    [
+      4.955277749473829,
+      "Birth"
+    ],
+    [
+      4.954425683438707,
+      "Birth"
+    ],
+    [
+      4.900642792399414,
+      "Birth"
+    ],
+    [
+      4.7806633150933076,
+      "Protect"
+    ],
+    [
+      4.700576239039444,
+      "Protect"
+    ],
+    [
+      4.660897186392759,
+      "Protect"
+    ],
+    [
+      4.619719620765872,
+      "Birth"
+    ],
+    [
+      4.567332387152312,
+      "Protect"
+    ],
+    [
+      4.555313067045199,
+      "Protect"
+    ],
+    [
+      4.463284980454354,
+      "Protect"
+    ],
+    [
+      4.428904852812122,
+      "Birth"
+    ],
+    [
+      4.241642010355184,
+      "Protect"
+    ],
+    [
+      4.195398359831457,
+      "Protect"
+    ],
+    [
+      4.186328879368117,
+      "Birth"
+    ],
+    [
+      4.092705929788847,
+      "Protect"
+    ],
+    [
+      4.082706690038699,
+      "Birth"
+    ],
+    [
+      4.027168382066757,
+      "Protect"
+    ],
+    [
+      4.021362068523441,
+      "Protect"
+    ],
+    [
+      4.013755449721131,
+      "Protect"
+    ],
+    [
+      4.003801551652701,
+      "Birth"
+    ],
+    [
+      3.9603785050754965,
+      "Birth"
+    ],
+    [
+      3.954104143036407,
+      "Birth"
+    ],
+    [
+      3.942529044590973,
+      "Protect"
+    ],
+    [
+      3.909358230476448,
+      "Birth"
+    ],
+    [
+      3.8888932541881776,
+      "Birth"
+    ],
+    [
+      3.8750534215506995,
+      "Birth"
+    ],
+    [
+      3.7802201234351642,
+      "Birth"
+    ],
+    [
+      3.753335852086666,
+      "Protect"
+    ],
+    [
+      3.6982823585529747,
+      "Protect"
+    ],
+    [
+      3.6351540499529253,
+      "Birth"
+    ],
+    [
+      3.593185925466795,
+      "Birth"
+    ],
+    [
+      3.566793700099611,
+      "Protect"
+    ],
+    [
+      3.4993635144132664,
+      "Birth"
+    ],
+    [
+      3.484586605760276,
+      "Protect"
+    ],
+    [
+      3.4201269676364827,
+      "Birth"
+    ],
+    [
+      3.3923673834888017,
+      "Death"
+    ],
+    [
+      3.2982043660922873,
+      "Birth"
+    ],
+    [
+      3.292357387377603,
+      "Birth"
+    ],
+    [
+      3.257902849139903,
+      "Birth"
+    ],
+    [
+      3.207482278062031,
+      "Protect"
+    ],
+    [
+      3.171179733611165,
+      "Birth"
+    ],
+    [
+      3.1692769284418496,
+      "Protect"
+    ],
+    [
+      3.1611509478389728,
+      "Death"
+    ],
+    [
+      3.136067468973202,
+      "Death"
+    ],
+    [
+      3.0745752647431512,
+      "Birth"
+    ],
+    [
+      3.0553924465606865,
+      "Protect"
+    ],
+    [
+      3.023853885410558,
+      "Birth"
+    ],
+    [
+      3.0237049195274697,
+      "Protect"
+    ],
+    [
+      3.0217834957987257,
+      "Birth"
+    ],
+    [
+      2.93668548053731,
+      "Birth"
+    ],
+    [
+      2.9167209415438986,
+      "Death"
+    ],
+    [
+      2.8043082216460196,
+      "Protect"
+    ],
+    [
+      2.8019765073709237,
+      "Birth"
+    ],
+    [
+      2.798974819531164,
+      "Birth"
+    ],
+    [
+      2.7842483363057493,
+      "Birth"
+    ],
+    [
+      2.7566635835737507,
+      "Protect"
+    ],
+    [
+      2.6401898757854987,
+      "Birth"
+    ],
+    [
+      2.6340679219484393,
+      "Birth"
+    ],
+    [
+      2.6290322134663917,
+      "Birth"
+    ],
+    [
+      2.5968151132277377,
+      "Birth"
+    ],
+    [
+      2.588289683568311,
+      "Birth"
+    ],
+    [
+      2.5423728749792627,
+      "Protect"
+    ],
+    [
+      2.5377033877964053,
+      "Birth"
+    ],
+    [
+      2.5304856494085133,
+      "Birth"
+    ],
+    [
+      2.460487953609027,
+      "Birth"
+    ],
+    [
+      2.452139580678601,
+      "Protect"
+    ],
+    [
+      2.4436198678936147,
+      "Protect"
+    ],
+    [
+      2.4148602429124804,
+      "Protect"
+    ],
+    [
+      2.404835223383726,
+      "Death"
+    ],
+    [
+      2.2721372368968122,
+      "Protect"
+    ],
+    [
+      2.226622398837579,
+      "Protect"
+    ],
+    [
+      2.1939267271971374,
+      "Death"
+    ],
+    [
+      2.193024131294024,
+      "Birth"
+    ],
+    [
+      2.190165542459619,
+      "Birth"
+    ],
+    [
+      2.1623170918772736,
+      "Protect"
+    ],
+    [
+      2.1490723520298864,
+      "Birth"
+    ],
+    [
+      2.1285278930062024,
+      "Protect"
+    ],
+    [
+      2.0736986972528513,
+      "Birth"
+    ],
+    [
+      2.0484093196085595,
+      "Death"
+    ],
+    [
+      2.0184507132250182,
+      "Protect"
+    ],
+    [
+      1.9482243487888145,
+      "Protect"
+    ],
+    [
+      1.9471548519888824,
+      "Protect"
+    ],
+    [
+      1.9286522718470618,
+      "Birth"
+    ],
+    [
+      1.9206114044852782,
+      "Birth"
+    ],
+    [
+      1.8600701628031597,
+      "Protect"
+    ],
+    [
+      1.8153040732963746,
+      "Birth"
+    ],
+    [
+      1.7136161355472428,
+      "Protect"
+    ],
+    [
+      1.668759678001095,
+      "Death"
+    ],
+    [
+      1.6131147977088407,
+      "Birth"
+    ],
+    [
+      1.6102197570581875,
+      "Protect"
+    ],
+    [
+      1.5733717741132143,
+      "Protect"
+    ],
+    [
+      1.5000026399302513,
+      "Birth"
+    ],
+    [
+      1.4655247150442534,
+      "Protect"
+    ],
+    [
+      1.4595488369616607,
+      "Birth"
+    ],
+    [
+      1.4496592321475195,
+      "Birth"
+    ],
+    [
+      1.3807229751139367,
+      "Protect"
+    ],
+    [
+      1.3702673333569848,
+      "Birth"
+    ],
+    [
+      1.3489419251655477,
+      "Protect"
+    ],
+    [
+      1.3164724060047401,
+      "Death"
+    ],
+    [
+      1.3070032012248642,
+      "Death"
+    ],
+    [
+      1.3022982066816216,
+      "Protect"
+    ],
+    [
+      1.2783008892542895,
+      "Death"
+    ],
+    [
+      1.272459967909425,
+      "Birth"
+    ],
+    [
+      1.2451542973151675,
+      "Protect"
+    ],
+    [
+      1.1996599886886976,
+      "Protect"
+    ],
+    [
+      1.1643778069950592,
+      "Birth"
+    ],
+    [
+      1.1160369803285395,
+      "Birth"
+    ],
+    [
+      1.1086301598462711,
+      "Death"
+    ],
+    [
+      1.0802090368487303,
+      "Death"
+    ],
+    [
+      1.0631435901901085,
+      "Protect"
+    ],
+    [
+      1.037964629540891,
+      "Birth"
+    ],
+    [
+      1.0375003497844926,
+      "Protect"
+    ],
+    [
+      0.9773112401093975,
+      "Death"
+    ],
+    [
+      0.963847480654108,
+      "Death"
+    ],
+    [
+      0.9568497787425692,
+      "Protect"
+    ],
+    [
+      0.9524911337997342,
+      "Protect"
+    ],
+    [
+      0.9474686904894813,
+      "Death"
+    ],
+    [
+      0.9332532642586582,
+      "Death"
+    ],
+    [
+      0.9035671179181453,
+      "Protect"
+    ],
+    [
+      0.899686534422564,
+      "Birth"
+    ],
+    [
+      0.8850657008063472,
+      "Birth"
+    ],
+    [
+      0.8692685165668035,
+      "Death"
+    ],
+    [
+      0.8691921918070236,
+      "Death"
+    ],
+    [
+      0.8259658522712456,
+      "Protect"
+    ],
+    [
+      0.7762899847021707,
+      "Birth"
+    ],
+    [
+      0.7601766013016729,
+      "Birth"
+    ],
+    [
+      0.7076518577166322,
+      "Death"
+    ],
+    [
+      0.5725925786575328,
+      "Birth"
+    ],
+    [
+      0.5452508514179009,
+      "Birth"
+    ],
+    [
+      0.4899541318424454,
+      "Death"
+    ],
+    [
+      0.4050178790005745,
+      "Death"
+    ],
+    [
+      0.39312680290528235,
+      "Protect"
+    ],
+    [
+      0.377898392136645,
+      "Death"
+    ],
+    [
+      0.3352622226007025,
+      "Death"
+    ],
+    [
+      0.2976722388329076,
+      "Protect"
+    ],
+    [
+      0.28568277257086727,
+      "Birth"
+    ],
+    [
+      0.2652938631729267,
+      "Protect"
+    ],
+    [
+      0.2569006542414698,
+      "Death"
+    ],
+    [
+      0.20226401256709714,
+      "Death"
+    ],
+    [
+      0.19747520593993606,
+      "Birth"
+    ],
+    [
+      0.1868302148273031,
+      "Birth"
+    ],
+    [
+      0.15555688371451382,
+      "Birth"
+    ],
+    [
+      0.14404827317733648,
+      "Birth"
+    ],
+    [
+      0.10870481254847597,
+      "Protect"
+    ],
+    [
+      0.1049694137318582,
+      "Death"
+    ],
+    [
+      0.08535503131679256,
+      "Birth"
+    ],
+    [
+      0.084506904344261,
+      "Protect"
+    ],
+    [
+      0.0589711929122263,
+      "Birth"
+    ],
+    [
+      0.0440942794223016,
+      "Birth"
+    ],
+    [
+      0.04291059269033326,
+      "Death"
+    ],
+    [
+      0.03309583065332511,
+      "Birth"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ],
+    [
+      0.0,
+      "Protect"
+    ]
+  ],
+  "fossilRecords": 105,
+  "sampledLiving": 64,
+  "unsampledLiving": 8
+}

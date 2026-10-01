@@ -1,0 +1,50 @@
+   Processing file "model.Rev"
+   Attempting to read the contents of file "extended_tree.nwk"
+   Successfully read file
+   Successfully read one character matrix from file 'data/morphology.nex'
+   
+   Running MCMC simulation
+   This simulation runs 1 independent replicate.
+   The simulator uses 35 different moves in a random move schedule with 12.8 moves per iteration
+   
+
+                  Name                  | Param              |  Weight  |  Tried   | Accepted | Acc. Ratio| Parameters
+===============================================================================================================================
+Scaling                                  lambda0                  1.0000         15          8      0.5333 lambda = 0.5000
+Scaling                                  alpha                    1.0000         11         10      0.9091 lambda = 0.5000
+Scaling                                  mu                       1.0000         10          8      0.8000 lambda = 0.5000
+Scaling                                  psi                      1.0000          9          5      0.5556 lambda = 0.5000
+OrderedTreeSwap                          species_tree             2.0000         14          0      0.0000 
+NodeTimeSlideUniform                     species_tree             3.0000         30         10      0.3333 
+RootTimeSlideUniform                     species_tree             1.0000         11          1      0.0909 
+FossilTipTimeSlideUniform                species_tree              0.1000          0          0      0.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          1          1      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          0          0      0.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          2          2      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          3          3      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          3          3      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          1          1      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          2          2      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          1          1      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          3          3      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          0          0      0.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          1          1      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          1          1      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          0          0      0.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          2          2      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          0          0      0.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          0          0      0.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          1          1      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          2          1      0.5000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          0          0      0.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          0          0      0.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          1          1      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          1          1      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          1          1      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          2          2      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          1          1      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          1          1      1.0000 delta = 0.5000
+FossilTipTimeSlideUniform                species_tree              0.1000          0          0      0.0000 delta = 0.5000
+
+RECOVERY_CHAIN_COMPLETE
+   Processing of file "model.Rev" completed

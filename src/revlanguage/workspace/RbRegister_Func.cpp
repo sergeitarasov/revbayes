@@ -95,6 +95,8 @@
 #include "Func_constructRootedTripletDistribution.h"
 #include "Func_earlyBurstRates.h"
 #include "Func_extantTree.h"
+#include "Func_speciesObservationTree.h"
+#include "Func_diversityDependentLogLikelihood.h"
 #include "Func_formatDiscreteCharacterData.h"
 #include "Func_inferAncestralPopSize.h"
 #include "Func_maximumTree.h"
@@ -455,6 +457,8 @@ void RevLanguage::Workspace::initializeFuncGlobalWorkspace(void)
         addFunction( new Func_formatDiscreteCharacterData()                     );
         addFunction( new Func_EarlyBurstRates()                                 );
         addFunction( new Func_extantTree()                                      );
+        addFunction( new Func_diversityDependentLogLikelihood() );
+        addFunction( new Func_speciesObservationTree()                          );
         addFunction( new Func_inferAncestralPopSize()                           );
         addFunction( new Func_maximumTree()                                     );
         addFunction( new Func_MinBLTimeScaling()                                );

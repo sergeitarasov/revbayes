@@ -1,0 +1,2 @@
+DDD 5.2.5: lnL = -7.92638283015368
+Maximum discrepancy from rounded Rev profile: 4.97605e-07

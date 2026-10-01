@@ -1,0 +1,313 @@
+{
+  "seed": 1069,
+  "origin": 12,
+  "parameters": {
+    "lambda0": 0.8,
+    "alpha": 0.015,
+    "mu": 0.15,
+    "psi": 0.3,
+    "rho": 0.8
+  },
+  "selection": "First seed >=1001 yielding exactly 100 observed named species; size-selected pilot, not SBC",
+  "observed_species": 100,
+  "fossils": 105,
+  "complete_history_log_density": -697.8474423452598,
+  "no_observations": false,
+  "newick_notes": "A child first, D child second. Root branch is the origin stem. Use JSON node ages/endpoint ages; a generic fossil-only Newick importer may translate ages.",
+  "attempts": [
+    {
+      "seed": 1001,
+      "observed": 71
+    },
+    {
+      "seed": 1002,
+      "observed": 60
+    },
+    {
+      "seed": 1003,
+      "observed": 127
+    },
+    {
+      "seed": 1004,
+      "observed": 97
+    },
+    {
+      "seed": 1005,
+      "observed": 84
+    },
+    {
+      "seed": 1006,
+      "observed": 88
+    },
+    {
+      "seed": 1007,
+      "observed": 69
+    },
+    {
+      "seed": 1008,
+      "observed": 124
+    },
+    {
+      "seed": 1009,
+      "observed": 112
+    },
+    {
+      "seed": 1010,
+      "observed": 93
+    },
+    {
+      "seed": 1011,
+      "observed": 101
+    },
+    {
+      "seed": 1012,
+      "observed": 117
+    },
+    {
+      "seed": 1013,
+      "observed": 0
+    },
+    {
+      "seed": 1014,
+      "observed": 107
+    },
+    {
+      "seed": 1015,
+      "observed": 74
+    },
+    {
+      "seed": 1016,
+      "observed": 119
+    },
+    {
+      "seed": 1017,
+      "observed": 114
+    },
+    {
+      "seed": 1018,
+      "observed": 0
+    },
+    {
+      "seed": 1019,
+      "observed": 88
+    },
+    {
+      "seed": 1020,
+      "observed": 115
+    },
+    {
+      "seed": 1021,
+      "observed": 111
+    },
+    {
+      "seed": 1022,
+      "observed": 70
+    },
+    {
+      "seed": 1023,
+      "observed": 101
+    },
+    {
+      "seed": 1024,
+      "observed": 97
+    },
+    {
+      "seed": 1025,
+      "observed": 76
+    },
+    {
+      "seed": 1026,
+      "observed": 147
+    },
+    {
+      "seed": 1027,
+      "observed": 121
+    },
+    {
+      "seed": 1028,
+      "observed": 89
+    },
+    {
+      "seed": 1029,
+      "observed": 0
+    },
+    {
+      "seed": 1030,
+      "observed": 1
+    },
+    {
+      "seed": 1031,
+      "observed": 73
+    },
+    {
+      "seed": 1032,
+      "observed": 132
+    },
+    {
+      "seed": 1033,
+      "observed": 0
+    },
+    {
+      "seed": 1034,
+      "observed": 124
+    },
+    {
+      "seed": 1035,
+      "observed": 110
+    },
+    {
+      "seed": 1036,
+      "observed": 0
+    },
+    {
+      "seed": 1037,
+      "observed": 0
+    },
+    {
+      "seed": 1038,
+      "observed": 138
+    },
+    {
+      "seed": 1039,
+      "observed": 112
+    },
+    {
+      "seed": 1040,
+      "observed": 0
+    },
+    {
+      "seed": 1041,
+      "observed": 110
+    },
+    {
+      "seed": 1042,
+      "observed": 96
+    },
+    {
+      "seed": 1043,
+      "observed": 78
+    },
+    {
+      "seed": 1044,
+      "observed": 91
+    },
+    {
+      "seed": 1045,
+      "observed": 0
+    },
+    {
+      "seed": 1046,
+      "observed": 120
+    },
+    {
+      "seed": 1047,
+      "observed": 113
+    },
+    {
+      "seed": 1048,
+      "observed": 127
+    },
+    {
+      "seed": 1049,
+      "observed": 59
+    },
+    {
+      "seed": 1050,
+      "observed": 101
+    },
+    {
+      "seed": 1051,
+      "observed": 123
+    },
+    {
+      "seed": 1052,
+      "observed": 103
+    },
+    {
+      "seed": 1053,
+      "observed": 86
+    },
+    {
+      "seed": 1054,
+      "observed": 99
+    },
+    {
+      "seed": 1055,
+      "observed": 1
+    },
+    {
+      "seed": 1056,
+      "observed": 113
+    },
+    {
+      "seed": 1057,
+      "observed": 110
+    },
+    {
+      "seed": 1058,
+      "observed": 123
+    },
+    {
+      "seed": 1059,
+      "observed": 90
+    },
+    {
+      "seed": 1060,
+      "observed": 1
+    },
+    {
+      "seed": 1061,
+      "observed": 117
+    },
+    {
+      "seed": 1062,
+      "observed": 101
+    },
+    {
+      "seed": 1063,
+      "observed": 0
+    },
+    {
+      "seed": 1064,
+      "observed": 75
+    },
+    {
+      "seed": 1065,
+      "observed": 76
+    },
+    {
+      "seed": 1066,
+      "observed": 99
+    },
+    {
+      "seed": 1067,
+      "observed": 115
+    },
+    {
+      "seed": 1068,
+      "observed": 87
+    },
+    {
+      "seed": 1069,
+      "observed": 100
+    }
+  ],
+  "observed_extinct": 28,
+  "sampled_extant": 64,
+  "unsampled_living": 8,
+  "character_model": "100 independent binary symmetric sites, rate 0.2, all sites retained",
+  "fixed_in_inference": [
+    "origin=12",
+    "rho=0.8",
+    "character_clock=0.2",
+    "exact occurrence ages",
+    "living/extinct status"
+  ],
+  "inferred": [
+    "lambda0",
+    "alpha",
+    "mu",
+    "psi",
+    "extended tree and extinction endpoints in joint chains"
+  ]
+}

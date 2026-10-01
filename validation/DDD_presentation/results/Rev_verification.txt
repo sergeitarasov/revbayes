@@ -1,0 +1,203 @@
+   Attempting to read the contents of file "DDDlinear_age3_rep01.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep02.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep03.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep04.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep05.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep06.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep07.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep08.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep09.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep10.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep11.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep12.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep13.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep14.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep15.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep16.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep17.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep18.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep19.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep20.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep21.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep22.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep23.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep24.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age3_rep25.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep01.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep02.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep03.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep04.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep05.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep06.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep07.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep08.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep09.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep10.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep11.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep12.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep13.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep14.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep15.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep16.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep17.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep18.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep19.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep20.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep21.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep22.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep23.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep24.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDlinear_age8_rep25.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep01.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep02.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep03.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep04.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep05.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep06.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep07.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep08.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep09.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep10.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep11.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep12.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep13.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep14.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep15.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep16.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep17.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep18.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep19.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep20.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep21.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep22.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep23.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep24.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age3_rep25.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep01.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep02.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep03.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep04.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep05.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep06.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep07.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep08.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep09.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep10.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep11.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep12.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep13.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep14.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep15.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep16.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep17.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep18.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep19.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep20.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep21.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep22.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep23.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep24.tre"
+   Successfully read file
+   Attempting to read the contents of file "DDDpower_age8_rep25.tre"
+   Successfully read file
+   Attempting to read the contents of file "illustrative.tre"
+   Successfully read file
+SIMULATION_REV_CHECKS_PASSED count=481 max_error=5.1692e-12

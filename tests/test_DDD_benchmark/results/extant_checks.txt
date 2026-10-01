@@ -1,0 +1,1 @@
+19 extant reduction/analytic/domain checks passed

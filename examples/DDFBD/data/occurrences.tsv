@@ -1,0 +1,6 @@
+occurrence_id	species_id	age_min	age_max	character_sample_id	source
+A_old	A	3.8	4.2	A_old	synthetic
+A_young	A	1.8	2.2	A_young	synthetic
+B_old	B	1.8	2.2	B_old	synthetic
+B_young	B	0.8	1.2	B_young	synthetic
+C_fossil	C	0.8	1.2	C_fossil	synthetic

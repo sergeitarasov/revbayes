@@ -1,0 +1,6 @@
+use_morphology = true
+use_dna = false
+generations = 2000
+prefix = "morphology"
+source("model.Rev")
+q()

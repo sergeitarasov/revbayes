@@ -1,0 +1,29 @@
+   Processing file "model.Rev"
+   Attempting to read the contents of file "extended_tree.nwk"
+   Successfully read file
+   Successfully read one character matrix from file 'data/morphology.nex'
+   
+   Running burn-in phase of Monte Carlo sampler for 2000 iterations.
+   This simulation runs 1 independent replicate.
+   The simulator uses 4 different moves in a random move schedule with 4 moves per iteration
+   
+
+Progress:
+0---------------25---------------50---------------75--------------100
+********************************************************************
+
+   
+   Running MCMC simulation
+   This simulation runs 1 independent replicate.
+   The simulator uses 4 different moves in a random move schedule with 4 moves per iteration
+   
+
+                  Name                  | Param              |  Weight  |  Tried   | Accepted | Acc. Ratio| Parameters
+===============================================================================================================================
+Scaling                                  lambda0                  1.0000      21824      10213      0.4680 lambda = 0.6260
+Scaling                                  alpha                    1.0000      21962       9064      0.4127 lambda = 0.7751
+Scaling                                  mu                       1.0000      22136      10030      0.4531 lambda = 1.0741
+Scaling                                  psi                      1.0000      22078      10445      0.4731 lambda = 0.6360
+
+RECOVERY_CHAIN_COMPLETE
+   Processing of file "model.Rev" completed
