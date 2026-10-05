@@ -1,0 +1,253 @@
+# Run from repository root. Native constant-rate normalization regression.
+# Native BDSTP survival uses P(sampled extant)/rho. The new prior uses the
+# actual sampled-extant probability. Subtract ln(rho) from native survival
+# densities before comparison. All other comparisons are direct.
+taxa <- readTaxonData("tests/test_DDFBDP/data/ancestor.tsv")
+initial <- readTrees("tests/test_DDFBDP/data/ancestor.tre")[1]
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE ancestor 0.4 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE ancestor 0.4 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(0.4))
+print("NATIVE_COMPARE ancestor 0.4 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE ancestor 1.0 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE ancestor 1.0 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(1.0))
+print("NATIVE_COMPARE ancestor 1.0 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+taxa <- readTaxonData("tests/test_DDFBDP/data/ancestor_reverse.tsv")
+initial <- readTrees("tests/test_DDFBDP/data/ancestor_reverse.tre")[1]
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE ancestor_reverse 0.4 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE ancestor_reverse 0.4 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(0.4))
+print("NATIVE_COMPARE ancestor_reverse 0.4 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE ancestor_reverse 1.0 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE ancestor_reverse 1.0 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(1.0))
+print("NATIVE_COMPARE ancestor_reverse 1.0 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+taxa <- readTaxonData("tests/test_DDFBDP/data/decimal_age.tsv")
+initial <- readTrees("tests/test_DDFBDP/data/decimal_age.tre")[1]
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE decimal_age 0.4 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE decimal_age 0.4 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(0.4))
+print("NATIVE_COMPARE decimal_age 0.4 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE decimal_age 1.0 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE decimal_age 1.0 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(1.0))
+print("NATIVE_COMPARE decimal_age 1.0 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+taxa <- readTaxonData("tests/test_DDFBDP/data/terminal.tsv")
+initial <- readTrees("tests/test_DDFBDP/data/terminal.tre")[1]
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE terminal 0.4 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE terminal 0.4 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(0.4))
+print("NATIVE_COMPARE terminal 0.4 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE terminal 1.0 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE terminal 1.0 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(1.0))
+print("NATIVE_COMPARE terminal 1.0 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+taxa <- readTaxonData("tests/test_DDFBDP/data/mixed.tsv")
+initial <- readTrees("tests/test_DDFBDP/data/mixed.tre")[1]
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE mixed 0.4 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE mixed 0.4 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(0.4))
+print("NATIVE_COMPARE mixed 0.4 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE mixed 1.0 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE mixed 1.0 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(1.0))
+print("NATIVE_COMPARE mixed 1.0 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+taxa <- readTaxonData("tests/test_DDFBDP/data/root_ancestor.tsv")
+initial <- readTrees("tests/test_DDFBDP/data/root_ancestor.tre")[1]
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE root_ancestor 0.4 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE root_ancestor 0.4 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(0.4))
+print("NATIVE_COMPARE root_ancestor 0.4 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE root_ancestor 1.0 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE root_ancestor 1.0 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(1.0))
+print("NATIVE_COMPARE root_ancestor 1.0 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+taxa <- readTaxonData("tests/test_DDFBDP/data/extant_only.tsv")
+initial <- readTrees("tests/test_DDFBDP/data/extant_only.tre")[1]
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE extant_only 0.4 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE extant_only 0.4 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(0.4))
+print("NATIVE_COMPARE extant_only 0.4 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE extant_only 1.0 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE extant_only 1.0 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="survival")
+difference <- abs(old.lnProbability()-new.lnProbability()-ln(1.0))
+print("NATIVE_COMPARE extant_only 1.0 survival " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+taxa <- readTaxonData("tests/test_DDFBDP/data/all_fossil.tsv")
+initial <- readTrees("tests/test_DDFBDP/data/all_fossil.tre")[1]
+initial.offset(.5)
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE all_fossil 0.4 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=0.4, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE all_fossil 0.4 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="time")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE all_fossil 1.0 time " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+old ~ dnBDSTP(lambda=.4, r=0, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+new ~ dnDDFBDP(lambda0=.4, alpha=0, maxHiddenLineages=128, mu=.15, psi=.2, rho=1.0, originAge=3, taxa=taxa, initialTree=initial, condition="sampling")
+difference <- abs(old.lnProbability()-new.lnProbability())
+print("NATIVE_COMPARE all_fossil 1.0 sampling " + old.lnProbability() + " " + new.lnProbability() + " " + difference)
+if (difference > 1e-8) { stop("DDFBDP constant-rate mismatch") }
+print("DDFBDP_NATIVE_PASS")
+q()

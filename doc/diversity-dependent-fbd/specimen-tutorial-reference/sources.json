@@ -1,0 +1,56 @@
+[
+  {
+    "file": "data/bears_cytb.nex",
+    "url": "https://revbayes.github.io/tutorials/fbd/data/bears_cytb.nex",
+    "sha256": "cc03372ea08e9900b1d1a476a38f16fe06c847f47755df9c876efeadffe2b862",
+    "bytes": 10362
+  },
+  {
+    "file": "data/bears_morphology.nex",
+    "url": "https://revbayes.github.io/tutorials/fbd/data/bears_morphology.nex",
+    "sha256": "79c89ef5d1474846b51c4a8b34340cceccc8cb86544e67da9edbd01dea7dad20",
+    "bytes": 1729
+  },
+  {
+    "file": "data/bears_taxa.tsv",
+    "url": "https://revbayes.github.io/tutorials/fbd/data/bears_taxa.tsv",
+    "sha256": "d87924683b4468c78cd8a7ee6ad08937187103c779d0db4fd0fb22210a21be47",
+    "bytes": 627
+  },
+  {
+    "file": "scripts/mcmc_CEFBDP_Specimens.Rev",
+    "url": "https://revbayes.github.io/tutorials/fbd/scripts/mcmc_CEFBDP_Specimens.Rev",
+    "sha256": "309f38b1870dbb84ecf567fa1faf13d13fe42fb4eae353ea10145e2a82a7321d",
+    "bytes": 1973
+  },
+  {
+    "file": "scripts/model_FBDP.Rev",
+    "url": "https://revbayes.github.io/tutorials/fbd/scripts/model_FBDP.Rev",
+    "sha256": "2192b8f53aeb0664c0bb0434075b6760cb1b5afbca0997b0c46c5a2d28d158d1",
+    "bytes": 4948
+  },
+  {
+    "file": "scripts/model_GTRG.Rev",
+    "url": "https://revbayes.github.io/tutorials/fbd/scripts/model_GTRG.Rev",
+    "sha256": "f02dba2962c41185687d5c35d01c057b94040d22e6b0b16a6d482e36e8f943cf",
+    "bytes": 1233
+  },
+  {
+    "file": "scripts/model_Morph.Rev",
+    "url": "https://revbayes.github.io/tutorials/fbd/scripts/model_Morph.Rev",
+    "sha256": "e7c8cb9bec0a345b645e5bdf2827e94078a496daab16c20c423171cd261cfecb",
+    "bytes": 1406
+  },
+  {
+    "file": "scripts/model_UExp.Rev",
+    "url": "https://revbayes.github.io/tutorials/fbd/scripts/model_UExp.Rev",
+    "sha256": "16c0a285fb735cf6def514e0c8a2dda9b6c709daf07a1859718d094b528b102f",
+    "bytes": 1412
+  },
+  {
+    "file": "scripts/summarize_CEFBD.Rev",
+    "url": "https://revbayes.github.io/tutorials/fbd/scripts/summarize_CEFBD.Rev",
+    "sha256": "2cb154ec20ba46015f63a34fd4a4977dca5ba4c882bd43fdc9b5c09fbff84e9f",
+    "bytes": 221
+  }
+]

@@ -1,4 +1,12 @@
-# Diversity-dependent fossilized birth-death model
+# Diversity-dependent fossilized birth-death models
+
+**New specimen implementation:** see [DDFBDP.md](DDFBDP.md) for
+`dnDiversityDependentSpecimenFBD` / `dnDDFBDP`, the ordinary sampled-ancestor tree
+prior with exponential decline in total diversity. It includes a morphology-only
+example, standard fossil collapse/expand moves, build instructions and validation.
+
+## Earlier named-species implementation
+
 
 This research branch adds `dnDiversityDependentFBD` (`dnDDFBD`) to RevBayes, with speciation depending on total living diversity, including unobserved lineages. It supports repeated fossil occurrences assigned to named species and joint tree/parameter inference with morphological and molecular data.
 

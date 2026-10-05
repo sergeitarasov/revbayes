@@ -1,0 +1,42 @@
+   Successfully read one character matrix from file '<repository>/examples/DDFBDP/data/bears_morphology.nex'
+   
+   Running MCMC simulation
+   This simulation runs 1 independent replicate.
+   The simulator uses 12 different moves in a random move schedule with 46 moves per iteration
+   
+
+Iter        |      Posterior   |     Likelihood   |          Prior   |          alpha   |        lambda0   |             mu   |   numAncestors   |            psi   |    elapsed   |        ETA   |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0           |       -939.284   |        -651.79   |       -287.494   |           0.05   |            0.2   |            0.1   |              0   |           0.15   |   00:00:00   |   --:--:--   |
+
+                  Name                  | Param              |  Weight  |  Tried   | Accepted | Acc. Ratio| Parameters
+===============================================================================================================================
+Scaling                                  lambda0                  2.0000         40         30      0.7500 lambda = 0.5000
+Scaling                                  alpha                    2.0000         49         37      0.7551 lambda = 0.5000
+Scaling                                  mu                       2.0000         32         28      0.8750 lambda = 0.5000
+Scaling                                  psi                      2.0000         41         28      0.6829 lambda = 0.5000
+Sliding                                  origin                   2.0000         43         36      0.8372 delta = 2.0000
+FNPR                                     tree                    10.0000        203         88      0.4335 
+CollapseExpandFossilBranch               tree                     6.0000        110         44      0.4000 
+NodeTimeSlideUniform                     tree                    10.0000        198        152      0.7677 
+RootTimeSlideUniform                     tree                     2.0000         36         33      0.9167 
+FossilTipTimeSlideUniform                tree                     4.0000         81         79      0.9753 delta = 1.0000
+Scaling                                  shape                    2.0000         41         24      0.5854 lambda = 0.5000
+Scaling                                  clock                    2.0000         46         44      0.9565 lambda = 0.5000
+
+DDFBDP_MORPHOLOGY_PASS
+   Appending to previous MCMC simulation of 20 iterations
+   This simulation runs 1 independent replicate.
+   The simulator uses 12 different moves in a random move schedule with 46 moves per iteration
+   
+
+Iter        |      Posterior   |     Likelihood   |          Prior   |          alpha   |        lambda0   |             mu   |   numAncestors   |            psi   |    elapsed   |        ETA   |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   Appending to previous MCMC simulation of 40 iterations
+   This simulation runs 1 independent replicate.
+   The simulator uses 12 different moves in a random move schedule with 46 moves per iteration
+   
+
+Iter        |      Posterior   |     Likelihood   |          Prior   |          alpha   |        lambda0   |             mu   |   numAncestors   |            psi   |    elapsed   |        ETA   |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DDFBDP_CHECKPOINT_PASS

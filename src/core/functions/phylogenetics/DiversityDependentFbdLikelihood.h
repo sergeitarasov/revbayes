@@ -6,7 +6,7 @@
 
 namespace RevBayesCore { namespace DDFBD {
 
-/** A numerical kernel for oriented extended budding trees. No DAG dependencies.
+/** Numerical kernels for DD tree densities. No DAG dependencies.
  * Hidden counts are truncated with a killed, never reflecting, boundary.
  * See doc/diversity-dependent-fbd/EXTENDED_TREE_DERIVATION.md for the measure.
  */
@@ -32,6 +32,16 @@ struct Settings {
     std::size_t maxHidden = 128;
     double tolerance = 1e-12;
 };
+
+// Specimen observations: an ancestral sample continues the retained skeleton;
+// a terminal sample demotes its still-living continuation into the hidden count.
+enum class SpecimenEventType { Birth, AncestorSample, TerminalSample };
+struct SpecimenEvent { double age; SpecimenEventType type; };
+// Raw density, before the labelled non-oriented sampled-tree shape factor and
+// observation conditioning. Events must be oldest first; times are positive.
+// The origin starts with one retained lineage and no hidden lineages.
+double specimenLogLikelihood(double origin, const std::vector<SpecimenEvent>& events,
+    std::size_t extantSamples, const Parameters& parameters, const Settings& settings);
 
 /** Raw oriented density; excludes label factorial and sampling conditioning.
  * events must be oldest first, ties Birth then Protect then Death. Every species

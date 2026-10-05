@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "scope": "Numerical and runtime integration; not parameter recovery or posterior convergence",
+  "checks": [
+    {
+      "check": "native_BDSTP_alpha_zero",
+      "comparisons": 46,
+      "direct_matches": 39,
+      "survival_rho_corrections": 7,
+      "max_log_density_error": 2.00373e-12,
+      "note": "Native survival divides by P(sampled extant)/rho; new prior divides by P(sampled extant). Compare native minus ln(rho) for survival."
+    },
+    {
+      "check": "morphology_joint_MCMC_debug_cache_checks",
+      "generations": 200,
+      "samples": 21,
+      "ancestor_counts": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "check": "sampled_state_cutoff_sensitivity",
+      "comparisons": [
+        "CAP_COMPARE 0 5.3285e-10 1.22299e-10",
+        "CAP_COMPARE 5 8.52651e-13 2.00373e-12",
+        "CAP_COMPARE 10 3.12639e-13 3.97904e-13",
+        "CAP_COMPARE 15 2.58638e-12 1.25056e-12",
+        "CAP_COMPARE 20 1.44951e-12 8.52651e-14"
+      ]
+    },
+    {
+      "check": "constrained_topology_checkpoint_restore",
+      "status": "passed"
+    }
+  ]
+}

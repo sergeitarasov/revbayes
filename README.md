@@ -1,5 +1,10 @@
 # RevBayes 
 
+> **Experimental DD-FBD branch:** [new specimen tree prior (`dnDDFBDP`)](DDFBDP.md),
+> including its morphology-only example and validation. The earlier named-species
+> implementation is documented in [DDFBD.md](DDFBD.md).
+
+
 [![RevBayes v1.0 releases](https://img.shields.io/github/downloads/revbayes/revbayes.archive/total.svg?style=social&logo=github&label=Downloads:%20v1.0)](https://github.com/revbayes/revbayes.archive/releases)
 [![RevBayes later releases](https://img.shields.io/github/downloads/revbayes/revbayes/total.svg?style=social&logo=github&label=Downloads:%20v1.1%20and%20later)](https://github.com/revbayes/revbayes/releases)
 

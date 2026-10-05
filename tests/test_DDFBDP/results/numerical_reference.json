@@ -1,0 +1,103 @@
+{
+  "passed": 26,
+  "comparisons": [
+    {
+      "test": "constant_ancestor",
+      "rho": 0.4,
+      "error": 5.297984273511247e-13
+    },
+    {
+      "test": "constant_terminal",
+      "rho": 0.4,
+      "error": 1.667110893777135e-12
+    },
+    {
+      "test": "constant_two_ancestors",
+      "rho": 0.4,
+      "error": 1.0933476346508542e-12
+    },
+    {
+      "test": "constant_mixed",
+      "rho": 0.4,
+      "error": 1.8598456108520622e-12
+    },
+    {
+      "test": "constant_all_fossil",
+      "rho": 0.4,
+      "error": 1.637801005927031e-12
+    },
+    {
+      "test": "constant_root_ancestor",
+      "rho": 0.4,
+      "error": 1.8181012251261564e-12
+    },
+    {
+      "test": "constant_extant_only",
+      "rho": 0.4,
+      "error": 1.759481449425948e-12
+    },
+    {
+      "test": "constant_ancestor",
+      "rho": 1.0,
+      "error": 5.164757510556228e-13
+    },
+    {
+      "test": "constant_terminal",
+      "rho": 1.0,
+      "error": 1.694644424787839e-12
+    },
+    {
+      "test": "constant_two_ancestors",
+      "rho": 1.0,
+      "error": 1.0693668173189508e-12
+    },
+    {
+      "test": "constant_mixed",
+      "rho": 1.0,
+      "error": 1.879385536085465e-12
+    },
+    {
+      "test": "constant_all_fossil",
+      "rho": 1.0,
+      "error": 1.9415580254644738e-12
+    },
+    {
+      "test": "constant_root_ancestor",
+      "rho": 1.0,
+      "error": 2.000177801164682e-12
+    },
+    {
+      "test": "constant_extant_only",
+      "rho": 1.0,
+      "error": 1.6555645743210334e-12
+    },
+    {
+      "test": "dd_ancestor",
+      "error": 7.807088309164101e-13
+    },
+    {
+      "test": "dd_terminal",
+      "error": 1.5081269566508126e-12
+    },
+    {
+      "test": "dd_two_ancestors",
+      "error": 7.7982065249671e-13
+    },
+    {
+      "test": "dd_mixed",
+      "error": 1.9770851622524788e-12
+    },
+    {
+      "test": "dd_all_fossil",
+      "error": 2.362554596402333e-12
+    },
+    {
+      "test": "dd_root_ancestor",
+      "error": 2.283506717049022e-12
+    },
+    {
+      "test": "dd_extant_only",
+      "error": 1.9548807017599756e-12
+    }
+  ]
+}

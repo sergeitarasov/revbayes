@@ -1,0 +1,16 @@
+   Attempting to read the contents of file "state0.tre"
+   Successfully read file
+CAP_COMPARE 0 5.3285e-10 1.22299e-10
+   Attempting to read the contents of file "state5.tre"
+   Successfully read file
+CAP_COMPARE 5 8.52651e-13 2.00373e-12
+   Attempting to read the contents of file "state10.tre"
+   Successfully read file
+CAP_COMPARE 10 3.12639e-13 3.97904e-13
+   Attempting to read the contents of file "state15.tre"
+   Successfully read file
+CAP_COMPARE 15 2.58638e-12 1.25056e-12
+   Attempting to read the contents of file "state20.tre"
+   Successfully read file
+CAP_COMPARE 20 1.44951e-12 8.52651e-14
+DDFBDP_CAP_PASS

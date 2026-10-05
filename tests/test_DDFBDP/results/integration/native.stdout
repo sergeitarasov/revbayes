@@ -1,0 +1,63 @@
+   Attempting to read the contents of file "ancestor.tre"
+   Successfully read file
+NATIVE_COMPARE ancestor 0.4 time -4.43956 -4.43956 5.30243e-13
+NATIVE_COMPARE ancestor 0.4 sampling -4.06279 -4.06279 2.54907e-13
+NATIVE_COMPARE ancestor 0.4 survival -4.65021 -3.73392 3.03646e-13
+NATIVE_COMPARE ancestor 1.0 time -4.25271 -4.25271 5.1692e-13
+NATIVE_COMPARE ancestor 1.0 sampling -4.04075 -4.04075 2.47802e-13
+NATIVE_COMPARE ancestor 1.0 survival -3.97768 -3.97768 2.99316e-13
+   Attempting to read the contents of file "ancestor_reverse.tre"
+   Successfully read file
+NATIVE_COMPARE ancestor_reverse 0.4 time -4.43956 -4.43956 5.30243e-13
+NATIVE_COMPARE ancestor_reverse 0.4 sampling -4.06279 -4.06279 2.54907e-13
+NATIVE_COMPARE ancestor_reverse 0.4 survival -4.65021 -3.73392 3.03646e-13
+NATIVE_COMPARE ancestor_reverse 1.0 time -4.25271 -4.25271 5.1692e-13
+NATIVE_COMPARE ancestor_reverse 1.0 sampling -4.04075 -4.04075 2.47802e-13
+NATIVE_COMPARE ancestor_reverse 1.0 survival -3.97768 -3.97768 2.99316e-13
+   Attempting to read the contents of file "decimal_age.tre"
+   Successfully read file
+NATIVE_COMPARE decimal_age 0.4 time -6.23758 -6.23758 5.48894e-13
+NATIVE_COMPARE decimal_age 0.4 sampling -5.86082 -5.86082 2.74447e-13
+NATIVE_COMPARE decimal_age 0.4 survival -6.44824 -5.53195 3.22298e-13
+NATIVE_COMPARE decimal_age 1.0 time -9.23593 -9.23593 6.69687e-13
+NATIVE_COMPARE decimal_age 1.0 sampling -9.02396 -9.02396 4.01457e-13
+NATIVE_COMPARE decimal_age 1.0 survival -8.96089 -8.96089 4.52971e-13
+   Attempting to read the contents of file "terminal.tre"
+   Successfully read file
+NATIVE_COMPARE terminal 0.4 time -6.07652 -6.07652 1.668e-12
+NATIVE_COMPARE terminal 0.4 sampling -5.69976 -5.69976 1.39355e-12
+NATIVE_COMPARE terminal 0.4 survival -6.28718 -5.37089 1.4414e-12
+NATIVE_COMPARE terminal 1.0 time -7.65765 -7.65765 1.69642e-12
+NATIVE_COMPARE terminal 1.0 sampling -7.44569 -7.44569 1.4273e-12
+NATIVE_COMPARE terminal 1.0 survival -7.38262 -7.38262 1.47971e-12
+   Attempting to read the contents of file "mixed.tre"
+   Successfully read file
+NATIVE_COMPARE mixed 0.4 time -8.78459 -8.78459 1.85985e-12
+NATIVE_COMPARE mixed 0.4 sampling -8.40783 -8.40783 1.51346e-12
+NATIVE_COMPARE mixed 0.4 survival -8.99525 -8.07896 1.67411e-12
+NATIVE_COMPARE mixed 1.0 time -10.3657 -10.3657 1.87939e-12
+NATIVE_COMPARE mixed 1.0 sampling -10.1538 -10.1538 1.53833e-12
+NATIVE_COMPARE mixed 1.0 survival -10.0907 -10.0907 1.69997e-12
+   Attempting to read the contents of file "root_ancestor.tre"
+   Successfully read file
+NATIVE_COMPARE root_ancestor 0.4 time -8.3866 -8.3866 1.81721e-12
+NATIVE_COMPARE root_ancestor 0.4 sampling -8.00983 -8.00983 1.47082e-12
+NATIVE_COMPARE root_ancestor 0.4 survival -8.59726 -7.68097 1.63236e-12
+NATIVE_COMPARE root_ancestor 1.0 time -10.6177 -10.6177 2.00373e-12
+NATIVE_COMPARE root_ancestor 1.0 sampling -10.4058 -10.4058 1.66267e-12
+NATIVE_COMPARE root_ancestor 1.0 survival -10.3427 -10.3427 1.82432e-12
+   Attempting to read the contents of file "extant_only.tre"
+   Successfully read file
+NATIVE_COMPARE extant_only 0.4 time -7.6076 -7.6076 1.76037e-12
+NATIVE_COMPARE extant_only 0.4 sampling -7.23084 -7.23084 1.41309e-12
+NATIVE_COMPARE extant_only 0.4 survival -7.81826 -6.90197 1.57463e-12
+NATIVE_COMPARE extant_only 1.0 time -6.70394 -6.70394 1.65468e-12
+NATIVE_COMPARE extant_only 1.0 sampling -6.49197 -6.49197 1.31362e-12
+NATIVE_COMPARE extant_only 1.0 survival -6.4289 -6.4289 1.47526e-12
+   Attempting to read the contents of file "all_fossil.tre"
+   Successfully read file
+NATIVE_COMPARE all_fossil 0.4 time -7.17656 -7.17656 1.6378e-12
+NATIVE_COMPARE all_fossil 0.4 sampling -6.79979 -6.79979 1.36335e-12
+NATIVE_COMPARE all_fossil 1.0 time -11.0883 -11.0883 1.94689e-12
+NATIVE_COMPARE all_fossil 1.0 sampling -10.8763 -10.8763 1.67866e-12
+DDFBDP_NATIVE_PASS

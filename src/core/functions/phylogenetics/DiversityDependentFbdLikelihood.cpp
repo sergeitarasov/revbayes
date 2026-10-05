@@ -352,3 +352,56 @@ double RevBayesCore::DDFBD::extantTreeLogLikelihood(double startAge,
     }
     return result;
 }
+
+// BDSTP-compatible specimen density before its labelled non-oriented shape factor.
+double RevBayesCore::DDFBD::specimenLogLikelihood(double origin,
+    const std::vector<SpecimenEvent>& events, std::size_t extantSamples,
+    const Parameters& p, const Settings& settings)
+{
+    validate(p,settings,origin);
+    if (p.birthModel != BirthModel::Exponential)
+        throw std::invalid_argument("Specimen FBD supports exponential decline only");
+    std::vector<double> v(settings.maxHidden+1,0);
+    v[0]=1;
+    std::size_t k=1;
+    double age=origin, result=0;
+    for (const auto& event : events) {
+        if (!std::isfinite(event.age) || event.age<=0 || event.age>age || !k)
+            throw std::invalid_argument("Invalid specimen event schedule");
+        result+=interval(v,age-event.age,k,0,p,settings);
+        if (event.type==SpecimenEventType::Birth) {
+            if (p.lambda0==0) return negativeInfinity;
+            result+=std::log(p.lambda0)-p.alpha*(k-1);
+            for (std::size_t h=0;h<v.size();++h) v[h]*=std::exp(-p.alpha*h);
+            ++k;
+        } else {
+            if (p.psi==0) return negativeInfinity;
+            result+=std::log(p.psi);
+            if (event.type==SpecimenEventType::TerminalSample) {
+                // Sampling does not kill the lineage. Overflow is killed,
+                // never reflected or counted as biological extinction.
+                for (std::size_t h=v.size()-1;h>0;--h) v[h]=v[h-1];
+                v[0]=0;
+                --k;
+            }
+        }
+        const double change=normalize(v);
+        if (change==negativeInfinity)
+            throw std::runtime_error("Specimen FBD event underflow or insufficient cutoff");
+        result+=change;
+        age=event.age;
+    }
+    if (k!=extantSamples) throw std::invalid_argument("Specimen extant count mismatch");
+    result+=interval(v,age,k,0,p,settings);
+    double endpoint=0, weight=1;
+    for (double x:v) { endpoint+=x*weight; weight*=1-p.rho; }
+    if (p.rho==0 && extantSamples) return negativeInfinity;
+    if (endpoint==0) {
+        // With no deaths and rho=1, any terminal fossil is impossible.
+        if (p.mu==0 && p.rho==1 && std::any_of(events.begin(),events.end(),
+            [](const SpecimenEvent& e){return e.type==SpecimenEventType::TerminalSample;}))
+            return negativeInfinity;
+        throw std::runtime_error("Specimen FBD endpoint underflow or insufficient cutoff");
+    }
+    return result+std::log(endpoint)+logPower(p.rho,extantSamples);
+}

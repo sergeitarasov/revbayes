@@ -1,0 +1,42 @@
+{
+  "taxa": 22,
+  "extant_min_age_zero": 8,
+  "files": {
+    "bears_cytb.nex": {
+      "rows": 10,
+      "declared_sites": 1000,
+      "row_lengths": [
+        1000
+      ],
+      "unknown_labels": [],
+      "missing_from_partition": [
+        "Agriarctos_spp",
+        "Ailurarctos_lufengensis",
+        "Ballusia_elmensis",
+        "Indarctos_arctoides",
+        "Indarctos_punjabiensis",
+        "Indarctos_vireti",
+        "Kretzoiarctos_beatrix",
+        "Parictis_montanus",
+        "Ursavus_brevirhinus",
+        "Ursavus_primaevus",
+        "Ursus_abstrusus",
+        "Zaragocyon_daamsi"
+      ]
+    },
+    "bears_morphology.nex": {
+      "rows": 18,
+      "declared_sites": 62,
+      "row_lengths": [
+        62
+      ],
+      "unknown_labels": [],
+      "missing_from_partition": [
+        "Arctodus_simus",
+        "Parictis_montanus",
+        "Ursus_abstrusus",
+        "Ursus_spelaeus"
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+   Successfully read one character matrix from file '<repository>/examples/DDFBDP/data/bears_morphology.nex'
+   
+   Running MCMC simulation
+   This simulation runs 1 independent replicate.
+   The simulator uses 12 different moves in a random move schedule with 46 moves per iteration
+   
+
+Iter        |      Posterior   |     Likelihood   |          Prior   |          alpha   |        lambda0   |             mu   |   numAncestors   |            psi   |    elapsed   |        ETA   |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0           |       -948.051   |       -785.796   |       -162.255   |           0.05   |            0.2   |            0.1   |              0   |           0.15   |   00:00:00   |   --:--:--   |
+100         |       -579.454   |       -445.277   |       -134.177   |      0.2509156   |      0.4951743   |      0.1200889   |              8   |     0.06960158   |   00:02:07   |   --:--:--   |
+200         |       -561.697   |       -439.659   |       -122.038   |      0.1624331   |      0.4056858   |       0.187974   |             10   |      0.1311227   |   00:03:44   |   00:00:00   |
+
+                  Name                  | Param              |  Weight  |  Tried   | Accepted | Acc. Ratio| Parameters
+===============================================================================================================================
+Scaling                                  lambda0                  2.0000        392        311      0.7934 lambda = 0.5000
+Scaling                                  alpha                    2.0000        410        371      0.9049 lambda = 0.5000
+Scaling                                  mu                       2.0000        405        309      0.7630 lambda = 0.5000
+Scaling                                  psi                      2.0000        423        352      0.8322 lambda = 0.5000
+Sliding                                  origin                   2.0000        382        342      0.8953 delta = 2.0000
+FNPR                                     tree                    10.0000       2040        335      0.1642 
+CollapseExpandFossilBranch               tree                     6.0000       1159        212      0.1829 
+NodeTimeSlideUniform                     tree                    10.0000       2007       1091      0.5436 
+RootTimeSlideUniform                     tree                     2.0000        370        131      0.3541 
+FossilTipTimeSlideUniform                tree                     4.0000        829        761      0.9180 delta = 1.0000
+Scaling                                  shape                    2.0000        415        374      0.9012 lambda = 0.5000
+Scaling                                  clock                    2.0000        368        235      0.6386 lambda = 0.5000
+
+DDFBDP_MORPHOLOGY_PASS
